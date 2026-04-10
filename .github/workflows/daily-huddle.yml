@@ -2,8 +2,8 @@ name: Daily Huddle Report
 
 on:
   schedule:
-    # Mon–Fri at 13:00 UTC = 8:00 AM ET (9:00 AM EDT in summer)
-    - cron: "0 13 * * 1-5"
+    # Mon–Fri at 14:00 UTC = 9:00 AM EST (winter) / 10:00 AM EDT (summer)
+    - cron: "0 14 * * 1-5"
   workflow_dispatch:   # allow manual trigger from GitHub Actions tab
 
 permissions:
