@@ -10,7 +10,7 @@ Environment variable required:
 The service account must have Viewer access to both spreadsheets below.
 """
 
-import os, sys, json, math, calendar, datetime
+import os, sys, json, math, calendar, datetime, subprocess
 from pathlib import Path
 
 # ── Google API ────────────────────────────────────────────────────────────────
@@ -154,10 +154,11 @@ def fetch_main_tab(service, year, month, biz_day):
         return safe(cell(row_1based, biz_day_to_col(day)))
 
     # MTD actuals from col B of the "Actual" rows
-    hvac_mtd    = safe(cell(ROW["hvac_actual"],   1))
-    plumb_mtd   = safe(cell(ROW["plumb_actual"],  1))
-    install_mtd = safe(cell(ROW["install_actual"],1))
-    sales_mtd   = safe(cell(ROW["sales_actual"],  1))
+    # Some sheet tabs store values as negatives — abs() normalises them
+    hvac_mtd    = abs(safe(cell(ROW["hvac_actual"],   1)))
+    plumb_mtd   = abs(safe(cell(ROW["plumb_actual"],  1)))
+    install_mtd = abs(safe(cell(ROW["install_actual"],1)))
+    sales_mtd   = abs(safe(cell(ROW["sales_actual"],  1)))
 
     # Today's commitments from today_col
     hvac_commit   = safe(cell(ROW["hvac_commit"],   today_col))
@@ -258,9 +259,10 @@ def fetch_prior_months_ytd(service, year, month):
 
 def fetch_prior_year_april(service, month):
     """Fetch April 2025 full-month service totals (HVAC+Plumbing+Install)."""
+    FALLBACK = 641_482  # known April 2025 full-month total
     gid_2025 = MONTH_GIDS_2025.get(month)
     if not gid_2025:
-        return 0
+        return FALLBACK
     try:
         tab = sheet_title(service, SHEET_ID, gid_2025)
         data = get_range(service, SHEET_ID, tab, "A1:B80")
@@ -269,10 +271,10 @@ def fetch_prior_year_april(service, month):
         for row_1based in [42, 54, 76]:   # HVAC, Plumbing, Install actuals
             v = safe(rows[row_1based-1][1]) if (row_1based-1) < len(rows) else 0
             total += abs(v)
-        return total
+        return total if total > 0 else FALLBACK   # fallback if sheet returned blanks
     except Exception as e:
         print(f"Warning: could not fetch 2025-{month:02d} tab: {e}", file=sys.stderr)
-        return 641_482  # fallback April 2025 value
+        return FALLBACK
 
 def fetch_prior_year_ytd(service, year, month, biz_day):
     """
@@ -363,7 +365,8 @@ def proj_finish(mtd, days_with_data, days_remaining):
 def revised_daily(budget, mtd, days_remaining):
     if days_remaining <= 0:
         return 0
-    return (budget - mtd) / days_remaining
+    val = (budget - mtd) / days_remaining
+    return max(0, val)   # clamp to 0 when already ahead of budget
 
 def ytd_proj_dec31(ytd_actual, biz_days_elapsed):
     if biz_days_elapsed <= 0:
@@ -387,6 +390,23 @@ def main():
     if today.weekday() >= 5:
         print(f"Today is {today.strftime('%A')} — skipping weekend report.")
         return
+
+    # Guard against duplicate runs on DST transition days.
+    # Two crons fire (13:00 and 14:00 UTC) to cover EST and EDT; the second
+    # one exits early if index.html was already committed today.
+    script_dir = Path(__file__).parent
+    try:
+        result = subprocess.run(
+            ["git", "log", "-1", "--format=%ci", "index.html"],
+            capture_output=True, text=True, cwd=script_dir
+        )
+        if result.returncode == 0 and result.stdout.strip():
+            last_commit_date = result.stdout.strip()[:10]   # "YYYY-MM-DD"
+            if last_commit_date == str(today):
+                print(f"Report already generated today ({today}) — skipping duplicate DST run.")
+                return
+    except Exception:
+        pass   # git not available or no commits yet — proceed normally
 
     year  = today.year
     month = today.month
