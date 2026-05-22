@@ -232,7 +232,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 <!-- ═════ BLUE BANNER ═════ -->
 <div class="month-banner">
   <div class="banner-eyebrow">📋 Jay Is On The Way · Daily Operations Huddle</div>
-  <div class="banner-headline">Friday, May 22, 2026 · Day 16 of 26 Working Days · 10 Days Remaining<br><span style="font-size:10px;font-weight:500;letter-spacing:.5px;color:rgba(255,255,255,0.55);text-transform:uppercase;">📡 Live refresh · 22-May-2026 · ServiceTitan API · v10</span></div>
+  <div class="banner-headline">Friday, May 22, 2026 · Day 16 of 26 Working Days · 10 Days Remaining<br><span style="font-size:10px;font-weight:500;letter-spacing:.5px;color:rgba(255,255,255,0.55);text-transform:uppercase;">📡 Live refresh · 22-May-2026 · ServiceTitan API · v11</span></div>
 
   <div class="banner-body">
     <div class="narrative">
@@ -894,20 +894,21 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
   ══════════════════════════════════════════════════════════ -->
   <div class="section-title">💼 Sales — Performance Dashboard</div>
 <div style="background:white;border-radius:14px;border-top:5px solid #6D28D9;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden;margin-bottom:22px;">
+
   <!-- Header -->
   <div style="padding:16px 20px 14px;background:linear-gradient(to right,#F5F3FF,#FFF);border-bottom:2px solid #DDD6FE;">
-    <span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#6D28D9;">💼 Sales · May 2026 · Day 15 of 19</span>
+    <span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#6D28D9;">💼 Sales · May 2026 · Day 15 of 19 · 100% ServiceTitan API</span>
   </div>
 
   <!-- Body -->
   <div style="padding:22px 24px;">
 
-    <!-- Headline (correct, from ServiceTitan API) -->
+    <!-- Headline -->
     <div style="display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:18px;border-bottom:1px solid #F1F5F9;margin-bottom:18px;">
       <div>
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:4px;">Total MTD Sales Revenue</div>
         <div style="font-size:36px;font-weight:900;color:#6D28D9;line-height:1;">$371,900</div>
-        <div style="font-size:10px;color:#94A3B8;margin-top:4px;">ServiceTitan Report 63167744 · HVAC:Sales BU · matches dashboard</div>
+        <div style="font-size:10px;color:#94A3B8;margin-top:4px;">Report 63167744 · matches dashboard</div>
       </div>
       <div style="text-align:right;">
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:4px;">vs May Budget</div>
@@ -916,30 +917,49 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
       </div>
     </div>
 
-    <!-- Sales by Source (from huddle sheet — the one thing not in ST API) -->
-    <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:10px;">Sales by Source — MTD totals (from huddle sheet)</div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px;">
-      <div style="background:#F8FAFC;border-left:3px solid #10B981;border-radius:8px;padding:12px 14px;">
+    <!-- 3-bucket Sales by Source (100% from ServiceTitan API) -->
+    <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:10px;">Sales by Source — MTD (ServiceTitan API · totals reconcile to $371,900 exactly)</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px;">
+      <div style="background:#F8FAFC;border-left:3px solid #10B981;border-radius:8px;padding:14px 16px;">
         <div style="font-size:10px;color:#64748B;font-weight:600;">TGL <span style="color:#94A3B8;font-weight:400;">· Tech-Generated Leads</span></div>
-        <div style="font-size:20px;font-weight:900;color:#0F172A;margin-top:4px;">$124,110</div>
-        <div style="font-size:10px;color:#64748B;margin-top:2px;">38.1% of jobs sold</div>
+        <div style="font-size:22px;font-weight:900;color:#0F172A;margin-top:4px;">$125,524</div>
+        <div style="font-size:10px;color:#64748B;margin-top:2px;">33.8% of MTD Sales</div>
       </div>
-      <div style="background:#F8FAFC;border-left:3px solid #1D4ED8;border-radius:8px;padding:12px 14px;">
-        <div style="font-size:10px;color:#64748B;font-weight:600;">Marketing <span style="color:#94A3B8;font-weight:400;">· Google/FB/Mail/etc</span></div>
-        <div style="font-size:20px;font-weight:900;color:#0F172A;margin-top:4px;">$136,835</div>
-        <div style="font-size:10px;color:#64748B;margin-top:2px;">42.9% of jobs sold</div>
+      <div style="background:#F8FAFC;border-left:3px solid #1D4ED8;border-radius:8px;padding:14px 16px;">
+        <div style="font-size:10px;color:#64748B;font-weight:600;">Marketing <span style="color:#94A3B8;font-weight:400;">· All marketing channels</span></div>
+        <div style="font-size:22px;font-weight:900;color:#0F172A;margin-top:4px;">$225,072</div>
+        <div style="font-size:10px;color:#64748B;margin-top:2px;">60.5% of MTD Sales</div>
       </div>
-      <div style="background:#F8FAFC;border-left:3px solid #EA580C;border-radius:8px;padding:12px 14px;">
-        <div style="font-size:10px;color:#64748B;font-weight:600;">Costco <span style="color:#94A3B8;font-weight:400;">· Other</span></div>
-        <div style="font-size:20px;font-weight:900;color:#0F172A;margin-top:4px;">$92,813</div>
-        <div style="font-size:10px;color:#64748B;margin-top:2px;">19.0% of jobs sold</div>
+      <div style="background:#F8FAFC;border-left:3px solid #EA580C;border-radius:8px;padding:14px 16px;">
+        <div style="font-size:10px;color:#64748B;font-weight:600;">Costco <span style="color:#94A3B8;font-weight:400;">· Customer-tag classifier</span></div>
+        <div style="font-size:22px;font-weight:900;color:#0F172A;margin-top:4px;">$21,303</div>
+        <div style="font-size:10px;color:#64748B;margin-top:2px;">5.7% of MTD Sales · 10,000+ tagged customers</div>
       </div>
     </div>
 
-    <!-- Per-salesperson placeholder note -->
-    <div style="background:#FEF3C7;border:1px solid #F59E0B;border-radius:8px;padding:10px 14px;font-size:11px;color:#78350F;line-height:1.5;">
-      <strong>Per-salesperson breakdown — coming Monday.</strong> Today this section showed stale per-person dollars carried over from yesterday's sheet that didn't reconcile to the $371,900 ServiceTitan total. The ST pull script has been extended to capture per-salesperson rows directly from Report 63167744 (which already returns them). Monday's 8 AM run will populate this with current per-person Sold MTD data.
-    </div>
+    <!-- Per-salesperson breakdown -->
+    <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:10px;">By Salesperson — MTD</div>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;">
+      <thead><tr style="background:#F8FAFC;color:#64748B;font-size:10px;text-transform:uppercase;letter-spacing:.5px;">
+        <th style="text-align:left;padding:8px 10px;">Salesperson</th>
+        <th style="text-align:right;padding:8px 10px;">Sold MTD</th>
+        <th style="text-align:right;padding:8px 10px;">TGL $</th>
+        <th style="text-align:right;padding:8px 10px;">Marketing $</th>
+        <th style="text-align:right;padding:8px 10px;">Jobs</th>
+      </tr></thead>
+      <tbody>
+        <tr><td style="padding:9px 10px;font-weight:700;">Jackson Vaughan</td><td style="text-align:right;padding:9px 10px;font-weight:800;">$183,486</td><td style="text-align:right;padding:9px 10px;color:#10B981;">$61,096</td><td style="text-align:right;padding:9px 10px;color:#1D4ED8;">$122,390</td><td style="text-align:right;padding:9px 10px;">20</td></tr>
+        <tr><td style="padding:9px 10px;font-weight:700;">Nathan Gough (M)</td><td style="text-align:right;padding:9px 10px;font-weight:800;">$104,420</td><td style="text-align:right;padding:9px 10px;color:#10B981;">$12,797</td><td style="text-align:right;padding:9px 10px;color:#1D4ED8;">$91,623</td><td style="text-align:right;padding:9px 10px;">21</td></tr>
+        <tr><td style="padding:9px 10px;font-weight:700;">Koby Clark</td><td style="text-align:right;padding:9px 10px;font-weight:800;">$83,994</td><td style="text-align:right;padding:9px 10px;color:#10B981;">$51,632</td><td style="text-align:right;padding:9px 10px;color:#1D4ED8;">$32,362</td><td style="text-align:right;padding:9px 10px;">22</td></tr>
+        <tr style="background:#F8FAFC;font-weight:800;border-top:2px solid #E2E8F0;">
+          <td style="padding:10px;">Total (3 salespeople)</td>
+          <td style="text-align:right;padding:10px;">$371,900</td>
+          <td style="text-align:right;padding:10px;color:#10B981;">$125,525</td>
+          <td style="text-align:right;padding:10px;color:#1D4ED8;">$246,376</td>
+          <td style="text-align:right;padding:10px;">63</td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>
 </div><div class="section-title">🔧 Install — Performance Dashboard</div>
@@ -1142,7 +1162,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 
 <div class="report-footer">
   Generated automatically · Friday, May 22, 2026 · Jay Is On The Way Operations · Confidential — Internal Use Only<br>
-  huddle.jayisontheway.com · D-1 = Thu May 21, 2026 · v10 (Sales card patched — stale $222K/$266K removed, $371,900 ServiceTitan total kept)
+  huddle.jayisontheway.com · D-1 = Thu May 21, 2026 · v11 (Sales by Source 100% from API — 3 buckets reconcile to $371,900 · per-salesperson live)
 </div>
 
 </div>
