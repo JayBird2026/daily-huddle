@@ -717,7 +717,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 
   <!-- Header -->
   <div style="padding:16px 20px 14px;background:linear-gradient(to right,#F5F3FF,#FFF);border-bottom:2px solid #DDD6FE;">
-    <span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#6D28D9;">💼 Sales · May 2026 · 100% ServiceTitan API · v12</span>
+    <span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#6D28D9;">💼 Sales · May 2026 · 100% ServiceTitan API · v13</span>
   </div>
 
   <!-- Body -->
@@ -845,29 +845,387 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
     </div>
 
     <!-- Per-salesperson breakdown -->
-    <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin:18px 0 10px;">By Salesperson · MTD</div>
-    <table style="width:100%;border-collapse:collapse;font-size:13px;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);">
-      <thead><tr style="background:#F8FAFC;color:#64748B;font-size:10px;text-transform:uppercase;letter-spacing:.5px;">
-        <th style="text-align:left;padding:9px 12px;">Salesperson</th>
-        <th style="text-align:right;padding:9px 12px;">Sold MTD</th>
-        <th style="text-align:right;padding:9px 12px;">TGL $</th>
-        <th style="text-align:right;padding:9px 12px;">Marketing $</th>
-        <th style="text-align:right;padding:9px 12px;">Jobs</th>
-      </tr></thead>
-      <tbody>
-        
-        <tr><td style="padding:9px 12px;font-weight:700;">Jackson Vaughan</td><td style="text-align:right;padding:9px 12px;font-weight:800;">$183,486</td><td style="text-align:right;padding:9px 12px;color:#10B981;">$61,096</td><td style="text-align:right;padding:9px 12px;color:#1D4ED8;">$122,390</td><td style="text-align:right;padding:9px 12px;">20</td></tr>
-        <tr><td style="padding:9px 12px;font-weight:700;">Nathan Gough (M)</td><td style="text-align:right;padding:9px 12px;font-weight:800;">$104,420</td><td style="text-align:right;padding:9px 12px;color:#10B981;">$12,797</td><td style="text-align:right;padding:9px 12px;color:#1D4ED8;">$91,623</td><td style="text-align:right;padding:9px 12px;">21</td></tr>
-        <tr><td style="padding:9px 12px;font-weight:700;">Koby Clark</td><td style="text-align:right;padding:9px 12px;font-weight:800;">$83,994</td><td style="text-align:right;padding:9px 12px;color:#10B981;">$51,632</td><td style="text-align:right;padding:9px 12px;color:#1D4ED8;">$32,362</td><td style="text-align:right;padding:9px 12px;">22</td></tr>
-        <tr style="background:#F8FAFC;font-weight:800;border-top:2px solid #475569;">
-          <td style="padding:10px 12px;">Total (3 salespeople)</td>
-          <td style="text-align:right;padding:10px 12px;">$371,900</td>
-          <td style="text-align:right;padding:10px 12px;color:#10B981;">$125,525</td>
-          <td style="text-align:right;padding:10px 12px;color:#1D4ED8;">$246,376</td>
-          <td style="text-align:right;padding:10px 12px;">63</td>
+    <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin:18px 0 10px;">📅 By Salesperson · MTD (May 1–21)</div>
+    
+    <div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;">
+        <div style="font-size:14px;font-weight:800;color:#0F172A;">Jackson Vaughan</div>
+        <div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$183,486</strong></div>
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;">
+        <thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;">
+          <th style="text-align:left;padding:7px 12px;">Source</th>
+          <th style="text-align:right;padding:7px 12px;">$ Sold</th>
+          <th style="text-align:right;padding:7px 12px;">Calls</th>
+          <th style="text-align:right;padding:7px 12px;">Closed</th>
+          <th style="text-align:right;padding:7px 12px;">Conv %</th>
+          <th style="text-align:right;padding:7px 12px;">Avg Ticket</th>
+        </tr></thead>
+        <tbody>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$61,096</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">5</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">80.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$15,274</td>
         </tr>
-      </tbody>
-    </table>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$82,390</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">14</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">5</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">35.7%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,478</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$40,000</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">100.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$40,000</td>
+        </tr>
+          <tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;">
+            <td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$183,486</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">20</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">10</td>
+            <td style="padding:9px 12px;text-align:right;color:#10B981;font-size:12px;">50.0%</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$18,349</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;">
+        <div style="font-size:14px;font-weight:800;color:#0F172A;">Nathan Gough (M)</div>
+        <div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$104,420</strong></div>
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;">
+        <thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;">
+          <th style="text-align:left;padding:7px 12px;">Source</th>
+          <th style="text-align:right;padding:7px 12px;">$ Sold</th>
+          <th style="text-align:right;padding:7px 12px;">Calls</th>
+          <th style="text-align:right;padding:7px 12px;">Closed</th>
+          <th style="text-align:right;padding:7px 12px;">Conv %</th>
+          <th style="text-align:right;padding:7px 12px;">Avg Ticket</th>
+        </tr></thead>
+        <tbody>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$12,797</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">3</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">33.3%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$12,797</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$78,623</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">14</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">5</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">35.7%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$15,725</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$13,000</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">25.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$13,000</td>
+        </tr>
+          <tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;">
+            <td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$104,420</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">21</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">7</td>
+            <td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">33.3%</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$14,917</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;">
+        <div style="font-size:14px;font-weight:800;color:#0F172A;">Koby Clark</div>
+        <div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$83,994</strong></div>
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;">
+        <thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;">
+          <th style="text-align:left;padding:7px 12px;">Source</th>
+          <th style="text-align:right;padding:7px 12px;">$ Sold</th>
+          <th style="text-align:right;padding:7px 12px;">Calls</th>
+          <th style="text-align:right;padding:7px 12px;">Closed</th>
+          <th style="text-align:right;padding:7px 12px;">Conv %</th>
+          <th style="text-align:right;padding:7px 12px;">Avg Ticket</th>
+        </tr></thead>
+        <tbody>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$51,632</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">6</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">3</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">50.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$17,211</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$13,862</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">12</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">8.3%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$13,862</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$18,500</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">25.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$18,500</td>
+        </tr>
+          <tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;">
+            <td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$83,994</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">22</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">5</td>
+            <td style="padding:9px 12px;text-align:right;color:#EF4444;font-size:12px;">22.7%</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$16,799</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin:24px 0 10px;">📅 By Salesperson · YTD (Jan 1–May 21)</div>
+    
+    <div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;">
+        <div style="font-size:14px;font-weight:800;color:#0F172A;">Koby Clark</div>
+        <div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$1,327,741</strong></div>
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;">
+        <thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;">
+          <th style="text-align:left;padding:7px 12px;">Source</th>
+          <th style="text-align:right;padding:7px 12px;">$ Sold</th>
+          <th style="text-align:right;padding:7px 12px;">Calls</th>
+          <th style="text-align:right;padding:7px 12px;">Closed</th>
+          <th style="text-align:right;padding:7px 12px;">Conv %</th>
+          <th style="text-align:right;padding:7px 12px;">Avg Ticket</th>
+        </tr></thead>
+        <tbody>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$639,183</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">62</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">32</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">51.6%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$19,974</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$526,534</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">73</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">27</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">37.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$19,501</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$162,024</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">29</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">10</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">34.5%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,202</td>
+        </tr>
+          <tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;">
+            <td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$1,327,741</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">164</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">69</td>
+            <td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">42.1%</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$19,243</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;">
+        <div style="font-size:14px;font-weight:800;color:#0F172A;">Jackson Vaughan</div>
+        <div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$1,208,459</strong></div>
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;">
+        <thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;">
+          <th style="text-align:left;padding:7px 12px;">Source</th>
+          <th style="text-align:right;padding:7px 12px;">$ Sold</th>
+          <th style="text-align:right;padding:7px 12px;">Calls</th>
+          <th style="text-align:right;padding:7px 12px;">Closed</th>
+          <th style="text-align:right;padding:7px 12px;">Conv %</th>
+          <th style="text-align:right;padding:7px 12px;">Avg Ticket</th>
+        </tr></thead>
+        <tbody>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$669,538</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">59</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">34</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">57.6%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$19,692</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$397,783</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">81</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">24</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">29.6%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,574</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$141,139</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">25</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">7</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">28.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$20,163</td>
+        </tr>
+          <tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;">
+            <td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$1,208,459</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">165</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">65</td>
+            <td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">39.4%</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$18,592</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;">
+        <div style="font-size:14px;font-weight:800;color:#0F172A;">Nathan Gough (M)</div>
+        <div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$228,084</strong></div>
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;">
+        <thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;">
+          <th style="text-align:left;padding:7px 12px;">Source</th>
+          <th style="text-align:right;padding:7px 12px;">$ Sold</th>
+          <th style="text-align:right;padding:7px 12px;">Calls</th>
+          <th style="text-align:right;padding:7px 12px;">Closed</th>
+          <th style="text-align:right;padding:7px 12px;">Conv %</th>
+          <th style="text-align:right;padding:7px 12px;">Avg Ticket</th>
+        </tr></thead>
+        <tbody>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$29,797</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">5</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">40.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$14,898</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$166,287</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">19</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">11</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">57.9%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$15,117</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$32,000</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">5</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">40.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,000</td>
+        </tr>
+          <tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;">
+            <td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$228,084</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">29</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">15</td>
+            <td style="padding:9px 12px;text-align:right;color:#10B981;font-size:12px;">51.7%</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$15,206</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;">
+        <div style="font-size:14px;font-weight:800;color:#0F172A;">Kendall Dunn</div>
+        <div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$74,348</strong></div>
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;">
+        <thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;">
+          <th style="text-align:left;padding:7px 12px;">Source</th>
+          <th style="text-align:right;padding:7px 12px;">$ Sold</th>
+          <th style="text-align:right;padding:7px 12px;">Calls</th>
+          <th style="text-align:right;padding:7px 12px;">Closed</th>
+          <th style="text-align:right;padding:7px 12px;">Conv %</th>
+          <th style="text-align:right;padding:7px 12px;">Avg Ticket</th>
+        </tr></thead>
+        <tbody>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$59,448</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">13</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">30.8%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$14,862</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$0</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">9</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">0</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">0.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$0</td>
+        </tr>
+          
+        <tr>
+          <td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$14,900</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">5</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td>
+          <td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">20.0%</td>
+          <td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$14,900</td>
+        </tr>
+          <tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;">
+            <td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$74,348</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">27</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">5</td>
+            <td style="padding:9px 12px;text-align:right;color:#EF4444;font-size:12px;">18.5%</td>
+            <td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$14,870</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
   </div>
 </div>
