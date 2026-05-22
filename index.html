@@ -232,7 +232,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 <!-- ═════ BLUE BANNER ═════ -->
 <div class="month-banner">
   <div class="banner-eyebrow">📋 Jay Is On The Way · Daily Operations Huddle</div>
-  <div class="banner-headline">Friday, May 22, 2026 · Day 16 of 26 Working Days · 10 Days Remaining<br><span style="font-size:10px;font-weight:500;letter-spacing:.5px;color:rgba(255,255,255,0.55);text-transform:uppercase;">📡 Live refresh · 22-May-2026 · ServiceTitan API · v4</span></div>
+  <div class="banner-headline">Friday, May 22, 2026 · Day 16 of 26 Working Days · 10 Days Remaining<br><span style="font-size:10px;font-weight:500;letter-spacing:.5px;color:rgba(255,255,255,0.55);text-transform:uppercase;">📡 Live refresh · 22-May-2026 · ServiceTitan API · v5</span></div>
 
   <div class="banner-body">
     <div class="narrative">
@@ -410,40 +410,182 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 
   </div>
 
-  <!-- DEPT KPIs (compact snapshot) -->
-  <div class="section-title">💼 May MTD — Department Snapshot</div>
-  <div class="dept-grid">
+  <!-- ★ YEAR-TO-DATE PACING (restored from yesterday's structure) ★ -->
+  <div class="section-title">📅 Year-to-Date Pacing — Jan 1 through May 21, 2026</div>
+  <div class="dept-grid" style="grid-template-columns:repeat(5,1fr);">
     <div class="dept-card hvac">
       <div class="dept-card-name">🌡️ HVAC Service</div>
-      <div class="dept-actual">$93,921</div>
-      <div class="dept-budget">of $248,100</div>
-      <div class="dept-bar-bg"><div class="dept-bar" style="width:37.9%;background:#F97316;"></div></div>
-      <div class="dept-pct" style="color:#F97316;">37.9% of budget</div>
-      <div class="dept-foot">EoM proj: <strong>$118,966</strong><br>Today: <strong>$10,000</strong> · D-1: $5,000</div>
+      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 – May 21 Actual</div>
+      <div class="dept-actual">$604,733</div>
+      <div class="dept-budget">of $3,012,317 annual</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:20.1%;background:#EF4444;"></div></div>
+      <div class="dept-pct" style="color:#EF4444;">20.1% of annual</div>
+      <div class="dept-foot">Projected Dec 31<br><strong style="color:#EF4444;">$1,565,000</strong> · avg $4,289/day</div>
     </div>
     <div class="dept-card plumb">
-      <div class="dept-card-name">🔧 Plumbing</div>
-      <div class="dept-actual">$89,533</div>
-      <div class="dept-budget">of $122,589</div>
-      <div class="dept-bar-bg"><div class="dept-bar" style="width:73.0%;background:#10B981;"></div></div>
-      <div class="dept-pct" style="color:#10B981;">73.0% of budget</div>
-      <div class="dept-foot">EoM proj: <strong style="color:#10B981;">$113,409</strong><br>Today: <strong>$6,000</strong> · D-1: $5,000</div>
+      <div class="dept-card-name">🪠 Plumbing</div>
+      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 – May 21 Actual</div>
+      <div class="dept-actual">$615,234</div>
+      <div class="dept-budget">of $2,016,366 annual</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:30.5%;background:#F97316;"></div></div>
+      <div class="dept-pct" style="color:#F97316;">30.5% of annual</div>
+      <div class="dept-foot">Projected Dec 31<br><strong style="color:#F97316;">$1,592,000</strong> · avg $4,364/day</div>
     </div>
     <div class="dept-card install">
-      <div class="dept-card-name">⚙️ HVAC Install</div>
-      <div class="dept-actual">$271,411</div>
-      <div class="dept-budget">of $766,378</div>
-      <div class="dept-bar-bg"><div class="dept-bar" style="width:35.4%;background:#EF4444;"></div></div>
-      <div class="dept-pct" style="color:#EF4444;">35.4% of budget</div>
-      <div class="dept-foot">EoM proj: <strong>$343,787</strong><br>Today: <strong>$35,000</strong> · D-1: $27,205</div>
+      <div class="dept-card-name">⚙️ Installation</div>
+      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 – May 21 Actual</div>
+      <div class="dept-actual">$2,649,719</div>
+      <div class="dept-budget">of $9,821,325 annual</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:27.0%;background:#F97316;"></div></div>
+      <div class="dept-pct" style="color:#F97316;">27.0% of annual</div>
+      <div class="dept-foot">Projected Dec 31<br><strong style="color:#F97316;">$6,860,000</strong> · avg $18,808/day</div>
     </div>
     <div class="dept-card sales">
       <div class="dept-card-name">💼 Sales</div>
+      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">MTD May 1 – 21 Actual</div>
       <div class="dept-actual">$371,900</div>
-      <div class="dept-budget">of $843,016</div>
+      <div class="dept-budget">of $843,016 May budget</div>
       <div class="dept-bar-bg"><div class="dept-bar" style="width:44.1%;background:#8B5CF6;"></div></div>
-      <div class="dept-pct" style="color:#8B5CF6;">44.1% of budget</div>
-      <div class="dept-foot">EoM proj: <strong>$471,073</strong><br>Today: <strong style="color:#94A3B8;">TBD</strong> · D-1: $30,000</div>
+      <div class="dept-pct" style="color:#8B5CF6;">44.1% of May budget</div>
+      <div class="dept-foot">Sales YTD pulled from sheet next run<br>(API only returns MTD currently)</div>
+    </div>
+    <div class="dept-card" style="border-top-color:#1D4ED8;background:#F0F7FF;">
+      <div class="dept-card-name" style="color:#1D4ED8;">📊 Consolidated</div>
+      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 – May 21 Actual</div>
+      <div class="dept-actual" style="color:#1D4ED8;">$3,869,686</div>
+      <div class="dept-budget">of $15,235,653 annual goal</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:25.4%;background:#1D4ED8;"></div></div>
+      <div class="dept-pct" style="color:#1D4ED8;">25.4% of annual goal</div>
+      <div class="dept-foot">Projected Dec 31<br><strong style="color:#1D4ED8;">$10,019,000</strong> · avg $27,445/day</div>
+    </div>
+  </div>
+
+  <!-- ★ CALL BOARD (restored from yesterday's structure) ★ -->
+  <div class="section-title">📞 Call Board — Friday, May 22, 2026 (Day 16 of May)</div>
+  <div class="dept-grid" style="grid-template-columns:repeat(3,1fr);margin-bottom:26px;">
+
+    <!-- HVAC SERVICE Call Board -->
+    <div style="background:white;border-radius:14px;border-top:4px solid #F97316;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:16px 18px;">
+      <div style="font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#F97316;margin-bottom:12px;">🌡️ HVAC Service</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px;">
+        <div style="text-align:center;background:#F8FAFC;border-radius:9px;padding:11px 5px;">
+          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Board</div>
+          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">12</div>
+        </div>
+        <div style="text-align:center;background:#FFF7ED;border-radius:9px;padding:11px 5px;">
+          <div style="font-size:8px;color:#9A3412;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Commit</div>
+          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">10</div>
+        </div>
+        <div style="text-align:center;background:#ECFDF5;border-radius:9px;padding:11px 5px;">
+          <div style="font-size:8px;color:#166534;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Need</div>
+          <div style="font-size:26px;font-weight:900;color:#16A34A;line-height:1;">0</div>
+          <div style="font-size:8px;color:#16A34A;margin-top:2px;">covered +2</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;border-top:1px solid #F1F5F9;padding-top:10px;">
+        <div style="text-align:center;background:#FEF2F2;border-radius:8px;padding:9px 5px;">
+          <div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel D-1</div>
+          <div style="font-size:20px;font-weight:800;color:#DC2626;line-height:1;">9</div>
+        </div>
+        <div style="text-align:center;background:#FEF2F2;border-radius:8px;padding:9px 5px;">
+          <div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel MTD</div>
+          <div style="font-size:20px;font-weight:800;color:#DC2626;line-height:1;">43</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLUMBING Call Board -->
+    <div style="background:white;border-radius:14px;border-top:4px solid #3B82F6;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:16px 18px;">
+      <div style="font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#3B82F6;margin-bottom:12px;">🪠 Plumbing</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px;">
+        <div style="text-align:center;background:#F8FAFC;border-radius:9px;padding:11px 5px;">
+          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Board</div>
+          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">6</div>
+        </div>
+        <div style="text-align:center;background:#EFF6FF;border-radius:9px;padding:11px 5px;">
+          <div style="font-size:8px;color:#1E40AF;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Commit</div>
+          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">7</div>
+        </div>
+        <div style="text-align:center;background:#FEF2F2;border-radius:9px;padding:11px 5px;">
+          <div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Need</div>
+          <div style="font-size:26px;font-weight:900;color:#DC2626;line-height:1;">1</div>
+          <div style="font-size:8px;color:#94A3B8;margin-top:2px;">to fill</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;border-top:1px solid #F1F5F9;padding-top:10px;">
+        <div style="text-align:center;background:#ECFDF5;border-radius:8px;padding:9px 5px;">
+          <div style="font-size:8px;color:#166534;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel D-1</div>
+          <div style="font-size:20px;font-weight:800;color:#16A34A;line-height:1;">1</div>
+        </div>
+        <div style="text-align:center;background:#FEF2F2;border-radius:8px;padding:9px 5px;">
+          <div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel MTD</div>
+          <div style="font-size:20px;font-weight:800;color:#DC2626;line-height:1;">11</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SALES Call Board -->
+    <div style="background:white;border-radius:14px;border-top:4px solid #8B5CF6;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:16px 18px;">
+      <div style="font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#8B5CF6;margin-bottom:12px;">💼 Sales</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px;">
+        <div style="text-align:center;background:#F8FAFC;border-radius:9px;padding:11px 5px;">
+          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Board</div>
+          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">3</div>
+        </div>
+        <div style="text-align:center;background:#F5F3FF;border-radius:9px;padding:11px 5px;">
+          <div style="font-size:8px;color:#5B21B6;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Commit</div>
+          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">6</div>
+        </div>
+        <div style="text-align:center;background:#FEF2F2;border-radius:9px;padding:11px 5px;">
+          <div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Need</div>
+          <div style="font-size:26px;font-weight:900;color:#DC2626;line-height:1;">3</div>
+          <div style="font-size:8px;color:#94A3B8;margin-top:2px;">to fill</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;border-top:1px solid #F1F5F9;padding-top:10px;">
+        <div style="text-align:center;background:#F8FAFC;border-radius:8px;padding:9px 5px;">
+          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Closed D-1</div>
+          <div style="font-size:20px;font-weight:800;color:#0F172A;line-height:1;">—</div>
+        </div>
+        <div style="text-align:center;background:#F8FAFC;border-radius:8px;padding:9px 5px;">
+          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Closed MTD</div>
+          <div style="font-size:20px;font-weight:800;color:#0F172A;line-height:1;">17</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ★ OPS METRICS STRIP (today vs D-1) ★ -->
+  <div class="two-col" style="grid-template-columns:1fr 1fr;margin-bottom:22px;">
+    <div class="card">
+      <div class="card-title">⏱️ Today's Operations Snapshot</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;">
+        <thead><tr style="border-bottom:1px solid #E2E8F0;color:#64748B;font-size:10px;text-transform:uppercase;letter-spacing:1px;"><th style="text-align:left;padding:6px 4px;">Metric</th><th style="text-align:right;padding:6px 4px;">Today</th><th style="text-align:right;padding:6px 4px;">D-1</th><th style="text-align:right;padding:6px 4px;">MTD Total</th></tr></thead>
+        <tbody>
+          <tr><td style="padding:6px 4px;">Hours Sold</td><td style="text-align:right;font-weight:700;">40</td><td style="text-align:right;color:#64748B;">43</td><td style="text-align:right;color:#64748B;">454</td></tr>
+          <tr><td style="padding:6px 4px;">Hour Commitment</td><td style="text-align:right;font-weight:700;">40</td><td style="text-align:right;color:#64748B;">43</td><td style="text-align:right;color:#64748B;">—</td></tr>
+          <tr><td style="padding:6px 4px;">Total Calls Ran</td><td style="text-align:right;font-weight:700;">10</td><td style="text-align:right;color:#64748B;">24</td><td style="text-align:right;color:#64748B;">325</td></tr>
+          <tr><td style="padding:6px 4px;">Total Calls Provided</td><td style="text-align:right;font-weight:700;">21</td><td style="text-align:right;color:#64748B;">22</td><td style="text-align:right;color:#64748B;">—</td></tr>
+          <tr><td style="padding:6px 4px;">Jobs Not Ran</td><td style="text-align:right;font-weight:700;color:#EF4444;">11</td><td style="text-align:right;color:#64748B;">—</td><td style="text-align:right;color:#64748B;">50</td></tr>
+          <tr><td style="padding:6px 4px;">3-Day Board Fill</td><td style="text-align:right;font-weight:700;color:#10B981;">210%</td><td style="text-align:right;color:#64748B;">92%</td><td style="text-align:right;color:#64748B;">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">🔧 Install Backlog &amp; Sold Days</div>
+      <div class="permit-stat" style="margin-bottom:10px;">
+        <div class="permit-item"><div class="permit-val">17</div><div class="permit-lbl">MTD Jobs Completed</div></div>
+        <div class="permit-item"><div class="permit-val">20</div><div class="permit-lbl">Sold Days Generated</div></div>
+      </div>
+      <div class="permit-stat">
+        <div class="permit-item"><div class="permit-val" style="color:#10B981;">$259,798</div><div class="permit-lbl">MTD Install Revenue</div></div>
+        <div class="permit-item"><div class="permit-val" style="color:#1D4ED8;">17</div><div class="permit-lbl">Sold Days Available</div></div>
+      </div>
+      <div style="margin-top:10px;padding-top:10px;border-top:1px solid #E2E8F0;font-size:11px;color:#64748B;line-height:1.5;">
+        D-1 (Thu 5/21): 2 jobs completed · 2 sold days generated · $26,205 revenue. Today's install commit: <strong style="color:#0F172A;">$35,000</strong>.
+      </div>
     </div>
   </div>
 
@@ -565,7 +707,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 
 <div class="report-footer">
   Generated automatically · Friday, May 22, 2026 · Jay Is On The Way Operations · Confidential — Internal Use Only<br>
-  huddle.jayisontheway.com · D-1 = Thu May 21, 2026 · v4 (Recap section added · mobile responsive)
+  huddle.jayisontheway.com · D-1 = Thu May 21, 2026 · v5 (Recap + YTD pacing + Call Board restored · mobile responsive)
 </div>
 
 </div>
