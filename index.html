@@ -3,365 +3,570 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jay Is On The Way | Daily Huddle — May 22, 2026 (v2 · FULL)</title>
+<title>Jay Is On The Way | Daily Huddle — May 22, 2026</title>
 <style>
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#F1F5F9; color:#1E293B; }
-  .container { max-width:1280px; margin:0 auto; background:white; box-shadow:0 0 30px rgba(0,0,0,.06); }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#F1F5F9; color:#1E293B; }
+.container { max-width:1280px; margin:0 auto; background:white; box-shadow:0 0 30px rgba(0,0,0,.06); }
 
-  .month-banner { background:linear-gradient(135deg,#1D4ED8 0%,#1E3A8A 100%); padding:28px 32px 24px; }
-  .banner-eyebrow { font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:10px; }
-  .banner-headline { font-size:21px;font-weight:800;color:white;line-height:1.3;margin-bottom:16px; }
-  .banner-body { display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start;margin-bottom:20px; }
-  .narrative { font-size:13px;color:rgba(255,255,255,0.85);line-height:1.8; }
-  .narrative strong { color:white; }
-  .narrative .section-head { font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:16px;margin-bottom:6px;display:block; }
+/* PAGE HEADER */
+.page-header { background:linear-gradient(135deg,#C2410C 0%,#F97316 100%); padding:16px 32px; display:flex; align-items:center; gap:18px; border-bottom:3px solid #EA580C; }
+.logo-circle { background:white; border-radius:10px; padding:8px 12px; font-weight:900; color:#C2410C; font-size:14px; letter-spacing:1px; flex-shrink:0; }
+.header-title { font-size:17px; font-weight:800; color:white; }
+.header-subtitle { font-size:11px; color:rgba(255,255,255,0.75); margin-top:2px; }
+.header-date { font-size:10px; color:rgba(255,255,255,0.6); font-weight:600; text-transform:uppercase; letter-spacing:1px; margin-top:4px; }
 
-  .commitment-card { background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.15);border-radius:14px;padding:20px 18px; }
-  .commit-title { font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:3px; }
-  .commit-date  { font-size:11px;color:rgba(255,255,255,0.35);margin-bottom:14px; }
-  .commit-total { font-size:34px;font-weight:900;color:#FCD34D;line-height:1; }
-  .commit-total-sub { font-size:11px;color:rgba(255,255,255,0.45);margin-top:4px;margin-bottom:4px; }
-  .commit-vs-be { font-size:11px;font-weight:700;padding:5px 10px;border-radius:20px;background:rgba(16,185,129,0.2);color:#34D399;display:inline-block;margin-bottom:16px; }
-  .commit-divider { border:none;border-top:1px solid rgba(255,255,255,0.1);margin-bottom:12px; }
-  .commit-rows { display:flex;flex-direction:column;gap:9px; }
-  .commit-row { display:flex;align-items:center;justify-content:space-between; }
-  .commit-dept { font-size:12px;color:rgba(255,255,255,0.7); }
-  .commit-amt  { font-size:14px;font-weight:700;color:white; }
-  .commit-amt.tbd { color:rgba(255,255,255,0.45);font-style:italic;font-weight:500; }
+/* BLUE BANNER */
+.month-banner { background:linear-gradient(135deg,#1D4ED8 0%,#1E3A8A 100%); padding:24px 32px 22px; }
+.banner-eyebrow { font-size:10px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:rgba(255,255,255,0.45); margin-bottom:8px; }
+.banner-headline { font-size:18px; font-weight:800; color:white; line-height:1.4; margin-bottom:14px; }
+.banner-body { display:grid; grid-template-columns:1fr 320px; gap:20px; align-items:start; }
+.narrative { font-size:13px; color:rgba(255,255,255,0.85); line-height:1.7; }
+.narrative strong { color:white; }
+.section-head { font-size:10px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-top:14px; margin-bottom:6px; display:block; }
+.be-table { width:100%; border-collapse:collapse; margin-top:6px; }
+.be-table th { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:rgba(255,255,255,0.4); padding:4px 6px; text-align:right; border-bottom:1px solid rgba(255,255,255,0.1); }
+.be-table th:first-child { text-align:left; }
+.be-table td { font-size:11px; padding:5px 6px; text-align:right; color:rgba(255,255,255,0.85); border-bottom:1px solid rgba(255,255,255,0.07); }
+.be-table td:first-child { text-align:left; font-weight:600; color:white; }
+.be-table tr.total-row td { font-weight:700; color:#FCD34D; border-top:1px solid rgba(255,255,255,0.2); border-bottom:none; }
 
-  .banner-stats { display:grid;grid-template-columns:repeat(4,1fr);gap:12px;border-top:1px solid rgba(255,255,255,0.1);padding-top:18px; }
-  .banner-stat { background:rgba(255,255,255,0.08);border-radius:10px;padding:11px 14px;text-align:center; }
-  .banner-stat-value { font-size:18px;font-weight:800;color:white; }
-  .banner-stat-label { font-size:9px;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:1px;margin-top:3px; }
+.right-stack { display:flex; flex-direction:column; gap:12px; }
+.yoy-card { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:12px 14px; }
+.yoy-card-title { font-size:9px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:7px; }
+.yoy-row { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:8px; }
+.yoy-label { font-size:9px; color:rgba(255,255,255,0.45); margin-bottom:2px; }
+.yoy-val { font-size:16px; font-weight:800; color:white; }
+.yoy-val.muted { color:rgba(255,255,255,0.7); }
+.yoy-pct { font-size:12px; font-weight:800; padding:4px 8px; border-radius:6px; display:inline-block; }
+.yoy-up { background:rgba(16,185,129,0.2); color:#34D399; }
+.yoy-down { background:rgba(239,68,68,0.2); color:#FCA5A5; }
 
-  .page-header { background:linear-gradient(135deg,#C2410C 0%,#F97316 100%);padding:16px 32px;display:flex;align-items:center;gap:18px;border-bottom:3px solid #EA580C; }
-  .logo-circle { background:white;border-radius:50%;width:54px;height:54px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#C2410C;font-size:13px;letter-spacing:1px;flex-shrink:0; }
-  .header-title { font-size:17px;font-weight:800;color:#FFFFFF; }
-  .header-subtitle { font-size:11px;color:rgba(255,255,255,0.75);margin-top:2px; }
-  .header-date { font-size:10px;color:rgba(255,255,255,0.6);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-top:4px; }
+.goal-card { background:rgba(255,255,255,0.07); border-radius:10px; padding:12px 14px; border-left:3px solid #FCD34D; }
+.goal-title { font-size:9px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.55); margin-bottom:4px; }
+.goal-val { font-size:22px; font-weight:900; color:#FCD34D; line-height:1; }
+.goal-sub { font-size:10px; color:rgba(255,255,255,0.55); margin-top:5px; }
 
-  .pacing-dashboard { background:#F8FAFC;padding:22px 32px 26px; }
-  .dashboard-title { font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#475569;margin-bottom:14px;padding-bottom:7px;border-bottom:2px solid #E2E8F0; }
-  .pace-grid { display:grid;grid-template-columns:repeat(5,1fr);gap:12px; }
-  .pace-card { background:white;border:1px solid #E2E8F0;border-radius:12px;padding:14px 12px;box-shadow:0 1px 3px rgba(0,0,0,.06); }
-  .pace-card-label { font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#64748B;margin-bottom:6px; }
-  .pace-actual { font-size:19px;font-weight:800;color:#0F172A; }
-  .pace-budget { font-size:11px;color:#94A3B8;margin-top:2px;margin-bottom:7px; }
-  .pace-progress-bg { background:#F1F5F9;border-radius:99px;height:5px;overflow:hidden;margin-bottom:6px; }
-  .pace-progress-fill { height:5px;border-radius:99px; }
-  .pace-pct { font-size:11px;font-weight:700; }
-  .pace-ou { font-size:10px;color:#64748B;margin-top:2px; }
+.commit-card { background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.15); border-radius:12px; padding:14px 14px; }
+.commit-title { font-size:10px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:3px; }
+.commit-date { font-size:10px; color:rgba(255,255,255,0.4); margin-bottom:10px; }
+.commit-total { font-size:28px; font-weight:900; color:#FCD34D; line-height:1; }
+.commit-sub { font-size:10px; color:rgba(255,255,255,0.45); margin-top:3px; }
+.commit-vs-be { font-size:10px; font-weight:700; padding:4px 9px; border-radius:20px; display:inline-block; margin:8px 0 10px; }
+.commit-rows { display:flex; flex-direction:column; gap:7px; padding-top:8px; border-top:1px solid rgba(255,255,255,0.1); }
+.commit-row { display:flex; justify-content:space-between; font-size:11px; }
+.commit-row .dept { color:rgba(255,255,255,0.7); }
+.commit-row .amt { color:white; font-weight:700; }
 
-  .content { padding:26px 32px; }
-  .section-title { font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#475569;margin-bottom:14px;padding-bottom:7px;border-bottom:2px solid #E2E8F0; }
+/* PACING DASHBOARD */
+.pacing { background:#F8FAFC; padding:22px 32px 26px; }
+.section-title { font-size:13px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#475569; margin-bottom:14px; padding-bottom:7px; border-bottom:2px solid #E2E8F0; }
+.pace-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:11px; }
+.pace-card { background:white; border:1px solid #E2E8F0; border-radius:12px; padding:13px 11px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.pace-card-label { font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#64748B; margin-bottom:5px; }
+.pace-actual { font-size:18px; font-weight:800; color:#0F172A; }
+.pace-budget { font-size:10px; color:#94A3B8; margin-top:2px; margin-bottom:7px; }
+.pace-bar-bg { background:#F1F5F9; border-radius:99px; height:5px; overflow:hidden; margin-bottom:5px; }
+.pace-bar { height:5px; border-radius:99px; }
+.pace-pct { font-size:11px; font-weight:700; }
+.pace-ou { font-size:10px; color:#64748B; margin-top:2px; }
 
-  .dept-grid { display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:22px; }
-  .dept-card { background:white;border-radius:12px;padding:18px 16px;border-top:4px solid transparent;box-shadow:0 1px 3px rgba(0,0,0,.06); }
-  .dept-card.hvac { border-top-color:#C2410C; }
-  .dept-card.plumbing { border-top-color:#1D4ED8; }
-  .dept-card.install { border-top-color:#B45309; }
-  .dept-card.sales { border-top-color:#6D28D9; }
-  .dept-card-name { font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#64748B;margin-bottom:7px; }
-  .dept-actual { font-size:22px;font-weight:800;color:#0F172A; }
-  .dept-budget { font-size:11px;color:#94A3B8;margin-top:2px;margin-bottom:9px; }
-  .dept-progress-bg { background:#F1F5F9;border-radius:99px;height:6px;overflow:hidden;margin-bottom:7px; }
-  .dept-progress-fill { height:6px;border-radius:99px; }
-  .dept-pct { font-size:13px;font-weight:700; }
-  .dept-proj { font-size:11px;color:#64748B;margin-top:6px;padding-top:6px;border-top:1px dashed #E2E8F0; }
+/* CONTENT */
+.content { padding:24px 32px; }
 
-  .ytd-card { background:linear-gradient(135deg,#0F172A 0%,#1E293B 100%);border-radius:14px;padding:22px 26px;color:white;margin-bottom:26px; }
-  .ytd-title { font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:14px; }
-  .ytd-grid { display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:end; }
-  .ytd-big { font-size:34px;font-weight:900;color:white;line-height:1; }
-  .ytd-small { font-size:11px;color:rgba(255,255,255,0.55);margin-top:5px; }
-  .ytd-yoy { font-size:34px;font-weight:900;color:#34D399;line-height:1; }
-  .ytd-yoy.down { color:#FCA5A5; }
-  .ytd-table { width:100%;margin-top:18px;border-collapse:collapse; }
-  .ytd-table th,.ytd-table td { padding:7px 4px;text-align:right;font-size:12px;border-top:1px solid rgba(255,255,255,0.08); }
-  .ytd-table th { font-size:9px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1px;font-weight:700; }
-  .ytd-table th:first-child,.ytd-table td:first-child { text-align:left;color:white;font-weight:600; }
+/* RECAP - NEW SECTION */
+.recap-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:22px; }
+.recap-card { background:linear-gradient(135deg,#0F172A 0%,#1E293B 100%); border-radius:14px; padding:22px 24px; color:white; }
+.recap-title { font-size:11px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:14px; }
+.recap-headline { display:flex; justify-content:space-between; align-items:end; padding-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.1); margin-bottom:14px; }
+.recap-big { font-size:26px; font-weight:900; color:white; line-height:1; }
+.recap-big.muted { color:rgba(255,255,255,0.7); }
+.recap-yoy { font-size:24px; font-weight:900; line-height:1; }
+.recap-yoy.up { color:#34D399; }
+.recap-yoy.down { color:#FCA5A5; }
+.recap-sub { font-size:10px; color:rgba(255,255,255,0.5); margin-top:4px; }
+.recap-table { width:100%; border-collapse:collapse; }
+.recap-table th { font-size:9px; color:rgba(255,255,255,0.45); text-transform:uppercase; letter-spacing:1px; font-weight:700; padding:6px 4px; text-align:right; border-bottom:1px solid rgba(255,255,255,0.1); }
+.recap-table th:first-child { text-align:left; }
+.recap-table td { font-size:12px; padding:7px 4px; text-align:right; color:rgba(255,255,255,0.85); border-bottom:1px solid rgba(255,255,255,0.06); }
+.recap-table td:first-child { text-align:left; color:white; font-weight:600; }
+.recap-table tr.total td { font-weight:800; color:white; border-top:1px solid rgba(255,255,255,0.15); border-bottom:none; padding-top:8px; }
+.recap-note { font-size:10px; color:rgba(255,255,255,0.5); margin-top:10px; font-style:italic; }
 
-  .lace-section { margin-bottom:26px; }
-  .lace-grid { display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:14px; }
-  .lace-panel { background:white;border-radius:12px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.06); }
-  .lace-panel.yesterday { border-left:4px solid #EA580C; }
-  .lace-panel.mtd { border-left:4px solid #0EA5E9; }
-  .lace-panel-title { font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#64748B;margin-bottom:12px; }
-  .lace-kpis { display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px; }
-  .lace-kpi { background:#F8FAFC;border-radius:8px;padding:10px;text-align:center; }
-  .lace-kpi-val { font-size:20px;font-weight:800;color:#0F172A; }
-  .lace-kpi-lbl { font-size:9px;color:#64748B;text-transform:uppercase;letter-spacing:1px;margin-top:3px; }
-  .lace-table { width:100%;border-collapse:collapse;font-size:11px;margin-top:8px; }
-  .lace-table th { background:#F1F5F9;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#64748B;padding:6px;text-align:right; }
-  .lace-table th:first-child { text-align:left; }
-  .lace-table td { padding:6px;border-top:1px solid #F1F5F9;text-align:right; }
-  .lace-table td:first-child { text-align:left;font-weight:600; }
+/* DEPT GRID */
+.dept-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:13px; margin-bottom:22px; }
+.dept-card { background:white; border-radius:12px; padding:16px 14px; border-top:4px solid transparent; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.dept-card.hvac { border-top-color:#C2410C; }
+.dept-card.plumb { border-top-color:#1D4ED8; }
+.dept-card.install { border-top-color:#B45309; }
+.dept-card.sales { border-top-color:#6D28D9; }
+.dept-card-name { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#64748B; margin-bottom:7px; }
+.dept-actual { font-size:22px; font-weight:800; color:#0F172A; }
+.dept-budget { font-size:10px; color:#94A3B8; margin-top:2px; margin-bottom:8px; }
+.dept-bar-bg { background:#F1F5F9; border-radius:99px; height:6px; overflow:hidden; margin-bottom:6px; }
+.dept-bar { height:6px; border-radius:99px; }
+.dept-pct { font-size:13px; font-weight:700; }
+.dept-foot { font-size:10px; color:#64748B; margin-top:7px; padding-top:7px; border-top:1px dashed #E2E8F0; line-height:1.5; }
 
-  .esc-stats { display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px; }
-  .esc-stat-card { background:white;border-radius:10px;padding:15px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06); }
-  .esc-stat-val { font-size:26px;font-weight:800;color:#0F172A; }
-  .esc-stat-lbl { font-size:9px;text-transform:uppercase;letter-spacing:1px;color:#94A3B8;margin-top:3px; }
+/* MARKETING */
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:22px; }
+.card { background:white; border-radius:12px; padding:18px 18px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.card-title { font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:1.5px; color:#64748B; margin-bottom:14px; }
+.review-row { display:grid; grid-template-columns:1fr 70px 70px 60px 50px; gap:8px; align-items:center; padding:8px 0; border-bottom:1px solid #F1F5F9; font-size:11px; }
+.review-row:last-child { border-bottom:none; }
+.review-row.h { font-weight:700; color:#94A3B8; font-size:9px; text-transform:uppercase; letter-spacing:.5px; }
+.review-state { font-weight:700; color:#0F172A; font-size:12px; }
+.review-val { text-align:right; color:#475569; }
 
-  .success-banner { background:#D1FAE5;border:1px solid #10B981;border-radius:10px;padding:14px 18px;margin-bottom:22px;font-size:12px;color:#064E3B;line-height:1.6; }
-  .success-banner strong { color:#065F46; }
+.roas-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.roas-card { background:#F8FAFC; border-radius:8px; padding:11px 9px; text-align:center; }
+.roas-channel { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:#64748B; margin-bottom:5px; }
+.roas-value { font-size:17px; font-weight:800; color:#0F172A; }
+.roas-label { font-size:9px; color:#94A3B8; margin-top:2px; }
 
-  .source-strip { background:linear-gradient(135deg,#0F172A,#1E293B);border-radius:10px;padding:14px 20px;color:rgba(255,255,255,0.7);font-size:11px;line-height:1.7;margin-bottom:22px; }
-  .source-strip strong { color:white; }
+/* LACE */
+.lace-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:22px; }
+.lace-panel { background:white; border-radius:12px; padding:16px 18px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.lace-panel.yest { border-left:4px solid #EA580C; }
+.lace-panel.mtd { border-left:4px solid #0EA5E9; }
+.lace-kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:7px; margin:10px 0 10px; }
+.lace-kpi { background:#F8FAFC; border-radius:8px; padding:9px 5px; text-align:center; }
+.lace-kpi-val { font-size:18px; font-weight:800; color:#0F172A; }
+.lace-kpi-lbl { font-size:8px; color:#64748B; text-transform:uppercase; letter-spacing:1px; margin-top:2px; }
+.lace-table { width:100%; border-collapse:collapse; font-size:11px; }
+.lace-table th { background:#F1F5F9; font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; color:#64748B; padding:5px 4px; text-align:right; }
+.lace-table th:first-child { text-align:left; }
+.lace-table td { padding:6px 4px; border-top:1px solid #F1F5F9; text-align:right; }
+.lace-table td:first-child { text-align:left; font-weight:600; }
 
-  .report-footer { text-align:center;padding:22px;font-size:10px;color:#94A3B8;letter-spacing:.5px;border-top:1px solid #E2E8F0; }
+/* ESC */
+.esc-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:12px; }
+.esc-stat { background:white; border-radius:10px; padding:13px; text-align:center; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.esc-stat-val { font-size:24px; font-weight:800; color:#0F172A; }
+.esc-stat-lbl { font-size:9px; text-transform:uppercase; letter-spacing:1px; color:#94A3B8; margin-top:3px; }
+
+/* PERMITS */
+.permit-stat { display:grid; grid-template-columns:repeat(2,1fr); gap:9px; }
+.permit-item { background:#F8FAFC; border-radius:8px; padding:11px; text-align:center; }
+.permit-val { font-size:20px; font-weight:800; color:#0F172A; }
+.permit-lbl { font-size:9px; text-transform:uppercase; letter-spacing:1px; color:#64748B; margin-top:2px; }
+
+.source-strip { background:linear-gradient(135deg,#0F172A,#1E293B); border-radius:10px; padding:14px 18px; color:rgba(255,255,255,0.7); font-size:11px; line-height:1.6; margin-bottom:22px; }
+.source-strip strong { color:white; }
+
+.report-footer { text-align:center; padding:20px; font-size:10px; color:#94A3B8; letter-spacing:.5px; border-top:1px solid #E2E8F0; }
+
+/* ─── MOBILE RESPONSIVE ≤ 640px ─── */
+@media (max-width: 768px) {
+  .pace-grid { grid-template-columns:repeat(2,1fr); }
+  .dept-grid { grid-template-columns:repeat(2,1fr); }
+  .recap-grid { grid-template-columns:1fr; }
+}
+@media (max-width: 640px) {
+  .page-header { padding:12px 14px; gap:10px; }
+  .logo-circle { padding:6px 8px; font-size:11px; }
+  .header-title { font-size:13px; }
+  .header-subtitle, .header-date { font-size:9px; line-height:1.4; }
+
+  .month-banner { padding:16px 14px; }
+  .banner-eyebrow { font-size:9px; letter-spacing:1.5px; }
+  .banner-headline { font-size:13px; line-height:1.4; }
+  .banner-body { grid-template-columns:1fr; gap:14px; }
+  .narrative { font-size:11px; line-height:1.6; }
+  .be-table th, .be-table td { padding:4px 4px; font-size:10px; }
+  .right-stack { gap:10px; }
+  .yoy-val { font-size:14px; }
+  .yoy-pct { font-size:11px; }
+  .goal-val { font-size:18px; }
+  .commit-total { font-size:22px; }
+
+  .pacing { padding:16px 14px; }
+  .section-title { font-size:11px; letter-spacing:1px; }
+  .pace-grid { grid-template-columns:repeat(2,1fr); gap:8px; }
+  .pace-card { padding:10px 8px; }
+  .pace-actual { font-size:15px; }
+  .pace-budget, .pace-pct, .pace-ou { font-size:9px; }
+
+  .content { padding:16px 14px; }
+  .recap-grid { grid-template-columns:1fr; gap:12px; }
+  .recap-card { padding:16px 16px; }
+  .recap-big, .recap-yoy { font-size:20px; }
+  .recap-table { font-size:11px; }
+  .recap-table th, .recap-table td { padding:5px 3px; }
+
+  .dept-grid { grid-template-columns:repeat(2,1fr); gap:8px; }
+  .dept-card { padding:12px 10px; }
+  .dept-actual { font-size:17px; }
+  .dept-pct { font-size:11px; }
+
+  .two-col { grid-template-columns:1fr; gap:12px; }
+  .roas-grid { grid-template-columns:repeat(2,1fr); gap:7px; }
+  .roas-value { font-size:14px; }
+
+  .lace-grid { grid-template-columns:1fr; gap:12px; }
+  .lace-panel { padding:12px 12px; }
+  .lace-kpi-val { font-size:15px; }
+  .lace-table { font-size:10px; }
+
+  .esc-stats { grid-template-columns:repeat(2,1fr); gap:7px; }
+  .esc-stat-val { font-size:18px; }
+
+  .source-strip { font-size:10px; padding:10px 12px; }
+  .report-footer { padding:14px; font-size:9px; }
+}
 </style>
 </head>
 <body>
 <div class="container">
 
-  <!-- BLUE BANNER -->
-  <div class="month-banner">
-    <div class="banner-eyebrow">📡 LIVE REFRESH · 22-MAY-2026 · FULL DATA · v2</div>
-    <div class="banner-headline">May 2026 — Day 16 of 26 · MTD <strong style="color:#FCD34D;">$454,865</strong> (40.0% of $1.137M budget) · Today's commit <strong style="color:#FCD34D;">$51,000</strong> vs $40K daily BE = <strong style="color:#34D399;">$11K OVER</strong></div>
+<!-- ═════ PAGE HEADER ═════ -->
+<div class="page-header">
+  <div class="logo-circle">JIOW</div>
+  <div>
+    <div class="header-title">Jay Is On The Way — Daily Operations Huddle</div>
+    <div class="header-subtitle">Residential HVAC · Plumbing · Installation Services</div>
+    <div class="header-date">Friday, May 22, 2026 · Month 5 of 12 · Day 16 of 26 working days (incl. 5 Saturdays · 21 Mon–Fri)</div>
+  </div>
+</div>
 
-    <div class="banner-body">
-      <div class="narrative">
-        <strong>Friday morning brief.</strong> Through Thursday May 21 (D-1, workday 15 of 19), Consolidated MTD is <strong>$454,865</strong> — right at 40% of the May $1.137M budget. Plumbing leads the pace at <strong>73% of budget</strong>; Sales hit <strong>44%</strong>; HVAC Service <strong>38%</strong>; Install <strong>35%</strong>. Sales pacing $471K vs $843K budget; Install pacing $344K vs $766K — Install remains the largest gap to close.
-        <span class="section-head">📊 Pacing Snapshot</span>
-        Consolidated pacing <strong>$576K</strong> full-month at current rate. May 2025 full-month was <strong>$753K</strong>, so the May 2026 projection runs <strong>−23.5%</strong> behind May 2025 — but YTD stays strong at <strong>+37.5% YoY</strong> ($3.87M vs $2.81M Jan–May 21).
-        <span class="section-head">⚡ Today's commits beat BE</span>
-        Today's committed revenue ($51K from HVAC + Plumbing + Install) is already $11K above the $40K daily break-even — and Sales hasn't entered yet. Hours target = 40 (vs 43 sold yesterday). Yesterday's Lace performance was solid: <strong>73% success rate on 146 calls</strong>, 19 bookings.
+<!-- ═════ BLUE BANNER ═════ -->
+<div class="month-banner">
+  <div class="banner-eyebrow">📋 Jay Is On The Way · Daily Operations Huddle</div>
+  <div class="banner-headline">Friday, May 22, 2026 · Day 16 of 26 Working Days · 10 Days Remaining<br><span style="font-size:10px;font-weight:500;letter-spacing:.5px;color:rgba(255,255,255,0.55);text-transform:uppercase;">📡 Live refresh · 22-May-2026 · ServiceTitan API · v4</span></div>
+
+  <div class="banner-body">
+    <div class="narrative">
+
+      <span class="section-head">📌 May Budget — What We're Going After</span>
+      May's consolidated revenue budget is <strong>$1,137,067</strong> (HVAC + Plumbing + Install + Electrical). Sales tracks independently and shown for reference.
+      <table class="be-table" style="margin-top:8px;">
+        <thead><tr><th>Department</th><th>Monthly Budget</th><th>Daily Target</th></tr></thead>
+        <tbody>
+          <tr><td>🔧 HVAC Service</td><td>$248,100</td><td>$12,405</td></tr>
+          <tr><td>🪠 Plumbing</td><td>$122,589</td><td>$6,129</td></tr>
+          <tr><td>⚙️ Installation</td><td>$766,378</td><td>$38,319</td></tr>
+          <tr><td>⚡ Electrical</td><td>$41,432</td><td>$2,072</td></tr>
+          <tr class="total-row"><td>Consolidated</td><td>$1,137,067</td><td>$56,853</td></tr>
+          <tr style="opacity:0.5;font-style:italic;"><td>💼 Sales (ref)</td><td>$843,016</td><td>$42,151</td></tr>
+        </tbody>
+      </table>
+
+      <span class="section-head">⚖️ Break-Even — Daily Floor</span>
+      Daily break-even is <strong>$40,000</strong> ($800K monthly ÷ 20 working days). Below $40K/day on commits = under floor.
+      <table class="be-table" style="margin-top:8px;">
+        <thead><tr><th>Department</th><th>Monthly BE</th><th>Daily BE</th></tr></thead>
+        <tbody>
+          <tr><td>🔧 HVAC Service</td><td>$250,000</td><td>$12,500/day</td></tr>
+          <tr><td>🪠 Plumbing</td><td>$150,000</td><td>$7,500/day</td></tr>
+          <tr><td>⚙️ Installation</td><td>$400,000</td><td>$20,000/day</td></tr>
+          <tr style="opacity:0.5;font-style:italic;"><td>⚡ Electrical</td><td>N/A</td><td>N/A</td></tr>
+          <tr class="total-row"><td>Consolidated</td><td>$800,000</td><td>$40,000/day</td></tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="right-stack">
+
+      <div class="goal-card">
+        <div class="goal-title">🎯 2026 Annual Consolidated Goal</div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+          <div class="goal-val">$15.24M</div>
+          <div class="goal-sub" style="text-align:right;">YTD $3.87M · 25.4% complete<br><span style="color:#FCA5A5;">$11.37M remaining</span></div>
+        </div>
       </div>
 
-      <div class="commitment-card">
-        <div class="commit-title">📅 Today's Commitments</div>
-        <div class="commit-date">Friday, May 22, 2026 — Day 16 of May<br><span style="font-size:9px;font-weight:400;color:rgba(255,255,255,0.45);">D-1 actuals: Thu May 21, 2026</span></div>
+      <div class="commit-card">
+        <div class="commit-title">🎯 Today's Commitments</div>
+        <div class="commit-date">Friday, May 22, 2026 — Day 16<br><span style="opacity:.7;">D-1 actuals: Thu May 21</span></div>
         <div class="commit-total">$51,000</div>
-        <div class="commit-total-sub">Total commit (Sales TBD)</div>
-        <div class="commit-vs-be">▲ $11,000 OVER $40,000 daily BE</div>
-        <hr class="commit-divider">
+        <div class="commit-sub">Depts (HVAC + Plumbing + Install)</div>
+        <div class="commit-vs-be" style="background:rgba(16,185,129,0.2);color:#34D399;">▲ $11K OVER $40K daily BE</div>
         <div class="commit-rows">
-          <div class="commit-row"><span class="commit-dept">HVAC Service</span><span class="commit-amt">$10,000</span></div>
-          <div class="commit-row"><span class="commit-dept">Plumbing</span><span class="commit-amt">$6,000</span></div>
-          <div class="commit-row"><span class="commit-dept">Installation</span><span class="commit-amt">$35,000</span></div>
-          <div class="commit-row"><span class="commit-dept">Sales</span><span class="commit-amt tbd">TBD</span></div>
-          <div class="commit-row" style="padding-top:8px;border-top:1px solid rgba(255,255,255,0.1);"><span class="commit-dept">Hours sold target</span><span class="commit-amt">40 hrs</span></div>
+          <div class="commit-row"><span class="dept">🔧 HVAC Service</span><span class="amt">$10,000</span></div>
+          <div class="commit-row"><span class="dept">🪠 Plumbing</span><span class="amt">$6,000</span></div>
+          <div class="commit-row"><span class="dept">⚙️ Installation</span><span class="amt">$35,000</span></div>
+          <div class="commit-row"><span class="dept">💼 Sales</span><span class="amt" style="color:rgba(255,255,255,0.55);font-style:italic;">TBD</span></div>
+          <div class="commit-row" style="padding-top:6px;border-top:1px solid rgba(255,255,255,0.08);"><span class="dept">Hours sold target</span><span class="amt">40 hrs</span></div>
         </div>
       </div>
-    </div>
 
-    <div class="banner-stats">
-      <div class="banner-stat"><div class="banner-stat-value">$454,865</div><div class="banner-stat-label">MTD Consolidated</div></div>
-      <div class="banner-stat"><div class="banner-stat-value">$371,900</div><div class="banner-stat-label">MTD Sales</div></div>
-      <div class="banner-stat"><div class="banner-stat-value">$3.87M</div><div class="banner-stat-label">YTD 2026</div></div>
-      <div class="banner-stat"><div class="banner-stat-value" style="color:#34D399;">▲ 37.5%</div><div class="banner-stat-label">YoY</div></div>
     </div>
   </div>
+</div>
 
-  <div class="page-header">
-    <div class="logo-circle">JIOW</div>
-    <div>
-      <div class="header-title">Jay Is On The Way · Daily Huddle Report</div>
-      <div class="header-subtitle">ServiceTitan API + Huddle Sheet + Escalations + Lace AI</div>
-      <div class="header-date">Friday, May 22, 2026 · Month 5 of 12 · Day 16 of 26 working days (incl. 5 Saturdays · 21 Mon–Fri)</div>
+<!-- ═════ PACING DASHBOARD ═════ -->
+<div class="pacing">
+  <div class="section-title">📊 Month-to-Date Pacing — May 2026 (Day 15 of 19 workdays · D-1 Thu 5/21)</div>
+  <div class="pace-grid">
+    <div class="pace-card">
+      <div class="pace-card-label">🔧 HVAC Service</div>
+      <div class="pace-actual">$93,921</div>
+      <div class="pace-budget">of $248,100</div>
+      <div class="pace-bar-bg"><div class="pace-bar" style="width:37.9%;background:#F97316;"></div></div>
+      <div class="pace-pct" style="color:#F97316;">37.9%</div>
+      <div class="pace-ou">Pacing $118.9K</div>
+    </div>
+    <div class="pace-card">
+      <div class="pace-card-label">🪠 Plumbing</div>
+      <div class="pace-actual">$89,533</div>
+      <div class="pace-budget">of $122,589</div>
+      <div class="pace-bar-bg"><div class="pace-bar" style="width:73.0%;background:#10B981;"></div></div>
+      <div class="pace-pct" style="color:#10B981;">73.0%</div>
+      <div class="pace-ou">Pacing $113.4K</div>
+    </div>
+    <div class="pace-card">
+      <div class="pace-card-label">⚙️ HVAC Install</div>
+      <div class="pace-actual">$271,411</div>
+      <div class="pace-budget">of $766,378</div>
+      <div class="pace-bar-bg"><div class="pace-bar" style="width:35.4%;background:#EF4444;"></div></div>
+      <div class="pace-pct" style="color:#EF4444;">35.4%</div>
+      <div class="pace-ou">Pacing $343.8K</div>
+    </div>
+    <div class="pace-card">
+      <div class="pace-card-label">💼 Sales</div>
+      <div class="pace-actual">$371,900</div>
+      <div class="pace-budget">of $843,016</div>
+      <div class="pace-bar-bg"><div class="pace-bar" style="width:44.1%;background:#8B5CF6;"></div></div>
+      <div class="pace-pct" style="color:#8B5CF6;">44.1%</div>
+      <div class="pace-ou">Pacing $471.1K</div>
+    </div>
+    <div class="pace-card" style="background:linear-gradient(135deg,#1E40AF,#1E3A8A);color:white;border:none;">
+      <div class="pace-card-label" style="color:rgba(255,255,255,0.5);">📊 Consolidated</div>
+      <div class="pace-actual" style="color:white;">$454,865</div>
+      <div class="pace-budget" style="color:rgba(255,255,255,0.55);">of $1,137,067</div>
+      <div class="pace-bar-bg" style="background:rgba(255,255,255,0.15);"><div class="pace-bar" style="width:40.0%;background:#FCD34D;"></div></div>
+      <div class="pace-pct" style="color:#FCD34D;">40.0%</div>
+      <div class="pace-ou" style="color:rgba(255,255,255,0.55);">Pacing $576K</div>
     </div>
   </div>
+</div>
 
-  <div class="pacing-dashboard">
-    <div class="dashboard-title">📊 Month-to-Date Pacing — May 2026 (Day 15 of 19 workdays · D-1 Thu 5/21)</div>
-    <div class="pace-grid">
-      <div class="pace-card">
-        <div class="pace-card-label">HVAC Service</div>
-        <div class="pace-actual">$93,921</div>
-        <div class="pace-budget">of $248,100 budget</div>
-        <div class="pace-progress-bg"><div class="pace-progress-fill" style="width:37.9%;background:#F97316;"></div></div>
-        <div class="pace-pct" style="color:#F97316;">37.9%</div>
-        <div class="pace-ou">Pacing $118.9K full-month</div>
-      </div>
-      <div class="pace-card">
-        <div class="pace-card-label">Plumbing</div>
-        <div class="pace-actual">$89,533</div>
-        <div class="pace-budget">of $122,589 budget</div>
-        <div class="pace-progress-bg"><div class="pace-progress-fill" style="width:73.0%;background:#10B981;"></div></div>
-        <div class="pace-pct" style="color:#10B981;">73.0%</div>
-        <div class="pace-ou">Pacing $113.4K full-month</div>
-      </div>
-      <div class="pace-card">
-        <div class="pace-card-label">HVAC Install</div>
-        <div class="pace-actual">$271,411</div>
-        <div class="pace-budget">of $766,378 budget</div>
-        <div class="pace-progress-bg"><div class="pace-progress-fill" style="width:35.4%;background:#EF4444;"></div></div>
-        <div class="pace-pct" style="color:#EF4444;">35.4%</div>
-        <div class="pace-ou">Pacing $343.8K full-month</div>
-      </div>
-      <div class="pace-card">
-        <div class="pace-card-label">Sales</div>
-        <div class="pace-actual">$371,900</div>
-        <div class="pace-budget">of $843,016 budget</div>
-        <div class="pace-progress-bg"><div class="pace-progress-fill" style="width:44.1%;background:#8B5CF6;"></div></div>
-        <div class="pace-pct" style="color:#8B5CF6;">44.1%</div>
-        <div class="pace-ou">Pacing $471.1K full-month</div>
-      </div>
-      <div class="pace-card" style="background:linear-gradient(135deg,#1E40AF,#1E3A8A);color:white;border:none;">
-        <div class="pace-card-label" style="color:rgba(255,255,255,0.5);">Consolidated</div>
-        <div class="pace-actual" style="color:white;">$454,865</div>
-        <div class="pace-budget" style="color:rgba(255,255,255,0.55);">of $1,137,067 budget</div>
-        <div class="pace-progress-bg" style="background:rgba(255,255,255,0.15);"><div class="pace-progress-fill" style="width:40.0%;background:#FCD34D;"></div></div>
-        <div class="pace-pct" style="color:#FCD34D;">40.0%</div>
-        <div class="pace-ou" style="color:rgba(255,255,255,0.55);">Pacing $576.2K · vs May'25 $753K (▼23.5%)</div>
-      </div>
-    </div>
-  </div>
+<!-- ═════ CONTENT ═════ -->
+<div class="content">
 
-  <div class="content">
+  <!-- ★ NEW: RECAP ★ -->
+  <div class="section-title">📊 Recap — Where We Stand vs Last Year</div>
+  <div class="recap-grid">
 
-    <!-- SUCCESS BANNER -->
-    <div class="success-banner">
-      <strong>✅ Full automation verified.</strong> This report was rebuilt at 10:00 AM ET using all four pre-pulled data sources: ServiceTitan API (8:06 AM), Google huddle sheet (9:32 AM), Customer escalations sheet (9:32 AM), and Lace AI headless scrape (9:53 AM). No data gaps — Monday morning's run should produce a report exactly like this one without any manual intervention.
-    </div>
-
-    <!-- MTD by BU detail -->
-    <div class="section-title">💼 May MTD — Department Detail (Day 15 of 19)</div>
-    <div class="dept-grid">
-      <div class="dept-card hvac">
-        <div class="dept-card-name">🌡️ HVAC Service</div>
-        <div class="dept-actual">$93,921</div>
-        <div class="dept-budget">of $248,100 budget</div>
-        <div class="dept-progress-bg"><div class="dept-progress-fill" style="width:37.9%;background:#F97316;"></div></div>
-        <div class="dept-pct" style="color:#F97316;">37.9% of budget</div>
-        <div class="dept-proj">Projected EoM: <strong style="color:#0F172A;">$118,966</strong> · Today commit: <strong>$10,000</strong> · D-1: $5K</div>
-      </div>
-      <div class="dept-card plumbing">
-        <div class="dept-card-name">🔧 Plumbing</div>
-        <div class="dept-actual">$89,533</div>
-        <div class="dept-budget">of $122,589 budget</div>
-        <div class="dept-progress-bg"><div class="dept-progress-fill" style="width:73.0%;background:#10B981;"></div></div>
-        <div class="dept-pct" style="color:#10B981;">73.0% of budget</div>
-        <div class="dept-proj">Projected EoM: <strong style="color:#10B981;">$113,409</strong> · Today commit: <strong>$6,000</strong> · D-1: $5K</div>
-      </div>
-      <div class="dept-card install">
-        <div class="dept-card-name">🔧 HVAC Install</div>
-        <div class="dept-actual">$271,411</div>
-        <div class="dept-budget">of $766,378 budget</div>
-        <div class="dept-progress-bg"><div class="dept-progress-fill" style="width:35.4%;background:#EF4444;"></div></div>
-        <div class="dept-pct" style="color:#EF4444;">35.4% of budget</div>
-        <div class="dept-proj">Projected EoM: <strong style="color:#0F172A;">$343,787</strong> · Today commit: <strong>$35,000</strong> · D-1: $27,205</div>
-      </div>
-      <div class="dept-card sales">
-        <div class="dept-card-name">💼 Sales</div>
-        <div class="dept-actual">$371,900</div>
-        <div class="dept-budget">of $843,016 budget</div>
-        <div class="dept-progress-bg"><div class="dept-progress-fill" style="width:44.1%;background:#8B5CF6;"></div></div>
-        <div class="dept-pct" style="color:#8B5CF6;">44.1% of budget</div>
-        <div class="dept-proj">Projected EoM: <strong style="color:#0F172A;">$471,073</strong> · Today commit: <strong style="color:#94A3B8;">TBD</strong> · D-1: $30K</div>
-      </div>
-    </div>
-
-    <!-- LACE AI -->
-    <div class="section-title">📞 Lace AI — CSR Performance</div>
-    <div class="lace-grid">
-
-      <div class="lace-panel yesterday">
-        <div class="lace-panel-title">📅 Yesterday — Thu May 21 (D-1)</div>
-        <div class="lace-kpis">
-          <div class="lace-kpi"><div class="lace-kpi-val" style="color:#10B981;">73%</div><div class="lace-kpi-lbl">Success</div></div>
-          <div class="lace-kpi"><div class="lace-kpi-val">146</div><div class="lace-kpi-lbl">Calls</div></div>
-          <div class="lace-kpi"><div class="lace-kpi-val">26</div><div class="lace-kpi-lbl">Qualified</div></div>
-          <div class="lace-kpi"><div class="lace-kpi-val" style="color:#1D4ED8;">19</div><div class="lace-kpi-lbl">Booked</div></div>
-        </div>
-        <table class="lace-table">
-          <thead><tr><th>CSR</th><th>Success</th><th>B/Q</th><th>Calls</th><th>Cancel</th><th>Playbook</th></tr></thead>
-          <tbody>
-            <tr><td>Sheyla Trinidad Palma</td><td style="color:#F97316;">62%</td><td>8/13</td><td>55</td><td>13% (1)</td><td>55%</td></tr>
-            <tr><td>Lacie (AI)</td><td style="color:#F97316;">67%</td><td>2/3</td><td>11</td><td>0%</td><td style="color:#10B981;">93%</td></tr>
-            <tr><td>Erica Marsh</td><td style="color:#10B981;">90%</td><td>9/10</td><td>61</td><td>11% (1)</td><td>56%</td></tr>
-            <tr><td>Brittany Williams</td><td style="color:#94A3B8;">N/A</td><td>0/0</td><td>19</td><td>0%</td><td>70%</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="lace-panel mtd">
-        <div class="lace-panel-title">📊 Past 30 Days (proxy for MTD)</div>
-        <div class="lace-kpis">
-          <div class="lace-kpi"><div class="lace-kpi-val" style="color:#10B981;">86%</div><div class="lace-kpi-lbl">Success</div></div>
-          <div class="lace-kpi"><div class="lace-kpi-val">3,328</div><div class="lace-kpi-lbl">Calls</div></div>
-          <div class="lace-kpi"><div class="lace-kpi-val">403</div><div class="lace-kpi-lbl">Qualified</div></div>
-          <div class="lace-kpi"><div class="lace-kpi-val" style="color:#1D4ED8;">348</div><div class="lace-kpi-lbl">Booked</div></div>
-        </div>
-        <table class="lace-table">
-          <thead><tr><th>CSR</th><th>Success</th><th>B/Q</th><th>Calls</th><th>Cancel</th><th>Playbook</th></tr></thead>
-          <tbody>
-            <tr><td>Erica Marsh</td><td style="color:#10B981;">92%</td><td>160/174</td><td>1,219</td><td>12% (19)</td><td>52%</td></tr>
-            <tr><td>Sheyla Trinidad Palma</td><td style="color:#10B981;">83%</td><td>88/106</td><td>1,045</td><td>14% (12)</td><td>54%</td></tr>
-            <tr><td>Lacie (AI)</td><td>79%</td><td>88/111</td><td>845</td><td>1% (1)</td><td>80%</td></tr>
-            <tr><td>Brittany Williams</td><td style="color:#10B981;">100%</td><td>5/5</td><td>166</td><td>0%</td><td>36%</td></tr>
-            <tr><td>Jessica Johnson</td><td style="color:#10B981;">100%</td><td>7/7</td><td>53</td><td>0%</td><td>42%</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-    </div>
-
-    <!-- ESCALATIONS -->
-    <div class="section-title">⚠️ Customer Escalations</div>
-    <div class="esc-stats">
-      <div class="esc-stat-card"><div class="esc-stat-val">30</div><div class="esc-stat-lbl">Total Cases YTD</div></div>
-      <div class="esc-stat-card"><div class="esc-stat-val" style="color:#10B981;">24</div><div class="esc-stat-lbl">Closed</div></div>
-      <div class="esc-stat-card"><div class="esc-stat-val" style="color:#EF4444;">4</div><div class="esc-stat-lbl">Open</div></div>
-      <div class="esc-stat-card"><div class="esc-stat-val" style="color:#94A3B8;">2</div><div class="esc-stat-lbl">Status TBD</div></div>
-    </div>
-    <div style="background:white;border-radius:10px;padding:14px 18px;box-shadow:0 1px 3px rgba(0,0,0,.06);font-size:12px;color:#64748B;">
-      4 open escalations need attention. Full case details available in the <a href="https://docs.google.com/spreadsheets/d/1XlpTSOFRByX9E_c0y-ICudIUZJdIgZAX" style="color:#1D4ED8;font-weight:700;">Customer Escalations sheet</a>. The morning Claude run can populate open-case detail cards here in future iterations.
-    </div>
-
-    <div class="section-title" style="margin-top:26px;">📅 Year-to-Date — Jan 1 through May 21, 2026</div>
-    <div class="ytd-card">
-      <div class="ytd-title">📊 Jan 1–May 21 · Year Over Year</div>
-      <div class="ytd-grid">
+    <!-- Current Month YoY -->
+    <div class="recap-card">
+      <div class="recap-title">📅 May 2026 vs May 2025</div>
+      <div class="recap-headline">
         <div>
-          <div class="ytd-big">$3,869,686</div>
-          <div class="ytd-small">YTD 2026 Consolidated (V&amp;H excluded)</div>
+          <div class="recap-big">$576,162</div>
+          <div class="recap-sub">May 2026 PROJECTED · MTD $454,865 (Day 15/19)</div>
         </div>
-        <div>
-          <div class="ytd-big" style="color:rgba(255,255,255,0.85);">$2,814,154</div>
-          <div class="ytd-small">YTD 2025 (same window)</div>
+        <div style="text-align:center;">
+          <div class="recap-yoy down">▼ 23.5%</div>
+          <div class="recap-sub">YoY</div>
         </div>
-        <div>
-          <div class="ytd-yoy">▲ 37.5%</div>
-          <div class="ytd-small">YoY · +$1,055,533 vs 2025</div>
+        <div style="text-align:right;">
+          <div class="recap-big muted">$753,308</div>
+          <div class="recap-sub">May 2025 FULL month</div>
         </div>
       </div>
+      <table class="recap-table">
+        <thead><tr><th>Business Unit</th><th>May 2026 (proj)</th><th>May 2025 (full)</th><th>YoY</th></tr></thead>
+        <tbody>
+          <tr><td>HVAC Service</td><td>$118,966</td><td colspan="2" style="text-align:center;color:rgba(255,255,255,0.45);font-style:italic;">by-dept available Monday →</td></tr>
+          <tr><td>HVAC Install</td><td>$343,787</td><td colspan="2" style="text-align:center;color:rgba(255,255,255,0.45);font-style:italic;">(new ST pull · v9 → v10)</td></tr>
+          <tr><td>Plumbing</td><td>$113,409</td><td colspan="2" style="text-align:center;color:rgba(255,255,255,0.45);">—</td></tr>
+          <tr><td>Sales</td><td>$471,073</td><td colspan="2" style="text-align:center;color:rgba(255,255,255,0.45);">—</td></tr>
+          <tr class="total"><td>Consolidated</td><td>$576,162</td><td>$753,308</td><td class="recap-yoy down" style="font-size:14px;">▼ 23.5%</td></tr>
+        </tbody>
+      </table>
+      <div class="recap-note">Pacing factor: MTD × (19 workdays / 15 elapsed) = 1.2667 → projection. Monday's run will populate per-dept May 2025 comparisons.</div>
+    </div>
 
-      <table class="ytd-table">
+    <!-- YTD YoY -->
+    <div class="recap-card">
+      <div class="recap-title">📅 Jan 1 – May 21 · Year Over Year</div>
+      <div class="recap-headline">
+        <div>
+          <div class="recap-big">$3,869,686</div>
+          <div class="recap-sub">YTD 2026 (V&amp;H excluded)</div>
+        </div>
+        <div style="text-align:center;">
+          <div class="recap-yoy up">▲ 37.5%</div>
+          <div class="recap-sub">YoY</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="recap-big muted">$2,814,154</div>
+          <div class="recap-sub">YTD 2025 (same window)</div>
+        </div>
+      </div>
+      <table class="recap-table">
         <thead><tr><th>Business Unit</th><th>2026 YTD</th><th>2025 YTD</th><th>YoY</th></tr></thead>
         <tbody>
           <tr><td>HVAC Service (Service + PMAG)</td><td>$604,733</td><td>$663,823</td><td style="color:#FCA5A5;">▼ 8.9%</td></tr>
           <tr><td>HVAC Install</td><td>$2,649,719</td><td>$1,914,483</td><td style="color:#34D399;">▲ 38.4%</td></tr>
           <tr><td>Plumbing (Service + Install + PMAG)</td><td>$615,234</td><td>$235,847</td><td style="color:#34D399;">▲ 160.9%</td></tr>
-          <tr style="font-weight:700;"><td>Consolidated</td><td>$3,869,686</td><td>$2,814,154</td><td style="color:#34D399;">▲ 37.5%</td></tr>
+          <tr class="total"><td>Consolidated</td><td>$3,869,686</td><td>$2,814,154</td><td class="recap-yoy up" style="font-size:14px;">▲ 37.5%</td></tr>
         </tbody>
       </table>
+      <div class="recap-note">+$1,055,533 YoY · 2026 Annual Goal $15,235,653 → YTD progress 25.4% (linear pace at 5/12 = 41.7%).</div>
+    </div>
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.1);">
-        <div>
-          <div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:4px;">2026 Annual Goal</div>
-          <div style="font-size:18px;font-weight:800;">$15,235,653</div>
-          <div style="font-size:11px;color:rgba(255,255,255,0.55);">YTD progress: 25.4% (5/12 of year = 41.7% linear)</div>
-        </div>
-        <div>
-          <div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:4px;">May Year-Over-Year</div>
-          <div style="font-size:18px;font-weight:800;color:#FCA5A5;">▼ 23.5% (projected)</div>
-          <div style="font-size:11px;color:rgba(255,255,255,0.55);">May 2026 proj $576K vs May 2025 full $753K</div>
-        </div>
+  </div>
+
+  <!-- DEPT KPIs (compact snapshot) -->
+  <div class="section-title">💼 May MTD — Department Snapshot</div>
+  <div class="dept-grid">
+    <div class="dept-card hvac">
+      <div class="dept-card-name">🌡️ HVAC Service</div>
+      <div class="dept-actual">$93,921</div>
+      <div class="dept-budget">of $248,100</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:37.9%;background:#F97316;"></div></div>
+      <div class="dept-pct" style="color:#F97316;">37.9% of budget</div>
+      <div class="dept-foot">EoM proj: <strong>$118,966</strong><br>Today: <strong>$10,000</strong> · D-1: $5,000</div>
+    </div>
+    <div class="dept-card plumb">
+      <div class="dept-card-name">🔧 Plumbing</div>
+      <div class="dept-actual">$89,533</div>
+      <div class="dept-budget">of $122,589</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:73.0%;background:#10B981;"></div></div>
+      <div class="dept-pct" style="color:#10B981;">73.0% of budget</div>
+      <div class="dept-foot">EoM proj: <strong style="color:#10B981;">$113,409</strong><br>Today: <strong>$6,000</strong> · D-1: $5,000</div>
+    </div>
+    <div class="dept-card install">
+      <div class="dept-card-name">⚙️ HVAC Install</div>
+      <div class="dept-actual">$271,411</div>
+      <div class="dept-budget">of $766,378</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:35.4%;background:#EF4444;"></div></div>
+      <div class="dept-pct" style="color:#EF4444;">35.4% of budget</div>
+      <div class="dept-foot">EoM proj: <strong>$343,787</strong><br>Today: <strong>$35,000</strong> · D-1: $27,205</div>
+    </div>
+    <div class="dept-card sales">
+      <div class="dept-card-name">💼 Sales</div>
+      <div class="dept-actual">$371,900</div>
+      <div class="dept-budget">of $843,016</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:44.1%;background:#8B5CF6;"></div></div>
+      <div class="dept-pct" style="color:#8B5CF6;">44.1% of budget</div>
+      <div class="dept-foot">EoM proj: <strong>$471,073</strong><br>Today: <strong style="color:#94A3B8;">TBD</strong> · D-1: $30,000</div>
+    </div>
+  </div>
+
+  <!-- LACE -->
+  <div class="section-title">📞 Lace AI — CSR Performance</div>
+  <div class="lace-grid">
+    <div class="lace-panel yest">
+      <div class="card-title">📅 Yesterday — Thu May 21 (D-1)</div>
+      <div class="lace-kpis">
+        <div class="lace-kpi"><div class="lace-kpi-val" style="color:#10B981;">73%</div><div class="lace-kpi-lbl">Success</div></div>
+        <div class="lace-kpi"><div class="lace-kpi-val">146</div><div class="lace-kpi-lbl">Calls</div></div>
+        <div class="lace-kpi"><div class="lace-kpi-val">26</div><div class="lace-kpi-lbl">Qualified</div></div>
+        <div class="lace-kpi"><div class="lace-kpi-val" style="color:#1D4ED8;">19</div><div class="lace-kpi-lbl">Booked</div></div>
+      </div>
+      <table class="lace-table">
+        <thead><tr><th>CSR</th><th>Succ</th><th>B/Q</th><th>Calls</th><th>Playbook</th></tr></thead>
+        <tbody>
+          <tr><td>Sheyla Trinidad Palma</td><td style="color:#F97316;">62%</td><td>8/13</td><td>55</td><td>55%</td></tr>
+          <tr><td>Lacie (AI)</td><td style="color:#F97316;">67%</td><td>2/3</td><td>11</td><td style="color:#10B981;">93%</td></tr>
+          <tr><td>Erica Marsh</td><td style="color:#10B981;">90%</td><td>9/10</td><td>61</td><td>56%</td></tr>
+          <tr><td>Brittany Williams</td><td style="color:#94A3B8;">N/A</td><td>0/0</td><td>19</td><td>70%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="lace-panel mtd">
+      <div class="card-title">📊 Past 30 Days (MTD proxy)</div>
+      <div class="lace-kpis">
+        <div class="lace-kpi"><div class="lace-kpi-val" style="color:#10B981;">86%</div><div class="lace-kpi-lbl">Success</div></div>
+        <div class="lace-kpi"><div class="lace-kpi-val">3,328</div><div class="lace-kpi-lbl">Calls</div></div>
+        <div class="lace-kpi"><div class="lace-kpi-val">403</div><div class="lace-kpi-lbl">Qualified</div></div>
+        <div class="lace-kpi"><div class="lace-kpi-val" style="color:#1D4ED8;">348</div><div class="lace-kpi-lbl">Booked</div></div>
+      </div>
+      <table class="lace-table">
+        <thead><tr><th>CSR</th><th>Succ</th><th>B/Q</th><th>Calls</th><th>Playbook</th></tr></thead>
+        <tbody>
+          <tr><td>Erica Marsh</td><td style="color:#10B981;">92%</td><td>160/174</td><td>1,219</td><td>52%</td></tr>
+          <tr><td>Sheyla Trinidad Palma</td><td style="color:#10B981;">83%</td><td>88/106</td><td>1,045</td><td>54%</td></tr>
+          <tr><td>Lacie (AI)</td><td>79%</td><td>88/111</td><td>845</td><td>80%</td></tr>
+          <tr><td>Brittany Williams</td><td style="color:#10B981;">100%</td><td>5/5</td><td>166</td><td>36%</td></tr>
+          <tr><td>Jessica Johnson</td><td style="color:#10B981;">100%</td><td>7/7</td><td>53</td><td>42%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- MARKETING -->
+  <div class="section-title">📢 Marketing — Channel Performance</div>
+  <div class="two-col">
+    <div class="card">
+      <div class="card-title">⭐ 5-Star Reviews — May MTD</div>
+      <div class="review-row h">
+        <div>State</div><div class="review-val">5-Star MTD</div><div class="review-val">Google</div><div class="review-val">FB</div><div class="review-val">Yelp</div>
+      </div>
+      <div class="review-row">
+        <div class="review-state">North Carolina</div>
+        <div class="review-val" style="font-weight:700;color:#10B981;">43</div>
+        <div class="review-val">3,298</div>
+        <div class="review-val">599</div>
+        <div class="review-val">44</div>
+      </div>
+      <div class="review-row">
+        <div class="review-state">Virginia</div>
+        <div class="review-val" style="font-weight:700;color:#10B981;">30</div>
+        <div class="review-val">380</div>
+        <div class="review-val">0</div>
+        <div class="review-val">6</div>
+      </div>
+      <div style="margin-top:12px;padding-top:10px;border-top:1px solid #E2E8F0;font-size:11px;color:#64748B;">
+        <strong style="color:#0F172A;">73 new 5-star reviews</strong> across both states this month.
       </div>
     </div>
-
-    <div class="source-strip">
-      <strong>Sources:</strong> Revenue/Sales/YTD → ServiceTitan API · Report 77063091 + 63167744 · Pulled 8:06 AM ET · Today's commits + Hours target → Google huddle sheet MAY 2026 tab (rows 6/11/16/18, col 5/22) · Pulled 9:32 AM ET · Escalations → Customer Escalations sheet · Pulled 9:32 AM ET · Lace AI → headless Playwright scrape · Pulled 9:53 AM ET · Pacing factor 19/15 = 1.2667.
+    <div class="card">
+      <div class="card-title">📊 Marketing ROAS by Channel — YTD 2026</div>
+      <div class="roas-grid">
+        <div class="roas-card"><div class="roas-channel">PPC HVAC</div><div class="roas-value">$7,835</div><div class="roas-label">ROAS</div></div>
+        <div class="roas-card"><div class="roas-channel">PPC Plumb</div><div class="roas-value">$7,359</div><div class="roas-label">ROAS</div></div>
+        <div class="roas-card"><div class="roas-channel">Paid Social</div><div class="roas-value" style="color:#10B981;">$82,149</div><div class="roas-label">ROAS</div></div>
+        <div class="roas-card"><div class="roas-channel">Paid SEO</div><div class="roas-value" style="color:#10B981;">$165,756</div><div class="roas-label">ROAS</div></div>
+        <div class="roas-card"><div class="roas-channel">LSA</div><div class="roas-value" style="color:#10B981;">$87,324</div><div class="roas-label">ROAS</div></div>
+        <div class="roas-card"><div class="roas-channel">Direct Mail</div><div class="roas-value">$33,406</div><div class="roas-label">ROAS</div></div>
+      </div>
+      <div style="margin-top:12px;padding-top:10px;border-top:1px solid #E2E8F0;font-size:11px;color:#64748B;">
+        Paid SEO &amp; Paid Social leading. PPC HVAC and Direct Mail underwater for the month.
+      </div>
     </div>
-
   </div>
 
-  <div class="report-footer">
-    Generated automatically · Friday, May 22, 2026 · Jay Is On The Way Operations · Confidential — Internal Use Only<br>
-    huddle.jayisontheway.com · D-1 = Thursday May 21, 2026 · v2 verification rebuild
+  <!-- PERMITS + ESC -->
+  <div class="two-col">
+    <div class="card">
+      <div class="card-title">📋 Outstanding Permits</div>
+      <div class="permit-stat">
+        <div class="permit-item"><div class="permit-val">18</div><div class="permit-lbl">Open Permits</div></div>
+        <div class="permit-item"><div class="permit-val">—</div><div class="permit-lbl">YTD Closed</div></div>
+      </div>
+      <div style="margin-top:12px;font-size:11px;color:#64748B;line-height:1.6;">
+        18 outstanding permit jobs (J. Randall, Bens, S. Smith, Nguyen, M. Jackson, Goins + 12 more). Full list in the huddle sheet rows 360+.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">🚨 Customer Escalations</div>
+      <div class="esc-stats">
+        <div class="esc-stat"><div class="esc-stat-val">30</div><div class="esc-stat-lbl">Total YTD</div></div>
+        <div class="esc-stat"><div class="esc-stat-val" style="color:#10B981;">24</div><div class="esc-stat-lbl">Closed</div></div>
+        <div class="esc-stat"><div class="esc-stat-val" style="color:#EF4444;">4</div><div class="esc-stat-lbl">Open</div></div>
+        <div class="esc-stat"><div class="esc-stat-val" style="color:#94A3B8;">2</div><div class="esc-stat-lbl">TBD</div></div>
+      </div>
+      <div style="font-size:11px;color:#64748B;line-height:1.5;">
+        4 open cases need attention. Detail in the <a href="https://docs.google.com/spreadsheets/d/1XlpTSOFRByX9E_c0y-ICudIUZJdIgZAX" style="color:#1D4ED8;font-weight:700;">Escalations sheet</a>.
+      </div>
+    </div>
   </div>
+
+  <div class="source-strip">
+    <strong>Sources:</strong> Revenue/Sales/YTD → ServiceTitan API (Reports 77063091 + 63167744) · Pulled 8:06 AM ET · Commits + Marketing + Reviews + Permits → Huddle sheet MAY 2026 · Pulled 9:32 AM ET · Escalations → Escalations sheet · 9:32 AM · CSR perf → Lace AI headless scrape · 9:53 AM · Pacing factor 19/15 = 1.2667.
+  </div>
+
+</div>
+
+<div class="report-footer">
+  Generated automatically · Friday, May 22, 2026 · Jay Is On The Way Operations · Confidential — Internal Use Only<br>
+  huddle.jayisontheway.com · D-1 = Thu May 21, 2026 · v4 (Recap section added · mobile responsive)
+</div>
 
 </div>
 </body>
