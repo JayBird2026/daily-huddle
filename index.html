@@ -228,7 +228,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 </div>
 <div class="month-banner">
   <div class="banner-eyebrow">&#128203; Jay Is On The Way &#183; Daily Operations Huddle</div>
-  <div class="banner-headline">Tuesday, June 9, 2026 &#183; Day 7 of 22 Working Days &#183; 15 Days Remaining<br><span style="font-size:10px;font-weight:500;letter-spacing:.5px;color:rgba(255,255,255,0.55);text-transform:uppercase;">&#128225; Live refresh &#183; 09-Jun-2026 &#183; ServiceTitan API + live sheet commitments &#183; v16</span></div>
+  <div class="banner-headline">Tuesday, June 9, 2026 &#183; Day 7 of 22 Working Days &#183; 15 Days Remaining<br><span style="font-size:10px;font-weight:500;letter-spacing:.5px;color:rgba(255,255,255,0.55);text-transform:uppercase;">&#128225; Live refresh &#183; 09-Jun-2026 &#183; ServiceTitan API + live sheet commitments &#183; v17</span></div>
   <div class="banner-body">
     <div class="narrative">
       <span class="section-head">&#128204; June Budget &#8212; What We&#39;re Going After</span>
@@ -318,6 +318,13 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
   </div>
 </div>
 <div class="content">
+  <div style="background:#FEF3C7;border:1px solid #F59E0B;border-left:5px solid #D97706;border-radius:12px;padding:14px 18px;margin-bottom:22px;">
+    <div style="font-size:12px;font-weight:800;color:#92400E;letter-spacing:.3px;margin-bottom:4px;">&#9888;&#65039; Uncategorized revenue &#8212; investigate &amp; reclassify</div>
+    <div style="font-size:12px;color:#78350F;line-height:1.6;">
+      <strong>$21,400</strong> of completed revenue is booked to a BU that is <strong>not</strong> one of the three operating departments (HVAC Service / Install / Plumbing) and is therefore <strong>excluded from Consolidated</strong>. Sales should not carry completed revenue &#8212; this is a misclassification pending reclassification in ServiceTitan.<br>
+      <span style="font-size:11px;color:#92400E;">Source BU: HVAC: Sales = $21,400. Consolidated stays at $253,022 (3 operating BUs); the all-BU total (incl. this orphan) is $274,422.</span>
+    </div>
+  </div>
   <div class="section-title">&#128202; Recap &#8212; Where We Stand vs Last Year</div>
   <div class="recap-grid">
     <div class="recap-card"><div class="recap-title">&#128197; June 2026 vs June 2025</div>
@@ -464,7 +471,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
   </div>
   <div class="section-title">&#128188; Sales &#8212; Performance Dashboard</div>
   <div style="background:white;border-radius:14px;border-top:5px solid #6D28D9;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden;margin-bottom:22px;">
-    <div style="padding:16px 20px 14px;background:linear-gradient(to right,#F5F3FF,#FFF);border-bottom:2px solid #DDD6FE;"><span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#6D28D9;">&#128188; Sales &#183; June 2026 &#183; 100% ServiceTitan API &#183; v16</span></div>
+    <div style="padding:16px 20px 14px;background:linear-gradient(to right,#F5F3FF,#FFF);border-bottom:2px solid #DDD6FE;"><span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#6D28D9;">&#128188; Sales &#183; June 2026 &#183; 100% ServiceTitan API &#183; v17</span></div>
     <div style="padding:22px 24px;">
       <div style="display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:18px;border-bottom:1px solid #F1F5F9;margin-bottom:18px;flex-wrap:wrap;gap:14px;">
         <div><div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:4px;">MTD Sales Revenue</div><div style="font-size:32px;font-weight:900;color:#6D28D9;line-height:1;">$306,046</div><div style="font-size:10px;color:#94A3B8;margin-top:4px;">3 buckets reconcile to this total exactly</div></div>
@@ -610,11 +617,11 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
       <div style="font-size:11px;color:#64748B;line-height:1.5;">6 open cases need attention (most recent: Liesa Hawks 5/22, no-AC daughter 5/28, Stephanie Trillo 5/21, Sam Gentry 4/29, Mary Britton 4/22). Detail in the Escalations sheet.</div>
     </div>
   </div>
-  <div class="source-strip"><strong>Sources:</strong> Revenue/Sales/YTD &#8594; ServiceTitan API (Reports 77063091 + 63167744) &#183; Pulled 8:12 AM ET &#183; <strong>Today&#39;s commitments &#8594; LIVE Google Sheet pull at build time (~9 AM ET)</strong> &#8212; Install commit $16,982 + 20 hrs captured live (blank in 8 AM CSV snapshot) &#183; Marketing/Reviews/Permits &#8594; Huddle sheet JUNE 2026 &#183; 8:12 AM &#183; Escalations &#8594; Escalations sheet &#183; 8:12 AM &#183; CSR perf &#8594; Lace AI headless scrape &#183; 8:12 AM &#183; Pacing factor 22/6 = 3.6667 &#183; Install API $194,357 reconciles to sheet $196,606 (diff under $5K, no override).</div>
+  <div class="source-strip"><strong>Sources:</strong> Revenue/Sales/YTD &#8594; ServiceTitan API (Reports 77063091 + 63167744) &#183; Pulled 8:12 AM ET &#183; <strong>Consolidated = HVAC Service + Install + Plumbing only</strong> (Sales BU excluded &#8212; sales does not generate revenue) &#183; <strong>Today&#39;s commitments &#8594; LIVE Google Sheet pull at build time (~9 AM ET)</strong> &#8212; Install commit $16,982 + 20 hrs captured live (blank in 8 AM CSV snapshot) &#183; Marketing/Reviews/Permits &#8594; Huddle sheet JUNE 2026 &#183; 8:12 AM &#183; Escalations &#8594; Escalations sheet &#183; 8:12 AM &#183; CSR perf &#8594; Lace AI headless scrape &#183; 8:12 AM &#183; Pacing factor 22/6 = 3.6667 &#183; Install API $194,357 reconciles to sheet $196,606 (diff under $5K, no override). &#183; <strong style="color:#FCD34D;">&#9888;&#65039; $21,400 uncategorized revenue (HVAC: Sales) excluded from Consolidated &#8212; pending reclassification.</strong></div>
 </div>
 <div class="report-footer">
   Generated automatically &#183; Tuesday, June 9, 2026 &#183; Jay Is On The Way Operations &#183; Confidential &#8212; Internal Use Only<br>
-  huddle.jayisontheway.com &#183; D-1 = Mon June 8, 2026 &#183; v16 (live commitment pull · June)
+  huddle.jayisontheway.com &#183; D-1 = Mon June 8, 2026 &#183; v17 (live commitment pull · June)
 </div>
 </div>
 </body>
