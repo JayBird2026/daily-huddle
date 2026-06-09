@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jay Is On The Way | Daily Huddle — June 8, 2026</title>
+<title>Jay Is On The Way | Daily Huddle &#8212; June 9, 2026</title>
 <style>
 * { box-sizing:border-box; margin:0; padding:0; }
 body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#F1F5F9; color:#1E293B; }
@@ -32,6 +32,16 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 .be-table tr.total-row td { font-weight:700; color:#FCD34D; border-top:1px solid rgba(255,255,255,0.2); border-bottom:none; }
 
 .right-stack { display:flex; flex-direction:column; gap:12px; }
+.yoy-card { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:12px 14px; }
+.yoy-card-title { font-size:9px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:7px; }
+.yoy-row { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:8px; }
+.yoy-label { font-size:9px; color:rgba(255,255,255,0.45); margin-bottom:2px; }
+.yoy-val { font-size:16px; font-weight:800; color:white; }
+.yoy-val.muted { color:rgba(255,255,255,0.7); }
+.yoy-pct { font-size:12px; font-weight:800; padding:4px 8px; border-radius:6px; display:inline-block; }
+.yoy-up { background:rgba(16,185,129,0.2); color:#34D399; }
+.yoy-down { background:rgba(239,68,68,0.2); color:#FCA5A5; }
+
 .goal-card { background:rgba(255,255,255,0.07); border-radius:10px; padding:12px 14px; border-left:3px solid #FCD34D; }
 .goal-title { font-size:9px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.55); margin-bottom:4px; }
 .goal-val { font-size:22px; font-weight:900; color:#FCD34D; line-height:1; }
@@ -64,7 +74,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 /* CONTENT */
 .content { padding:24px 32px; }
 
-/* RECAP */
+/* RECAP - NEW SECTION */
 .recap-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:22px; }
 .recap-card { background:linear-gradient(135deg,#0F172A 0%,#1E293B 100%); border-radius:14px; padding:22px 24px; color:white; }
 .recap-title { font-size:11px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:14px; }
@@ -146,7 +156,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 
 .report-footer { text-align:center; padding:20px; font-size:10px; color:#94A3B8; letter-spacing:.5px; border-top:1px solid #E2E8F0; }
 
-/* MOBILE RESPONSIVE */
+/* ─── MOBILE RESPONSIVE ≤ 640px ─── */
 @media (max-width: 768px) {
   .pace-grid { grid-template-columns:repeat(2,1fr); }
   .dept-grid { grid-template-columns:repeat(2,1fr); }
@@ -165,6 +175,8 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
   .narrative { font-size:11px; line-height:1.6; }
   .be-table th, .be-table td { padding:4px 4px; font-size:10px; }
   .right-stack { gap:10px; }
+  .yoy-val { font-size:14px; }
+  .yoy-pct { font-size:11px; }
   .goal-val { font-size:18px; }
   .commit-total { font-size:22px; }
 
@@ -206,357 +218,237 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 </head>
 <body>
 <div class="container">
-
-<!-- 1 · PAGE HEADER -->
 <div class="page-header">
   <div class="logo-circle">JIOW</div>
   <div>
-    <div class="header-title">Jay Is On The Way — Daily Operations Huddle</div>
-    <div class="header-subtitle">Residential HVAC · Plumbing · Installation Services</div>
-    <div class="header-date">Monday, June 8, 2026 · Month 6 of 12 · Day 6 of 22 working days</div>
+    <div class="header-title">Jay Is On The Way &#8212; Daily Operations Huddle</div>
+    <div class="header-subtitle">Residential HVAC &#183; Plumbing &#183; Installation Services</div>
+    <div class="header-date">Tuesday, June 9, 2026 &#183; Month 6 of 12 &#183; Day 7 of 22 working days &#183; D-1 = Mon June 8</div>
   </div>
 </div>
-
-<!-- 2 · BLUE BANNER -->
 <div class="month-banner">
-  <div class="banner-eyebrow">📋 Jay Is On The Way · Daily Operations Huddle</div>
-  <div class="banner-headline">Monday, June 8, 2026 · Day 6 of 22 Working Days · 17 Days Remaining (incl. today)<br><span style="font-size:10px;font-weight:500;letter-spacing:.5px;color:rgba(255,255,255,0.55);text-transform:uppercase;">📡 Live refresh · 08-Jun-2026 · ServiceTitan API + live huddle-sheet commitments · v17</span></div>
-
+  <div class="banner-eyebrow">&#128203; Jay Is On The Way &#183; Daily Operations Huddle</div>
+  <div class="banner-headline">Tuesday, June 9, 2026 &#183; Day 7 of 22 Working Days &#183; 15 Days Remaining<br><span style="font-size:10px;font-weight:500;letter-spacing:.5px;color:rgba(255,255,255,0.55);text-transform:uppercase;">&#128225; Live refresh &#183; 09-Jun-2026 &#183; ServiceTitan API + live sheet commitments &#183; v16</span></div>
   <div class="banner-body">
     <div class="narrative">
-
-      <span class="section-head">📌 June Budget — What We're Going After</span>
-      June's consolidated revenue budget is <strong>$1,652,996</strong> (HVAC Service + Plumbing + Install). Sales tracks independently and is shown for reference.
-      <table class="be-table" style="margin-top:8px;">
-        <thead><tr><th>Department</th><th>Monthly Budget</th><th>Daily Target</th></tr></thead>
-        <tbody>
-          <tr><td>🔧 HVAC Service</td><td>$306,579</td><td>$13,935</td></tr>
-          <tr><td>🪠 Plumbing</td><td>$173,211</td><td>$7,873</td></tr>
-          <tr><td>⚙️ Installation</td><td>$1,173,206</td><td>$53,328</td></tr>
-          <tr style="opacity:0.5;font-style:italic;"><td>⚡ Electrical (ref)</td><td>$45,473</td><td>$2,067</td></tr>
-          <tr class="total-row"><td>Consolidated</td><td>$1,652,996</td><td>$75,136</td></tr>
-          <tr style="opacity:0.5;font-style:italic;"><td>💼 Sales (ref)</td><td>$1,290,527</td><td>$58,660</td></tr>
-        </tbody>
-      </table>
-
-      <span class="section-head">⚖️ Break-Even — Daily Floor</span>
-      Daily break-even is <strong>$36,364</strong> ($800K monthly ÷ 22 June working days). Below $36.4K/day on commits = under floor.
-      <table class="be-table" style="margin-top:8px;">
-        <thead><tr><th>Department</th><th>Monthly BE</th><th>Daily BE</th></tr></thead>
-        <tbody>
-          <tr><td>🔧 HVAC Service</td><td>$250,000</td><td>$11,364/day</td></tr>
-          <tr><td>🪠 Plumbing</td><td>$150,000</td><td>$6,818/day</td></tr>
-          <tr><td>⚙️ Installation</td><td>$400,000</td><td>$18,182/day</td></tr>
-          <tr class="total-row"><td>Consolidated</td><td>$800,000</td><td>$36,364/day</td></tr>
-        </tbody>
-      </table>
-
+      <span class="section-head">&#128204; June Budget &#8212; What We&#39;re Going After</span>
+      June&#39;s consolidated revenue budget is <strong>$1,652,996</strong> (HVAC Service + Plumbing + Install). Sales tracks independently and is shown for reference.
+      <table class="be-table" style="margin-top:8px;"><thead><tr><th>Department</th><th>Monthly Budget</th><th>Daily Target</th></tr></thead><tbody>
+        <tr><td>&#128295; HVAC Service</td><td>$306,579</td><td>$13,935</td></tr>
+        <tr><td>&#129704; Plumbing</td><td>$173,211</td><td>$7,873</td></tr>
+        <tr><td>&#9881;&#65039; Installation</td><td>$1,173,206</td><td>$53,328</td></tr>
+        <tr><td>&#9889; Electrical</td><td>$45,473</td><td>$2,067</td></tr>
+        <tr class="total-row"><td>Consolidated</td><td>$1,652,996</td><td>$75,136</td></tr>
+        <tr style="opacity:0.5;font-style:italic;"><td>&#128188; Sales (ref)</td><td>$1,290,527</td><td>$58,660</td></tr>
+      </tbody></table>
+      <span class="section-head">&#9878;&#65039; Break-Even &#8212; Daily Floor</span>
+      Daily break-even is <strong>$40,000</strong> ($800K monthly &#247; 20 working days). Below $40K/day on commits = under floor.
+      <table class="be-table" style="margin-top:8px;"><thead><tr><th>Department</th><th>Monthly BE</th><th>Daily BE</th></tr></thead><tbody>
+        <tr><td>&#128295; HVAC Service</td><td>$250,000</td><td>$12,500/day</td></tr>
+        <tr><td>&#129704; Plumbing</td><td>$150,000</td><td>$7,500/day</td></tr>
+        <tr><td>&#9881;&#65039; Installation</td><td>$400,000</td><td>$20,000/day</td></tr>
+        <tr style="opacity:0.5;font-style:italic;"><td>&#9889; Electrical</td><td>N/A</td><td>N/A</td></tr>
+        <tr class="total-row"><td>Consolidated</td><td>$800,000</td><td>$40,000/day</td></tr>
+      </tbody></table>
     </div>
-
     <div class="right-stack">
-
-      <div class="goal-card">
-        <div class="goal-title">🎯 2026 Annual Consolidated Goal</div>
+      <div class="goal-card"><div class="goal-title">&#127919; 2026 Annual Consolidated Goal</div>
         <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
           <div class="goal-val">$15.24M</div>
-          <div class="goal-sub" style="text-align:right;">YTD $4.36M · 28.6% complete<br><span style="color:#FCA5A5;">$10.88M remaining</span></div>
-        </div>
-      </div>
-
-      <div class="commit-card">
-        <div class="commit-title">🎯 Today's Commitments</div>
-        <div class="commit-date">Monday, June 8, 2026 — Day 6<br><span style="opacity:.7;">D-1 actuals: Fri June 5 · commits pulled LIVE via Drive connector</span></div>
-        <div class="commit-total">$63,700</div>
-        <div class="commit-sub">Depts (HVAC + Plumbing + Install)</div>
-        <div class="commit-vs-be" style="background:rgba(16,185,129,0.2);color:#34D399;">▲ $27,336 OVER $36,364 daily BE</div>
+          <div class="goal-sub" style="text-align:right;">YTD $4,347,366 &#183; 28.5% complete<br><span style="color:#FCA5A5;">$10,888,287 remaining</span></div>
+        </div></div>
+      <div class="commit-card"><div class="commit-title">&#127919; Today&#39;s Commitments</div>
+        <div class="commit-date">Tuesday, June 9, 2026 &#8212; Day 7<br><span style="opacity:.7;">D-1 actuals: Mon June 8</span></div>
+        <div class="commit-total">$30,982</div>
+        <div class="commit-sub">Depts (HVAC Service + Plumbing + Install)</div>
+        <div class="commit-vs-be" style="background:rgba(239,68,68,0.2);color:#FCA5A5;">&#9660; $9,018 UNDER $40K daily BE</div>
         <div class="commit-rows">
-          <div class="commit-row"><span class="dept">🔧 HVAC Service</span><span class="amt">$5,000</span></div>
-          <div class="commit-row"><span class="dept">🪠 Plumbing</span><span class="amt">$3,000</span></div>
-          <div class="commit-row"><span class="dept">⚙️ Installation</span><span class="amt">$55,700</span></div>
-          <div class="commit-row"><span class="dept">💼 Sales</span><span class="amt">$50,000</span></div>
-          <div class="commit-row" style="padding-top:6px;border-top:1px solid rgba(255,255,255,0.08);"><span class="dept">Hours sold target</span><span class="amt">75 hrs</span></div>
-        </div>
-      </div>
-
+          <div class="commit-row"><span class="dept">&#128295; HVAC Service</span><span class="amt">$2,500</span></div>
+          <div class="commit-row"><span class="dept">&#129704; Plumbing</span><span class="amt">$11,500</span></div>
+          <div class="commit-row"><span class="dept">&#9881;&#65039; Installation</span><span class="amt">$16,982</span></div>
+          <div class="commit-row"><span class="dept">&#128188; Sales</span><span class="amt">$55,000</span></div>
+          <div class="commit-row" style="padding-top:6px;border-top:1px solid rgba(255,255,255,0.08);"><span class="dept">Hours sold target</span><span class="amt">20 hrs</span></div>
+        </div></div>
     </div>
   </div>
 </div>
-
-<!-- 3 · PACING DASHBOARD -->
 <div class="pacing">
-  <div class="section-title">📊 Month-to-Date Pacing — June 2026 (Day 6 of 22 · 5 workdays elapsed · D-1 Fri 6/5)</div>
+  <div class="section-title">&#128202; Month-to-Date Pacing &#8212; June 2026 (Day 7 of 22 workdays &#183; D-1 Mon 6/8)</div>
   <div class="pace-grid">
     <div class="pace-card">
-      <div class="pace-card-label">🔧 HVAC Service</div>
-      <div class="pace-actual">$17,672</div>
+      <div class="pace-card-label">&#128295; HVAC Service</div>
+      <div class="pace-actual">$22,946</div>
       <div class="pace-budget">of $306,579</div>
-      <div class="pace-bar-bg"><div class="pace-bar" style="width:5.8%;background:#EF4444;"></div></div>
-      <div class="pace-pct" style="color:#EF4444;">5.8%</div>
-      <div class="pace-ou">Pacing $77.8K</div>
+      <div class="pace-bar-bg"><div class="pace-bar" style="width:7.5%;background:#F97316;"></div></div>
+      <div class="pace-pct" style="color:#F97316;">7.5%</div>
+      <div class="pace-ou">Pacing $84,136</div>
     </div>
     <div class="pace-card">
-      <div class="pace-card-label">🪠 Plumbing</div>
-      <div class="pace-actual">$38,679</div>
+      <div class="pace-card-label">&#129704; Plumbing</div>
+      <div class="pace-actual">$35,718</div>
       <div class="pace-budget">of $173,211</div>
-      <div class="pace-bar-bg"><div class="pace-bar" style="width:22.3%;background:#10B981;"></div></div>
-      <div class="pace-pct" style="color:#10B981;">22.3%</div>
-      <div class="pace-ou">Pacing $170.2K</div>
+      <div class="pace-bar-bg"><div class="pace-bar" style="width:20.6%;background:#10B981;"></div></div>
+      <div class="pace-pct" style="color:#10B981;">20.6%</div>
+      <div class="pace-ou">Pacing $130,967</div>
     </div>
     <div class="pace-card">
-      <div class="pace-card-label">⚙️ HVAC Install</div>
+      <div class="pace-card-label">&#9881;&#65039; HVAC Install</div>
       <div class="pace-actual">$194,357</div>
       <div class="pace-budget">of $1,173,206</div>
-      <div class="pace-bar-bg"><div class="pace-bar" style="width:16.6%;background:#F97316;"></div></div>
-      <div class="pace-pct" style="color:#F97316;">16.6%</div>
-      <div class="pace-ou">Pacing $855.2K</div>
+      <div class="pace-bar-bg"><div class="pace-bar" style="width:16.6%;background:#EF4444;"></div></div>
+      <div class="pace-pct" style="color:#EF4444;">16.6%</div>
+      <div class="pace-ou">Pacing $712,644</div>
     </div>
     <div class="pace-card">
-      <div class="pace-card-label">💼 Sales</div>
-      <div class="pace-actual">$238,296</div>
+      <div class="pace-card-label">&#128188; Sales</div>
+      <div class="pace-actual">$306,046</div>
       <div class="pace-budget">of $1,290,527</div>
-      <div class="pace-bar-bg"><div class="pace-bar" style="width:18.5%;background:#8B5CF6;"></div></div>
-      <div class="pace-pct" style="color:#8B5CF6;">18.5%</div>
-      <div class="pace-ou">Pacing $1,048.5K</div>
+      <div class="pace-bar-bg"><div class="pace-bar" style="width:23.7%;background:#8B5CF6;"></div></div>
+      <div class="pace-pct" style="color:#8B5CF6;">23.7%</div>
+      <div class="pace-ou">Pacing $1,122,167</div>
     </div>
     <div class="pace-card" style="background:linear-gradient(135deg,#1E40AF,#1E3A8A);color:white;border:none;">
-      <div class="pace-card-label" style="color:rgba(255,255,255,0.5);">📊 Consolidated</div>
-      <div class="pace-actual" style="color:white;">$250,708</div>
+      <div class="pace-card-label" style="color:rgba(255,255,255,0.5);">&#128202; Consolidated</div>
+      <div class="pace-actual" style="color:white;">$253,022</div>
       <div class="pace-budget" style="color:rgba(255,255,255,0.55);">of $1,652,996</div>
-      <div class="pace-bar-bg" style="background:rgba(255,255,255,0.15);"><div class="pace-bar" style="width:15.2%;background:#FCD34D;"></div></div>
-      <div class="pace-pct" style="color:#FCD34D;">15.2%</div>
-      <div class="pace-ou" style="color:rgba(255,255,255,0.55);">Pacing $1,103K · vs Jun'25 $1,247K (▼11.5%)</div>
+      <div class="pace-bar-bg" style="background:rgba(255,255,255,0.15);"><div class="pace-bar" style="width:15.3%;background:#FCD34D;"></div></div>
+      <div class="pace-pct" style="color:#FCD34D;">15.3%</div>
+      <div class="pace-ou" style="color:rgba(255,255,255,0.55);">Pacing $927,747 &#183; vs Jun&#39;25 $1,246,852 (&#9660;25.6%)</div>
     </div>
   </div>
 </div>
-
-<!-- CONTENT -->
 <div class="content">
-
-  <!-- 4 · RECAP -->
-  <div class="section-title">📊 Recap — Where We Stand vs Last Year</div>
+  <div class="section-title">&#128202; Recap &#8212; Where We Stand vs Last Year</div>
   <div class="recap-grid">
-
-    <div class="recap-card">
-      <div class="recap-title">📅 June 2026 vs June 2025</div>
-      <div class="recap-headline">
-        <div>
-          <div class="recap-big">$1,103,115</div>
-          <div class="recap-sub">June 2026 PROJECTED · MTD $250,708 (Day 6/22)</div>
-        </div>
-        <div style="text-align:center;">
-          <div class="recap-yoy down">▼ 11.5%</div>
-          <div class="recap-sub">YoY</div>
-        </div>
-        <div style="text-align:right;">
-          <div class="recap-big muted">$1,246,852</div>
-          <div class="recap-sub">June 2025 FULL month (API)</div>
-        </div>
-      </div>
-      <table class="recap-table">
-        <thead><tr><th>Business Unit</th><th>Jun 2026 (proj)</th><th>Jun 2025 (full)</th><th>YoY</th></tr></thead>
-        <tbody>
-          <tr><td>HVAC Service</td><td>$77,755</td><td>$224,427</td><td style="color:#FCA5A5;">▼ 65.4%</td></tr>
-          <tr><td>HVAC Install</td><td>$855,172</td><td>$978,176</td><td style="color:#FCA5A5;">▼ 12.6%</td></tr>
-          <tr><td>Plumbing</td><td>$170,188</td><td>$44,248</td><td style="color:#34D399;">▲ 284.6%</td></tr>
-          <tr><td>Sales</td><td>$1,048,501</td><td>$1,166,383</td><td style="color:#FCA5A5;">▼ 10.1%</td></tr>
-          <tr class="total"><td>Consolidated (svc+install+plumb)</td><td>$1,103,115</td><td>$1,246,852</td><td class="recap-yoy down" style="font-size:14px;">▼ 11.5%</td></tr>
-        </tbody>
-      </table>
-      <div class="recap-note">Pacing factor: MTD × (22 workdays / 5 elapsed) = 4.4 → projection. Early-month projections are volatile — only 5 workdays of data. June 2025 per-BU pulled live from ServiceTitan API · Reports 77063091 + 63167744 · range 2025-06-01 → 2025-06-30.</div>
+    <div class="recap-card"><div class="recap-title">&#128197; June 2026 vs June 2025</div>
+      <div class="recap-headline"><div><div class="recap-big">$927,747</div><div class="recap-sub">June 2026 PROJECTED &#183; MTD $253,022 (Day 7/22)</div></div>
+        <div style="text-align:center;"><div class="recap-yoy down">&#9660; 25.6%</div><div class="recap-sub">YoY</div></div>
+        <div style="text-align:right;"><div class="recap-big muted">$1,246,852</div><div class="recap-sub">June 2025 FULL month (API)</div></div></div>
+      <table class="recap-table"><thead><tr><th>Business Unit</th><th>June 2026 (proj)</th><th>June 2025 (full)</th><th>YoY</th></tr></thead><tbody>
+        <tr><td>HVAC Service</td><td>$84,136</td><td>$224,427</td><td style="color:#FCA5A5;">&#9660; 62.5%</td></tr>
+        <tr><td>HVAC Install</td><td>$712,644</td><td>$978,176</td><td style="color:#FCA5A5;">&#9660; 27.1%</td></tr>
+        <tr><td>Plumbing</td><td>$130,967</td><td>$44,248</td><td style="color:#34D399;">&#9650; 196.0%</td></tr>
+        <tr><td>Sales</td><td>$1,122,167</td><td>$1,166,383</td><td style="color:#FCA5A5;">&#9660; 3.8%</td></tr>
+        <tr class="total"><td>Consolidated (svc+install+plumb)</td><td>$927,747</td><td>$1,246,852</td><td class="recap-yoy down" style="font-size:14px;">&#9660; 25.6%</td></tr>
+      </tbody></table>
+      <div class="recap-note">Pacing factor: MTD &#215; (22 workdays / 6 elapsed) = 3.6667 &#8594; projection. June 2025 per-BU pulled live from ServiceTitan API &#183; Report 77063091 + Report 63167744 &#183; range 2025-06-01 &#8594; 2025-06-30.</div>
     </div>
-
-    <div class="recap-card">
-      <div class="recap-title">📅 Jan 1 – Jun 7 · Year Over Year</div>
-      <div class="recap-headline">
-        <div>
-          <div class="recap-big">$4,356,057</div>
-          <div class="recap-sub">YTD 2026 (V&amp;H excluded)</div>
-        </div>
-        <div style="text-align:center;">
-          <div class="recap-yoy up">▲ 33.2%</div>
-          <div class="recap-sub">YoY</div>
-        </div>
-        <div style="text-align:right;">
-          <div class="recap-big muted">$3,269,467</div>
-          <div class="recap-sub">YTD 2025 (same window)</div>
-        </div>
-      </div>
-      <table class="recap-table">
-        <thead><tr><th>Business Unit</th><th>2026 YTD</th><th>2025 YTD</th><th>YoY</th></tr></thead>
-        <tbody>
-          <tr><td>HVAC Service (Service + PMAG)</td><td>$647,314</td><td>$738,240</td><td style="color:#FCA5A5;">▼ 12.3%</td></tr>
-          <tr><td>HVAC Install</td><td>$3,020,885</td><td>$2,267,840</td><td style="color:#34D399;">▲ 33.2%</td></tr>
-          <tr><td>Plumbing (Service + Install + PMAG)</td><td>$687,857</td><td>$263,388</td><td style="color:#34D399;">▲ 161.2%</td></tr>
-          <tr class="total"><td>Consolidated</td><td>$4,356,057</td><td>$3,269,467</td><td class="recap-yoy up" style="font-size:14px;">▲ 33.2%</td></tr>
-        </tbody>
-      </table>
-      <div class="recap-note">+$1,086,590 YoY · 2026 Annual Goal $15,235,653 → YTD progress 28.6% (linear pace at Jun 7 = 43.3%).</div>
+    <div class="recap-card"><div class="recap-title">&#128197; Jan 1 &#8211; June 8 &#183; Year Over Year</div>
+      <div class="recap-headline"><div><div class="recap-big">$4,347,366</div><div class="recap-sub">YTD 2026 (V&amp;H excluded)</div></div>
+        <div style="text-align:center;"><div class="recap-yoy up">&#9650; 33.0%</div><div class="recap-sub">YoY</div></div>
+        <div style="text-align:right;"><div class="recap-big muted">$3,269,467</div><div class="recap-sub">YTD 2025 (same window)</div></div></div>
+      <table class="recap-table"><thead><tr><th>Business Unit</th><th>2026 YTD</th><th>2025 YTD</th><th>YoY</th></tr></thead><tbody>
+        <tr><td>HVAC Service (Service + PMAG)</td><td>$652,589</td><td>$738,240</td><td style="color:#FCA5A5;">&#9660; 11.6%</td></tr>
+        <tr><td>HVAC Install</td><td>$3,020,885</td><td>$2,267,840</td><td style="color:#34D399;">&#9650; 33.2%</td></tr>
+        <tr><td>Plumbing (Service + Install + PMAG)</td><td>$673,892</td><td>$263,388</td><td style="color:#34D399;">&#9650; 155.9%</td></tr>
+        <tr class="total"><td>Consolidated</td><td>$4,347,366</td><td>$3,269,467</td><td class="recap-yoy up" style="font-size:14px;">&#9650; 33.0%</td></tr>
+      </tbody></table>
+      <div class="recap-note">+$1,077,899 YoY &#183; 2026 Annual Goal $15,235,653 &#8594; YTD progress 28.5% (linear pace at day 159/365 = 43.6%).</div>
     </div>
-
   </div>
-
-  <!-- 5 · YEAR-TO-DATE PACING -->
-  <div class="section-title">📅 Year-to-Date Pacing — Jan 1 through Jun 7, 2026</div>
+  <div class="section-title">&#128197; Year-to-Date Pacing &#8212; Jan 1 through June 8, 2026</div>
   <div class="dept-grid" style="grid-template-columns:repeat(5,1fr);">
     <div class="dept-card hvac">
-      <div class="dept-card-name">🌡️ HVAC Service</div>
-      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 – Jun 7 Actual</div>
-      <div class="dept-actual">$647,314</div>
-      <div class="dept-budget">▼ 12.3% vs 2025 same window</div>
-      <div class="dept-bar-bg"><div class="dept-bar" style="width:43.3%;background:#EF4444;"></div></div>
-      <div class="dept-pct" style="color:#EF4444;">43.3% of year elapsed</div>
-      <div class="dept-foot">Projected Dec 31<br><strong style="color:#EF4444;">$1,495,378</strong> · avg $4,097/day</div>
+      <div class="dept-card-name">&#127777;&#65039; HVAC Service</div>
+      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 &#8211; June 8 Actual</div>
+      <div class="dept-actual">$652,589</div>
+      <div class="dept-budget">43.6% of year elapsed</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:43.6%;background:#EF4444;"></div></div>
+      <div class="dept-pct" style="color:#EF4444;">Projected Dec 31</div>
+      <div class="dept-foot"><strong style="color:#EF4444;">$1,498,081</strong> &#183; avg $4,104/day</div>
     </div>
     <div class="dept-card plumb">
-      <div class="dept-card-name">🪠 Plumbing</div>
-      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 – Jun 7 Actual</div>
-      <div class="dept-actual">$687,857</div>
-      <div class="dept-budget">▲ 161.2% vs 2025 same window</div>
-      <div class="dept-bar-bg"><div class="dept-bar" style="width:43.3%;background:#10B981;"></div></div>
-      <div class="dept-pct" style="color:#10B981;">43.3% of year elapsed</div>
-      <div class="dept-foot">Projected Dec 31<br><strong style="color:#10B981;">$1,589,038</strong> · avg $4,354/day</div>
+      <div class="dept-card-name">&#129704; Plumbing</div>
+      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 &#8211; June 8 Actual</div>
+      <div class="dept-actual">$673,892</div>
+      <div class="dept-budget">43.6% of year elapsed</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:43.6%;background:#F97316;"></div></div>
+      <div class="dept-pct" style="color:#F97316;">Projected Dec 31</div>
+      <div class="dept-foot"><strong style="color:#F97316;">$1,546,984</strong> &#183; avg $4,238/day</div>
     </div>
     <div class="dept-card install">
-      <div class="dept-card-name">⚙️ Installation</div>
-      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 – Jun 7 Actual</div>
+      <div class="dept-card-name">&#9881;&#65039; Installation</div>
+      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 &#8211; June 8 Actual</div>
       <div class="dept-actual">$3,020,885</div>
-      <div class="dept-budget">▲ 33.2% vs 2025 same window</div>
-      <div class="dept-bar-bg"><div class="dept-bar" style="width:43.3%;background:#F97316;"></div></div>
-      <div class="dept-pct" style="color:#F97316;">43.3% of year elapsed</div>
-      <div class="dept-foot">Projected Dec 31<br><strong style="color:#F97316;">$6,978,628</strong> · avg $19,120/day</div>
+      <div class="dept-budget">43.6% of year elapsed</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:43.6%;background:#F97316;"></div></div>
+      <div class="dept-pct" style="color:#F97316;">Projected Dec 31</div>
+      <div class="dept-foot"><strong style="color:#F97316;">$6,934,737</strong> &#183; avg $18,999/day</div>
     </div>
     <div class="dept-card sales">
-      <div class="dept-card-name">💼 Sales</div>
-      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 – Jun 7 Actual (API call 7)</div>
-      <div class="dept-actual">$3,258,847</div>
-      <div class="dept-budget">Salesmen Sales report · HVAC: Sales BU</div>
-      <div class="dept-bar-bg"><div class="dept-bar" style="width:43.3%;background:#8B5CF6;"></div></div>
-      <div class="dept-pct" style="color:#8B5CF6;">43.3% of year elapsed</div>
-      <div class="dept-foot">Projected Dec 31<br><strong style="color:#8B5CF6;">$7,528,348</strong> · avg $20,626/day</div>
+      <div class="dept-card-name">&#128188; Sales</div>
+      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 &#8211; June 8 Actual</div>
+      <div class="dept-actual">$3,326,597</div>
+      <div class="dept-budget">43.6% of year elapsed</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:43.6%;background:#8B5CF6;"></div></div>
+      <div class="dept-pct" style="color:#8B5CF6;">Projected Dec 31</div>
+      <div class="dept-foot"><strong style="color:#8B5CF6;">$7,636,527</strong> &#183; avg $20,922/day</div>
     </div>
     <div class="dept-card" style="border-top-color:#1D4ED8;background:#F0F7FF;">
-      <div class="dept-card-name" style="color:#1D4ED8;">📊 Consolidated</div>
-      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 – Jun 7 Actual</div>
-      <div class="dept-actual" style="color:#1D4ED8;">$4,356,057</div>
+      <div class="dept-card-name" style="color:#1D4ED8;">&#128202; Consolidated</div>
+      <div style="font-size:9px;font-weight:600;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Jan 1 &#8211; June 8 Actual</div>
+      <div class="dept-actual" style="color:#1D4ED8;">$4,347,366</div>
       <div class="dept-budget">of $15,235,653 annual goal</div>
-      <div class="dept-bar-bg"><div class="dept-bar" style="width:28.6%;background:#1D4ED8;"></div></div>
-      <div class="dept-pct" style="color:#1D4ED8;">28.6% of annual goal</div>
-      <div class="dept-foot">Projected Dec 31<br><strong style="color:#1D4ED8;">$10,063,043</strong> · avg $27,570/day</div>
+      <div class="dept-bar-bg"><div class="dept-bar" style="width:28.5%;background:#1D4ED8;"></div></div>
+      <div class="dept-pct" style="color:#1D4ED8;">28.5% of annual goal</div>
+      <div class="dept-foot">Projected Dec 31<br><strong style="color:#1D4ED8;">$9,979,803</strong> &#183; avg $27,342/day</div>
     </div>
   </div>
-
-  <!-- 6 · CALL BOARD -->
-  <div class="section-title">📞 Call Board — Monday, June 8, 2026 (Day 6 of June · live sheet)</div>
+  <div class="section-title">&#128222; Call Board &#8212; Tuesday, June 9, 2026 (Day 7 of June)</div>
   <div class="dept-grid" style="grid-template-columns:repeat(3,1fr);margin-bottom:26px;">
-
     <div style="background:white;border-radius:14px;border-top:4px solid #F97316;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:16px 18px;">
-      <div style="font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#F97316;margin-bottom:12px;">🌡️ HVAC Service</div>
+      <div style="font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#F97316;margin-bottom:12px;">&#127777;&#65039; HVAC Service</div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px;">
-        <div style="text-align:center;background:#F8FAFC;border-radius:9px;padding:11px 5px;">
-          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Board</div>
-          <div style="font-size:26px;font-weight:900;color:#94A3B8;line-height:1;">—</div>
-          <div style="font-size:8px;color:#94A3B8;margin-top:2px;">TBD</div>
-        </div>
-        <div style="text-align:center;background:#FFF7ED;border-radius:9px;padding:11px 5px;">
-          <div style="font-size:8px;color:#9A3412;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Commit</div>
-          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">12</div>
-        </div>
-        <div style="text-align:center;background:#ECFDF5;border-radius:9px;padding:11px 5px;">
-          <div style="font-size:8px;color:#166534;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Need</div>
-          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">12</div>
-        </div>
+        <div style="text-align:center;background:#F8FAFC;border-radius:9px;padding:11px 5px;"><div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Board</div><div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">14</div></div>
+        <div style="text-align:center;background:#FFF7ED;border-radius:9px;padding:11px 5px;"><div style="font-size:8px;color:#9A3412;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Commit</div><div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">12</div></div>
+        <div style="text-align:center;background:#ECFDF5;border-radius:9px;padding:11px 5px;"><div style="font-size:8px;color:#166534;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Need</div><div style="font-size:26px;font-weight:900;color:#16A34A;line-height:1;">2</div><div style="font-size:8px;color:#16A34A;margin-top:2px;">covered +2</div></div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;border-top:1px solid #F1F5F9;padding-top:10px;">
-        <div style="text-align:center;background:#F8FAFC;border-radius:8px;padding:9px 5px;">
-          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel D-1</div>
-          <div style="font-size:20px;font-weight:800;color:#0F172A;line-height:1;">—</div>
-        </div>
-        <div style="text-align:center;background:#FEF2F2;border-radius:8px;padding:9px 5px;">
-          <div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel MTD</div>
-          <div style="font-size:20px;font-weight:800;color:#DC2626;line-height:1;">18</div>
-        </div>
+        <div style="text-align:center;background:#FEF2F2;border-radius:8px;padding:9px 5px;"><div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel D-1</div><div style="font-size:20px;font-weight:800;color:#16A34A;line-height:1;">0</div></div>
+        <div style="text-align:center;background:#FEF2F2;border-radius:8px;padding:9px 5px;"><div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel MTD</div><div style="font-size:20px;font-weight:800;color:#DC2626;line-height:1;">23</div></div>
       </div>
     </div>
-
     <div style="background:white;border-radius:14px;border-top:4px solid #3B82F6;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:16px 18px;">
-      <div style="font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#3B82F6;margin-bottom:12px;">🪠 Plumbing</div>
+      <div style="font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#3B82F6;margin-bottom:12px;">&#129704; Plumbing</div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px;">
-        <div style="text-align:center;background:#F8FAFC;border-radius:9px;padding:11px 5px;">
-          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Board</div>
-          <div style="font-size:26px;font-weight:900;color:#94A3B8;line-height:1;">—</div>
-          <div style="font-size:8px;color:#94A3B8;margin-top:2px;">TBD</div>
-        </div>
-        <div style="text-align:center;background:#EFF6FF;border-radius:9px;padding:11px 5px;">
-          <div style="font-size:8px;color:#1E40AF;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Commit</div>
-          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">10</div>
-        </div>
-        <div style="text-align:center;background:#ECFDF5;border-radius:9px;padding:11px 5px;">
-          <div style="font-size:8px;color:#166534;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Need</div>
-          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">10</div>
-        </div>
+        <div style="text-align:center;background:#F8FAFC;border-radius:9px;padding:11px 5px;"><div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Board</div><div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">7</div></div>
+        <div style="text-align:center;background:#EFF6FF;border-radius:9px;padding:11px 5px;"><div style="font-size:8px;color:#9A3412;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Commit</div><div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">8</div></div>
+        <div style="text-align:center;background:#ECFDF5;border-radius:9px;padding:11px 5px;"><div style="font-size:8px;color:#166534;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Need</div><div style="font-size:26px;font-weight:900;color:#DC2626;line-height:1;">1</div><div style="font-size:8px;color:#DC2626;margin-top:2px;">to fill</div></div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;border-top:1px solid #F1F5F9;padding-top:10px;">
-        <div style="text-align:center;background:#F8FAFC;border-radius:8px;padding:9px 5px;">
-          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel D-1</div>
-          <div style="font-size:20px;font-weight:800;color:#0F172A;line-height:1;">—</div>
-        </div>
-        <div style="text-align:center;background:#FEF2F2;border-radius:8px;padding:9px 5px;">
-          <div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel MTD</div>
-          <div style="font-size:20px;font-weight:800;color:#DC2626;line-height:1;">6</div>
-        </div>
+        <div style="text-align:center;background:#FEF2F2;border-radius:8px;padding:9px 5px;"><div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel D-1</div><div style="font-size:20px;font-weight:800;color:#16A34A;line-height:1;">0</div></div>
+        <div style="text-align:center;background:#FEF2F2;border-radius:8px;padding:9px 5px;"><div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel MTD</div><div style="font-size:20px;font-weight:800;color:#DC2626;line-height:1;">8</div></div>
       </div>
     </div>
-
     <div style="background:white;border-radius:14px;border-top:4px solid #8B5CF6;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:16px 18px;">
-      <div style="font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#8B5CF6;margin-bottom:12px;">💼 Sales</div>
+      <div style="font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#8B5CF6;margin-bottom:12px;">&#128188; Sales</div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px;">
-        <div style="text-align:center;background:#F8FAFC;border-radius:9px;padding:11px 5px;">
-          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Board</div>
-          <div style="font-size:26px;font-weight:900;color:#94A3B8;line-height:1;">—</div>
-          <div style="font-size:8px;color:#94A3B8;margin-top:2px;">TBD</div>
-        </div>
-        <div style="text-align:center;background:#F5F3FF;border-radius:9px;padding:11px 5px;">
-          <div style="font-size:8px;color:#5B21B6;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Commit</div>
-          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">6</div>
-        </div>
-        <div style="text-align:center;background:#ECFDF5;border-radius:9px;padding:11px 5px;">
-          <div style="font-size:8px;color:#166534;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Need</div>
-          <div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">6</div>
-        </div>
+        <div style="text-align:center;background:#F8FAFC;border-radius:9px;padding:11px 5px;"><div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Board</div><div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">2</div></div>
+        <div style="text-align:center;background:#F5F3FF;border-radius:9px;padding:11px 5px;"><div style="font-size:8px;color:#5B21B6;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Commit</div><div style="font-size:26px;font-weight:900;color:#0F172A;line-height:1;">6</div></div>
+        <div style="text-align:center;background:#FEF2F2;border-radius:9px;padding:11px 5px;"><div style="font-size:8px;color:#991B1B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Need</div><div style="font-size:26px;font-weight:900;color:#DC2626;line-height:1;">4</div><div style="font-size:8px;color:#94A3B8;margin-top:2px;">to fill</div></div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;border-top:1px solid #F1F5F9;padding-top:10px;">
-        <div style="text-align:center;background:#F8FAFC;border-radius:8px;padding:9px 5px;">
-          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Cancel MTD</div>
-          <div style="font-size:20px;font-weight:800;color:#0F172A;line-height:1;">0</div>
-        </div>
-        <div style="text-align:center;background:#F8FAFC;border-radius:8px;padding:9px 5px;">
-          <div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Closed MTD</div>
-          <div style="font-size:20px;font-weight:800;color:#0F172A;line-height:1;">14</div>
-        </div>
+        <div style="text-align:center;background:#F8FAFC;border-radius:8px;padding:9px 5px;"><div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Closed D-1</div><div style="font-size:20px;font-weight:800;color:#0F172A;line-height:1;">&#8212;</div></div>
+        <div style="text-align:center;background:#F8FAFC;border-radius:8px;padding:9px 5px;"><div style="font-size:8px;color:#64748B;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Closed MTD</div><div style="font-size:20px;font-weight:800;color:#0F172A;line-height:1;">16</div></div>
       </div>
     </div>
-
   </div>
-
-  <!-- 7 · OPS SNAPSHOT + INSTALL BACKLOG -->
   <div class="two-col" style="grid-template-columns:1fr 1fr;margin-bottom:22px;">
-    <div class="card">
-      <div class="card-title">⏱️ Today's Operations Snapshot</div>
+    <div class="card"><div class="card-title">&#9201;&#65039; Today&#39;s Operations Snapshot</div>
       <table style="width:100%;border-collapse:collapse;font-size:12px;">
         <thead><tr style="border-bottom:1px solid #E2E8F0;color:#64748B;font-size:10px;text-transform:uppercase;letter-spacing:1px;"><th style="text-align:left;padding:6px 4px;">Metric</th><th style="text-align:right;padding:6px 4px;">Today</th><th style="text-align:right;padding:6px 4px;">D-1</th><th style="text-align:right;padding:6px 4px;">MTD Total</th></tr></thead>
         <tbody>
-          <tr><td style="padding:6px 4px;">Hours Sold</td><td style="text-align:right;font-weight:700;">75</td><td style="text-align:right;color:#64748B;">44</td><td style="text-align:right;color:#64748B;">179</td></tr>
-          <tr><td style="padding:6px 4px;">Hour Commitment</td><td style="text-align:right;font-weight:700;">75</td><td style="text-align:right;color:#64748B;">44</td><td style="text-align:right;color:#64748B;">—</td></tr>
-          <tr><td style="padding:6px 4px;">Total Calls Ran</td><td style="text-align:right;font-weight:700;">13 <span style="font-weight:400;color:#94A3B8;">(8 AM)</span></td><td style="text-align:right;color:#64748B;">15</td><td style="text-align:right;color:#64748B;">102</td></tr>
-          <tr><td style="padding:6px 4px;">Total Calls Provided</td><td style="text-align:right;font-weight:700;">—</td><td style="text-align:right;color:#64748B;">29</td><td style="text-align:right;color:#64748B;">128</td></tr>
-          <tr><td style="padding:6px 4px;">Jobs Not Ran</td><td style="text-align:right;font-weight:700;color:#94A3B8;">—</td><td style="text-align:right;color:#64748B;">14</td><td style="text-align:right;color:#64748B;">13</td></tr>
-          <tr><td style="padding:6px 4px;">3-Day Board Fill</td><td style="text-align:right;font-weight:700;color:#94A3B8;">—</td><td style="text-align:right;color:#64748B;">193%</td><td style="text-align:right;color:#64748B;">130% avg</td></tr>
+          <tr><td style="padding:6px 4px;">Hours Sold</td><td style="text-align:right;font-weight:700;">20</td><td style="text-align:right;color:#64748B;">75</td><td style="text-align:right;color:#64748B;">273</td></tr>
+          <tr><td style="padding:6px 4px;">Hour Commitment</td><td style="text-align:right;font-weight:700;">20</td><td style="text-align:right;color:#64748B;">75</td><td style="text-align:right;color:#64748B;">&#8212;</td></tr>
+          <tr><td style="padding:6px 4px;">Total Calls Ran</td><td style="text-align:right;font-weight:700;">2</td><td style="text-align:right;color:#64748B;">12</td><td style="text-align:right;color:#64748B;">140</td></tr>
+          <tr><td style="padding:6px 4px;">Total Calls Provided</td><td style="text-align:right;font-weight:700;">23</td><td style="text-align:right;color:#64748B;">22</td><td style="text-align:right;color:#64748B;">173</td></tr>
+          <tr><td style="padding:6px 4px;">Jobs Not Ran</td><td style="text-align:right;font-weight:700;color:#EF4444;">21</td><td style="text-align:right;color:#64748B;">10</td><td style="text-align:right;color:#64748B;">33</td></tr>
+          <tr><td style="padding:6px 4px;">3-Day Board Fill</td><td style="text-align:right;font-weight:700;color:#10B981;">1150%</td><td style="text-align:right;color:#64748B;">183%</td><td style="text-align:right;color:#64748B;">&#8212;</td></tr>
         </tbody>
       </table>
+      <div style="margin-top:8px;font-size:10px;color:#94A3B8;font-style:italic;">Today&#39;s ran/provided are early-morning partials (report built ~9 AM); D-1 and MTD are settled.</div>
     </div>
-
-    <div class="card">
-      <div class="card-title">🔧 Install Backlog &amp; Sold Days</div>
+    <div class="card"><div class="card-title">&#128295; Install Backlog &amp; Sold Days</div>
       <div class="permit-stat" style="margin-bottom:10px;">
         <div class="permit-item"><div class="permit-val">10</div><div class="permit-lbl">MTD Jobs Completed</div></div>
         <div class="permit-item"><div class="permit-val">10</div><div class="permit-lbl">Sold Days Generated</div></div>
@@ -566,290 +458,164 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
         <div class="permit-item"><div class="permit-val" style="color:#1D4ED8;">44</div><div class="permit-lbl">Sold Days Available</div></div>
       </div>
       <div style="margin-top:10px;padding-top:10px;border-top:1px solid #E2E8F0;font-size:11px;color:#64748B;line-height:1.5;">
-        D-1 (Fri 6/5): 1 job completed · 1 sold day generated · $27,500 revenue. Today's install commit: <strong style="color:#0F172A;">$55,700</strong>. Huddle-sheet Install MTD $196,606 vs API $194,357 (Δ$2,249 — within $5K tolerance, API retained).
+        Today&#39;s install commit: <strong style="color:#0F172A;">$16,982</strong> &#183; 20 hrs (pulled live from sheet). API Install $194,357 reconciles to sheet &quot;Total Revenue Completed&quot; $196,606 (diff $2,249, under $5K &#8212; no override).
       </div>
     </div>
   </div>
-
-  <!-- 8 · HVAC SERVICE DEEP DIVE -->
-  <div class="section-title">🌡️ HVAC Service — Department KPIs</div>
-  <div style="background:white;border-radius:14px;border-top:5px solid #EA580C;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden;margin-bottom:22px;">
-    <div style="padding:14px 20px;background:linear-gradient(to right,#FFF7ED,#FFF);border-bottom:2px solid #FED7AA;display:flex;flex-wrap:wrap;gap:18px;align-items:center;">
-      <span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#EA580C;">🌡️ HVAC Service · June 2026</span>
-      <span style="font-size:11px;color:#64748B;">Board <strong>—</strong> · Commit <strong>12</strong> · Need <strong>12</strong> · Cancel MTD <strong style="color:#DC2626;">18</strong> · Cancel Yest <strong>—</strong></span>
-    </div>
-    <div style="padding:18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:16px;" class="two-col">
-      <div>
-        <table style="width:100%;border-collapse:collapse;font-size:12px;">
-          <tbody>
-            <tr><td style="padding:7px 4px;color:#64748B;">MTD Revenue (API)</td><td style="text-align:right;font-weight:800;color:#0F172A;">$17,672 <span style="font-weight:400;color:#EF4444;">(5.8% of $306,579 goal)</span></td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">Avg Daily Revenue</td><td style="text-align:right;font-weight:800;color:#EF4444;">$3,534 <span style="font-weight:400;color:#94A3B8;">vs $13,935/day target</span></td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">DEMAND Revenue MTD</td><td style="text-align:right;font-weight:700;">$6,372</td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">COD Revenue MTD</td><td style="text-align:right;font-weight:700;">$0</td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">PMAG Revenue MTD</td><td style="text-align:right;font-weight:700;">$9,766</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div>
-        <table style="width:100%;border-collapse:collapse;font-size:12px;">
-          <tbody>
-            <tr><td style="padding:7px 4px;color:#64748B;">Total TGLs Generated MTD</td><td style="text-align:right;font-weight:700;">1 <span style="font-weight:400;color:#94A3B8;">(1 DEMAND · 0 COD · 0 PMAG)</span></td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">MTD Day</td><td style="text-align:right;font-weight:700;">Day 6 of 22 (5 elapsed)</td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">Total Revenue Calls MTD</td><td style="text-align:right;font-weight:700;">62 <span style="font-weight:400;color:#94A3B8;">(32 Service · 30 PMAG)</span></td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">Avg per Call</td><td style="text-align:right;font-weight:700;">$285</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <!-- 9 · PLUMBING DEEP DIVE -->
-  <div class="section-title">🪠 Plumbing — Department KPIs</div>
-  <div style="background:white;border-radius:14px;border-top:5px solid #1D4ED8;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden;margin-bottom:22px;">
-    <div style="padding:14px 20px;background:linear-gradient(to right,#EFF6FF,#FFF);border-bottom:2px solid #BFDBFE;display:flex;flex-wrap:wrap;gap:18px;align-items:center;">
-      <span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#1D4ED8;">🪠 Plumbing · June 2026</span>
-      <span style="font-size:11px;color:#64748B;">Board <strong>—</strong> · Commit <strong>10</strong> · Need <strong>10</strong> · Cancel MTD <strong style="color:#DC2626;">6</strong> · Cancel Yest <strong>—</strong></span>
-    </div>
-    <div style="padding:18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:16px;" class="two-col">
-      <div>
-        <table style="width:100%;border-collapse:collapse;font-size:12px;">
-          <tbody>
-            <tr><td style="padding:7px 4px;color:#64748B;">MTD Revenue (API)</td><td style="text-align:right;font-weight:800;color:#0F172A;">$38,679 <span style="font-weight:400;color:#10B981;">(22.3% of $173,211 goal)</span></td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">Avg Daily Revenue</td><td style="text-align:right;font-weight:800;color:#10B981;">$7,736 <span style="font-weight:400;color:#94A3B8;">vs $7,873/day target</span></td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">Service Call Revenue MTD</td><td style="text-align:right;font-weight:700;">$36,323</td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">COD Revenue MTD</td><td style="text-align:right;font-weight:700;">$0</td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">PMAG Revenue MTD</td><td style="text-align:right;font-weight:700;">$2,356</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div>
-        <table style="width:100%;border-collapse:collapse;font-size:12px;">
-          <tbody>
-            <tr><td style="padding:7px 4px;color:#64748B;">TGLs for HVAC MTD</td><td style="text-align:right;font-weight:700;">0</td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">MTD Day</td><td style="text-align:right;font-weight:700;">Day 6 of 22 (5 elapsed)</td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">Total Revenue Calls MTD</td><td style="text-align:right;font-weight:700;">33 <span style="font-weight:400;color:#94A3B8;">(33 Service · 0 PMAG)</span></td></tr>
-            <tr><td style="padding:7px 4px;color:#64748B;">Avg per Call</td><td style="text-align:right;font-weight:700;">$1,172</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <!-- 10 · SALES DASHBOARD -->
-  <div class="section-title">💼 Sales — Performance Dashboard</div>
+  <div class="section-title">&#128188; Sales &#8212; Performance Dashboard</div>
   <div style="background:white;border-radius:14px;border-top:5px solid #6D28D9;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden;margin-bottom:22px;">
-
-    <div style="padding:16px 20px 14px;background:linear-gradient(to right,#F5F3FF,#FFF);border-bottom:2px solid #DDD6FE;">
-      <span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#6D28D9;">💼 Sales · June 2026 · 100% ServiceTitan API · v17</span>
-    </div>
-
+    <div style="padding:16px 20px 14px;background:linear-gradient(to right,#F5F3FF,#FFF);border-bottom:2px solid #DDD6FE;"><span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#6D28D9;">&#128188; Sales &#183; June 2026 &#183; 100% ServiceTitan API &#183; v16</span></div>
     <div style="padding:22px 24px;">
-
       <div style="display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:18px;border-bottom:1px solid #F1F5F9;margin-bottom:18px;flex-wrap:wrap;gap:14px;">
-        <div>
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:4px;">MTD Sales Revenue</div>
-          <div style="font-size:32px;font-weight:900;color:#6D28D9;line-height:1;">$238,296</div>
-          <div style="font-size:10px;color:#94A3B8;margin-top:4px;">3 buckets reconcile to this total exactly</div>
-        </div>
-        <div style="text-align:center;">
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:4px;">vs June Budget</div>
-          <div style="font-size:24px;font-weight:800;color:#0F172A;">18.5%</div>
-          <div style="font-size:10px;color:#94A3B8;margin-top:4px;">of $1,290,527</div>
-        </div>
-        <div style="text-align:right;">
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:4px;">YTD Sales</div>
-          <div style="font-size:24px;font-weight:800;color:#0F172A;">$3,258,847</div>
-          <div style="font-size:10px;color:#94A3B8;margin-top:4px;">Jan 1–Jun 7</div>
-        </div>
+        <div><div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:4px;">MTD Sales Revenue</div><div style="font-size:32px;font-weight:900;color:#6D28D9;line-height:1;">$306,046</div><div style="font-size:10px;color:#94A3B8;margin-top:4px;">3 buckets reconcile to this total exactly</div></div>
+        <div style="text-align:center;"><div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:4px;">vs June Budget</div><div style="font-size:24px;font-weight:800;color:#0F172A;">23.7%</div><div style="font-size:10px;color:#94A3B8;margin-top:4px;">of $1,290,527</div></div>
+        <div style="text-align:right;"><div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#94A3B8;margin-bottom:4px;">YTD Sales</div><div style="font-size:24px;font-weight:800;color:#0F172A;">$3,326,597</div><div style="font-size:10px;color:#94A3B8;margin-top:4px;">Jan 1&#8211;June 8</div></div>
       </div>
-
-      <div style="background:white;border-radius:10px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:16px;">
-        <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin-bottom:4px;">📅 MTD — Sales by Source</div>
-        <div style="font-size:10px;color:#94A3B8;margin-bottom:12px;">June 1–7 · ServiceTitan API</div>
-        <table style="width:100%;border-collapse:collapse;">
-          <thead>
-            <tr style="background:#F8FAFC;color:#64748B;font-size:10px;text-transform:uppercase;letter-spacing:.5px;">
-              <th style="text-align:left;padding:8px 12px;">Source</th><th style="text-align:right;padding:8px 12px;">$ Sold</th><th style="text-align:right;padding:8px 12px;">Calls Run</th><th style="text-align:right;padding:8px 12px;">Closed</th><th style="text-align:right;padding:8px 12px;">Conv %</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#10B981;font-size:13px;">🟢 TGL</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$92,845</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">8</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">6</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#10B981;font-size:13px;">75.0%</td></tr>
-            <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#1D4ED8;font-size:13px;">🔵 Marketing</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$45,500</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">9</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">4</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">44.4%</td></tr>
-            <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#EA580C;font-size:13px;">🟠 Costco</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$99,951</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">8</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">4</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">50.0%</td></tr>
-            <tr style="background:#F1F5F9;font-weight:800;border-top:2px solid #475569;"><td style="padding:10px 12px;font-weight:800;color:#0F172A;font-size:13px;">TOTAL</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$238,296</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">25</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">14</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">56.0%</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div style="background:white;border-radius:10px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:16px;">
-        <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin-bottom:4px;">📅 YTD — Sales by Source</div>
-        <div style="font-size:10px;color:#94A3B8;margin-bottom:12px;">Jan 1–Jun 7 · ServiceTitan API</div>
-        <table style="width:100%;border-collapse:collapse;">
-          <thead>
-            <tr style="background:#F8FAFC;color:#64748B;font-size:10px;text-transform:uppercase;letter-spacing:.5px;">
-              <th style="text-align:left;padding:8px 12px;">Source</th><th style="text-align:right;padding:8px 12px;">$ Sold</th><th style="text-align:right;padding:8px 12px;">Calls Run</th><th style="text-align:right;padding:8px 12px;">Closed</th><th style="text-align:right;padding:8px 12px;">Conv %</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#10B981;font-size:13px;">🟢 TGL</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$1,517,921</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">154</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">79</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#10B981;font-size:13px;">51.3%</td></tr>
-            <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#1D4ED8;font-size:13px;">🔵 Marketing</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$1,209,912</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">201</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">69</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">34.3%</td></tr>
-            <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#EA580C;font-size:13px;">🟠 Costco</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$531,013</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">75</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">27</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">36.0%</td></tr>
-            <tr style="background:#F1F5F9;font-weight:800;border-top:2px solid #475569;"><td style="padding:10px 12px;font-weight:800;color:#0F172A;font-size:13px;">TOTAL</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$3,258,847</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">430</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">175</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">40.7%</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin:18px 0 10px;">📅 By Salesperson · MTD (June 1–7)</div>
-      <div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;"><div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Jackson Vaughan</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$101,000</strong></div></div><table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody><tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$21,700</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">100.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$10,850</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$23,500</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">5</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">40.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$11,750</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$55,800</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">50.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$27,900</td></tr><tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$101,000</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">11</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">6</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">54.5%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$16,833</td></tr></tbody></table></div><div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;"><div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Koby Clark</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$91,640</strong></div></div><table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody><tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$53,223</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">3</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">75.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$17,741</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$16,000</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">3</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">33.3%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,000</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$22,417</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">3</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">33.3%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$22,417</td></tr><tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$91,640</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">10</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">5</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">50.0%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$18,328</td></tr></tbody></table></div><div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;"><div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Nathan Gough (M)</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$45,655</strong></div></div><table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody><tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$17,922</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">50.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$17,922</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$6,000</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">100.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$6,000</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$21,734</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">100.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$21,734</td></tr><tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$45,655</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">4</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">3</td><td style="padding:9px 12px;text-align:right;color:#10B981;font-size:12px;">75.0%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$15,218</td></tr></tbody></table></div>
-
-      <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin:24px 0 10px;">📅 By Salesperson · YTD (Jan 1–Jun 7)</div>
-      <div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;"><div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Koby Clark</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$1,434,500</strong></div></div><table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody><tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$692,017</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">68</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">35</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">51.5%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$19,772</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$558,043</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">79</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">29</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">36.7%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$19,243</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$184,441</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">32</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">11</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">34.4%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,767</td></tr><tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$1,434,500</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">179</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">75</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">41.9%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$19,127</td></tr></tbody></table></div><div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;"><div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Jackson Vaughan</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$1,358,259</strong></div></div><table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody><tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$699,738</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">62</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">36</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">58.1%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$19,437</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$435,583</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">91</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">27</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">29.7%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,133</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$222,939</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">31</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">10</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">32.3%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$22,294</td></tr><tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$1,358,259</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">184</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">73</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">39.7%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$18,606</td></tr></tbody></table></div><div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;"><div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Nathan Gough (M)</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$391,739</strong></div></div><table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody><tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$66,718</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">11</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">36.4%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,680</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$241,287</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">22</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">14</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">63.6%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$17,235</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$83,734</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">7</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">57.1%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$20,933</td></tr><tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$391,739</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">40</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">22</td><td style="padding:9px 12px;text-align:right;color:#10B981;font-size:12px;">55.0%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$17,806</td></tr></tbody></table></div><div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;"><div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Kendall Dunn</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$74,348</strong></div></div><table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody><tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">🟢 TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$59,448</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">13</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">30.8%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$14,862</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">🔵 Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$0</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">9</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">0</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">0.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$0</td></tr><tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">🟠 Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$14,900</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">5</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">20.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$14,900</td></tr><tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$74,348</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">27</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">5</td><td style="padding:9px 12px;text-align:right;color:#EF4444;font-size:12px;">18.5%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$14,870</td></tr></tbody></table></div>
-
-      <div style="font-size:10px;color:#94A3B8;margin-top:6px;">Today's commit: <strong style="color:#0F172A;">$50,000</strong> · Install revenue expected from today's scheduled jobs: <strong style="color:#0F172A;">$55,700</strong> · Costco identified via JOB tag 107049565; dollars from linked sold estimates. Calls Run = jobs Completed (cancellations excluded).</div>
-
+<div style="background:white;border-radius:10px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:16px;">
+<div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin-bottom:4px;">&#128197; MTD &#8212; Sales by Source</div>
+<div style="font-size:10px;color:#94A3B8;margin-bottom:12px;">June 1&#8211;8 &#183; ServiceTitan API</div>
+<table style="width:100%;border-collapse:collapse;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:10px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:8px 12px;">Source</th><th style="text-align:right;padding:8px 12px;">$ Sold</th><th style="text-align:right;padding:8px 12px;">Calls Run</th><th style="text-align:right;padding:8px 12px;">Closed</th><th style="text-align:right;padding:8px 12px;">Conv %</th></tr></thead><tbody>
+      <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#10B981;font-size:13px;">&#128994; TGL</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$92,845</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">8</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">6</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#10B981;font-size:13px;">75.0%</td></tr>
+      <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#1D4ED8;font-size:13px;">&#128309; Marketing</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$64,250</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">11</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">5</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">45.5%</td></tr>
+      <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#EA580C;font-size:13px;">&#128992; Costco</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$148,951</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">10</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">5</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#10B981;font-size:13px;">50.0%</td></tr>
+<tr style="background:#F1F5F9;font-weight:800;border-top:2px solid #475569;"><td style="padding:10px 12px;font-weight:800;color:#0F172A;font-size:13px;">TOTAL</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$306,046</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">29</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">16</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">55.2%</td></tr>
+</tbody></table></div>
+<div style="background:white;border-radius:10px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:16px;">
+<div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin-bottom:4px;">&#128197; YTD &#8212; Sales by Source</div>
+<div style="font-size:10px;color:#94A3B8;margin-bottom:12px;">Jan 1&#8211;June 8 &#183; ServiceTitan API</div>
+<table style="width:100%;border-collapse:collapse;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:10px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:8px 12px;">Source</th><th style="text-align:right;padding:8px 12px;">$ Sold</th><th style="text-align:right;padding:8px 12px;">Calls Run</th><th style="text-align:right;padding:8px 12px;">Closed</th><th style="text-align:right;padding:8px 12px;">Conv %</th></tr></thead><tbody>
+      <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#10B981;font-size:13px;">&#128994; TGL</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$1,517,921</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">154</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">79</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#10B981;font-size:13px;">51.3%</td></tr>
+      <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#1D4ED8;font-size:13px;">&#128309; Marketing</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$1,228,662</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">203</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">70</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">34.5%</td></tr>
+      <tr style="border-top:1px solid #F1F5F9;"><td style="padding:10px 12px;font-weight:700;color:#EA580C;font-size:13px;">&#128992; Costco</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$580,013</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">77</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">28</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">36.4%</td></tr>
+<tr style="background:#F1F5F9;font-weight:800;border-top:2px solid #475569;"><td style="padding:10px 12px;font-weight:800;color:#0F172A;font-size:13px;">TOTAL</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#0F172A;font-size:14px;">$3,326,597</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">434</td><td style="padding:10px 12px;text-align:right;color:#475569;font-size:13px;">177</td><td style="padding:10px 12px;text-align:right;font-weight:800;color:#F59E0B;font-size:13px;">40.8%</td></tr>
+</tbody></table></div>
+      <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin:18px 0 10px;">&#128197; By Salesperson &#183; MTD (June 1&#8211;8)</div>
+<div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Jackson Vaughan</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$168,750</strong></div></div>
+<table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">&#128994; TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$21,700</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">100.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$10,850</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">&#128309; Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$42,250</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">6</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">3</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">50.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$14,083</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">&#128992; Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$104,800</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">3</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">75.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$34,933</td></tr>
+<tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$168,750</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">12</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">8</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">66.7%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$21,094</td></tr>
+</tbody></table></div>
+<div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Koby Clark</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$91,640</strong></div></div>
+<table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">&#128994; TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$53,223</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">3</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">75.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$17,741</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">&#128309; Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$16,000</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">3</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">33.3%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,000</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">&#128992; Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$22,417</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">25.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$22,417</td></tr>
+<tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$91,640</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">11</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">5</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">45.5%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$18,328</td></tr>
+</tbody></table></div>
+<div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Nathan Gough (M)</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$45,655</strong></div></div>
+<table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">&#128994; TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$17,922</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">50.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$17,922</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">&#128309; Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$6,000</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">50.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$6,000</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">&#128992; Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$21,734</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">2</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">50.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$21,734</td></tr>
+<tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$45,655</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">6</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">3</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">50.0%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$15,218</td></tr>
+</tbody></table></div>
+      <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#475569;margin:24px 0 10px;">&#128197; By Salesperson &#183; YTD (Jan 1&#8211;June 8)</div>
+<div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Koby Clark</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$1,434,500</strong></div></div>
+<table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">&#128994; TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$692,017</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">68</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">35</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">51.5%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$19,772</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">&#128309; Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$558,042</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">79</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">29</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">36.7%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$19,243</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">&#128992; Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$184,441</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">33</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">11</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">33.3%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,767</td></tr>
+<tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$1,434,500</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">180</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">75</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">41.7%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$19,127</td></tr>
+</tbody></table></div>
+<div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Jackson Vaughan</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$1,426,009</strong></div></div>
+<table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">&#128994; TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$699,738</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">62</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">36</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">58.1%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$19,437</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">&#128309; Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$454,333</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">92</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">28</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">30.4%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,226</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">&#128992; Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$271,939</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">31</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">11</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">35.5%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$24,722</td></tr>
+<tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$1,426,009</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">185</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">75</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">40.5%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$19,013</td></tr>
+</tbody></table></div>
+<div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Nathan Gough (M)</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$391,739</strong></div></div>
+<table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">&#128994; TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$66,718</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">11</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#F59E0B;font-size:12px;">36.4%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$16,680</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">&#128309; Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$241,287</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">23</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">14</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">60.9%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$17,235</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">&#128992; Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$83,734</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">8</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#10B981;font-size:12px;">50.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$20,933</td></tr>
+<tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$391,739</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">42</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">22</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">52.4%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$17,806</td></tr>
+</tbody></table></div>
+<div style="background:white;border-radius:10px;padding:14px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #6D28D9;">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;"><div style="font-size:14px;font-weight:800;color:#0F172A;">Kendall Dunn</div><div style="font-size:11px;color:#94A3B8;">Total sold: <strong style="color:#0F172A;">$74,348</strong></div></div>
+<table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr style="background:#F8FAFC;color:#64748B;font-size:9px;text-transform:uppercase;letter-spacing:.5px;"><th style="text-align:left;padding:7px 12px;">Source</th><th style="text-align:right;padding:7px 12px;">$ Sold</th><th style="text-align:right;padding:7px 12px;">Calls</th><th style="text-align:right;padding:7px 12px;">Closed</th><th style="text-align:right;padding:7px 12px;">Conv %</th><th style="text-align:right;padding:7px 12px;">Avg Ticket</th></tr></thead><tbody>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#10B981;font-size:12px;">&#128994; TGL</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$59,448</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">13</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">4</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">30.8%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$14,862</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#1D4ED8;font-size:12px;">&#128309; Marketing</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$0</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">9</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">0</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">0.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$0</td></tr>
+        <tr><td style="padding:8px 12px;font-weight:700;color:#EA580C;font-size:12px;">&#128992; Costco</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#0F172A;font-size:13px;">$14,900</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">5</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">1</td><td style="padding:8px 12px;text-align:right;font-weight:700;color:#EF4444;font-size:12px;">20.0%</td><td style="padding:8px 12px;text-align:right;color:#475569;font-size:12px;">$14,900</td></tr>
+<tr style="background:#F1F5F9;border-top:2px solid #475569;font-weight:800;"><td style="padding:9px 12px;color:#0F172A;font-size:12px;">TOTAL</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:13px;">$74,348</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">27</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">5</td><td style="padding:9px 12px;text-align:right;color:#F59E0B;font-size:12px;">18.5%</td><td style="padding:9px 12px;text-align:right;color:#0F172A;font-size:12px;">$14,870</td></tr>
+</tbody></table></div>
     </div>
   </div>
-
-  <!-- 11 · INSTALL DASHBOARD -->
-  <div class="section-title">⚙️ Install — Performance Dashboard</div>
-  <div style="background:white;border-radius:14px;border-top:5px solid #B45309;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden;margin-bottom:22px;">
-    <div style="padding:14px 20px;background:linear-gradient(to right,#FFFBEB,#FFF);border-bottom:2px solid #FDE68A;">
-      <span style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#B45309;">⚙️ Install · June 2026</span>
-    </div>
-    <div style="padding:18px 20px;">
-      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;" class="lace-kpis">
-        <div class="lace-kpi"><div class="lace-kpi-val" style="color:#B45309;">$194,357</div><div class="lace-kpi-lbl">MTD Revenue (API)</div></div>
-        <div class="lace-kpi"><div class="lace-kpi-val">$38,871</div><div class="lace-kpi-lbl">Avg / Day (vs $53,328 target)</div></div>
-        <div class="lace-kpi"><div class="lace-kpi-val" style="color:#1D4ED8;">44</div><div class="lace-kpi-lbl">Sold Days Available (Backlog)</div></div>
-        <div class="lace-kpi"><div class="lace-kpi-val">10</div><div class="lace-kpi-lbl">Sold Days Generated MTD</div></div>
-        <div class="lace-kpi"><div class="lace-kpi-val">10</div><div class="lace-kpi-lbl">Jobs Completed MTD</div></div>
-      </div>
-      <div style="margin-top:12px;padding-top:10px;border-top:1px solid #E2E8F0;font-size:11px;color:#64748B;line-height:1.6;">
-        16.6% of June's $1,173,206 budget after 5 of 22 workdays (22.7% of month elapsed). Hour commitment today: <strong style="color:#0F172A;">75 hrs</strong> · Install revenue commit today: <strong style="color:#0F172A;">$55,700</strong>. Sheet Install MTD $196,606 (Δ$2,249 vs API — within tolerance).
-      </div>
-    </div>
-  </div>
-
-  <!-- 12 · LACE AI -->
-  <div class="section-title">📞 Lace AI — CSR Performance</div>
+  <div class="section-title">&#128222; Lace AI &#8212; CSR Performance</div>
   <div class="lace-grid">
-    <div class="lace-panel yest">
-      <div class="card-title">📅 Yesterday — Sun June 7 (Lace pull)</div>
-      <div class="lace-kpis">
-        <div class="lace-kpi"><div class="lace-kpi-val" style="color:#F59E0B;">50%</div><div class="lace-kpi-lbl">Success</div></div>
-        <div class="lace-kpi"><div class="lace-kpi-val">6</div><div class="lace-kpi-lbl">Calls</div></div>
-        <div class="lace-kpi"><div class="lace-kpi-val">2</div><div class="lace-kpi-lbl">Qualified</div></div>
-        <div class="lace-kpi"><div class="lace-kpi-val" style="color:#1D4ED8;">1</div><div class="lace-kpi-lbl">Booked</div></div>
-      </div>
-      <table class="lace-table">
-        <thead><tr><th>CSR</th><th>Succ</th><th>B/Q</th><th>Calls</th><th>Playbook</th></tr></thead>
-        <tbody>
-          <tr><td>Lacie (AI)</td><td style="color:#F59E0B;">50%</td><td>1/2</td><td>6</td><td style="color:#10B981;">84%</td></tr>
-        </tbody>
-      </table>
-      <div style="margin-top:10px;font-size:10px;color:#94A3B8;">Low weekend volume — Sunday only 6 calls. Business D-1 (Fri 6/5) figures roll into the 30-day panel.</div>
-    </div>
-    <div class="lace-panel mtd">
-      <div class="card-title">📊 Past 30 Days (MTD proxy)</div>
-      <div class="lace-kpis">
-        <div class="lace-kpi"><div class="lace-kpi-val" style="color:#10B981;">84%</div><div class="lace-kpi-lbl">Success</div></div>
-        <div class="lace-kpi"><div class="lace-kpi-val">3,198</div><div class="lace-kpi-lbl">Calls</div></div>
-        <div class="lace-kpi"><div class="lace-kpi-val">432</div><div class="lace-kpi-lbl">Qualified</div></div>
-        <div class="lace-kpi"><div class="lace-kpi-val" style="color:#1D4ED8;">364</div><div class="lace-kpi-lbl">Booked</div></div>
-      </div>
-      <table class="lace-table">
-        <thead><tr><th>CSR</th><th>Succ</th><th>B/Q</th><th>Calls</th><th>Cancel</th><th>Playbook</th></tr></thead>
-        <tbody>
-          <tr><td>Sheyla Trinidad Palma</td><td style="color:#10B981;">80%</td><td>109/136</td><td>1,153</td><td style="color:#EF4444;">31%</td><td>57%</td></tr>
-          <tr><td>Erica Marsh</td><td style="color:#10B981;">89%</td><td>126/142</td><td>1,026</td><td style="color:#F59E0B;">14%</td><td>52%</td></tr>
-          <tr><td>Lacie (AI)</td><td style="color:#10B981;">82%</td><td>117/142</td><td>805</td><td style="color:#F59E0B;">11%</td><td style="color:#10B981;">76%</td></tr>
-          <tr><td>Brittany Williams</td><td style="color:#10B981;">100%</td><td>6/6</td><td>151</td><td>0%</td><td>36%</td></tr>
-          <tr><td>Jessica Johnson</td><td style="color:#10B981;">100%</td><td>6/6</td><td>63</td><td>0%</td><td>44%</td></tr>
-        </tbody>
-      </table>
-    </div>
+<div class="lace-panel yest">
+<div class="card-title">&#128197; Yesterday &#8212; Mon June 8 (D-1)</div>
+<div class="lace-kpis">
+<div class="lace-kpi"><div class="lace-kpi-val" style="color:#10B981;">79%</div><div class="lace-kpi-lbl">Success</div></div>
+<div class="lace-kpi"><div class="lace-kpi-val">204</div><div class="lace-kpi-lbl">Calls</div></div>
+<div class="lace-kpi"><div class="lace-kpi-val">43</div><div class="lace-kpi-lbl">Qualified</div></div>
+<div class="lace-kpi"><div class="lace-kpi-val" style="color:#1D4ED8;">34</div><div class="lace-kpi-lbl">Booked</div></div>
+</div>
+<table class="lace-table"><thead><tr><th>CSR</th><th>Succ</th><th>B/Q</th><th>Calls</th><th>Playbook</th></tr></thead><tbody>
+<tr><td>Lacie (AI)</td><td style="color:#F97316;">76%</td><td>19/25</td><td>121</td><td>71%</td></tr>
+<tr><td>Erica Marsh</td><td style="color:#F97316;">82%</td><td>14/17</td><td>69</td><td>56%</td></tr>
+<tr><td>Brittany Williams</td><td style="color:#10B981;">100%</td><td>1/1</td><td>14</td><td>64%</td></tr>
+</tbody></table></div>
+<div class="lace-panel mtd">
+<div class="card-title">&#128202; Past 30 Days (MTD proxy)</div>
+<div class="lace-kpis">
+<div class="lace-kpi"><div class="lace-kpi-val" style="color:#10B981;">84%</div><div class="lace-kpi-lbl">Success</div></div>
+<div class="lace-kpi"><div class="lace-kpi-val">3,396</div><div class="lace-kpi-lbl">Calls</div></div>
+<div class="lace-kpi"><div class="lace-kpi-val">472</div><div class="lace-kpi-lbl">Qualified</div></div>
+<div class="lace-kpi"><div class="lace-kpi-val" style="color:#1D4ED8;">396</div><div class="lace-kpi-lbl">Booked</div></div>
+</div>
+<table class="lace-table"><thead><tr><th>CSR</th><th>Succ</th><th>B/Q</th><th>Calls</th><th>Playbook</th></tr></thead><tbody>
+<tr><td>Sheyla Trinidad Palma</td><td style="color:#F97316;">80%</td><td>109/136</td><td>1153</td><td>57%</td></tr>
+<tr><td>Lacie (AI)</td><td style="color:#F97316;">82%</td><td>134/164</td><td>920</td><td>76%</td></tr>
+<tr><td>Erica Marsh</td><td style="color:#10B981;">88%</td><td>140/159</td><td>1095</td><td>52%</td></tr>
+<tr><td>Brittany Williams</td><td style="color:#10B981;">100%</td><td>7/7</td><td>165</td><td>39%</td></tr>
+<tr><td>Jessica Johnson</td><td style="color:#10B981;">100%</td><td>6/6</td><td>63</td><td>44%</td></tr>
+</tbody></table></div>
   </div>
-
-  <!-- 13 · MARKETING -->
-  <div class="section-title">📢 Marketing — Channel Performance</div>
+  <div class="section-title">&#128226; Marketing &#8212; Channel Performance</div>
   <div class="two-col">
-    <div class="card">
-      <div class="card-title">⭐ 5-Star Reviews — June MTD</div>
-      <div class="review-row h">
-        <div>State</div><div class="review-val">5-Star MTD</div><div class="review-val">Google</div><div class="review-val">FB</div><div class="review-val">Yelp</div>
-      </div>
-      <div class="review-row">
-        <div class="review-state">North Carolina</div>
-        <div class="review-val" style="font-weight:700;color:#10B981;">17</div>
-        <div class="review-val">3,326</div>
-        <div class="review-val">598</div>
-        <div class="review-val">44</div>
-      </div>
-      <div class="review-row">
-        <div class="review-state">Virginia</div>
-        <div class="review-val" style="font-weight:700;color:#10B981;">11</div>
-        <div class="review-val">388</div>
-        <div class="review-val">0</div>
-        <div class="review-val">6</div>
-      </div>
-      <div style="margin-top:12px;padding-top:10px;border-top:1px solid #E2E8F0;font-size:11px;color:#64748B;">
-        <strong style="color:#0F172A;">28 new 5-star reviews</strong> across both states this month (goal: 5/day per state).
-      </div>
+    <div class="card"><div class="card-title">&#11088; 5-Star Reviews &#8212; June MTD</div>
+      <div class="review-row h"><div>State</div><div class="review-val">5-Star MTD</div><div class="review-val">Google</div><div class="review-val">FB</div><div class="review-val">Yelp</div></div>
+      <div class="review-row"><div class="review-state">North Carolina</div><div class="review-val" style="font-weight:700;color:#10B981;">17</div><div class="review-val">3,326</div><div class="review-val">598</div><div class="review-val">44</div></div>
+      <div class="review-row"><div class="review-state">Virginia</div><div class="review-val" style="font-weight:700;color:#10B981;">11</div><div class="review-val">388</div><div class="review-val">0</div><div class="review-val">6</div></div>
+      <div style="margin-top:12px;padding-top:10px;border-top:1px solid #E2E8F0;font-size:11px;color:#64748B;"><strong style="color:#0F172A;">28 new 5-star reviews</strong> across both states this month.</div>
     </div>
-    <div class="card">
-      <div class="card-title">📊 Marketing ROAS by Channel — June MTD</div>
+    <div class="card"><div class="card-title">&#128202; Marketing ROAS by Channel &#8212; YTD 2026 (HVAC)</div>
       <div class="roas-grid">
-        <div class="roas-card"><div class="roas-channel">PPC HVAC</div><div class="roas-value" style="color:#EF4444;">0.07×</div><div class="roas-label">$109 rev / $1,545 spend</div></div>
-        <div class="roas-card"><div class="roas-channel">PPC Plumb</div><div class="roas-value" style="color:#10B981;">8.51×</div><div class="roas-label">$5,738 rev / $674 spend</div></div>
-        <div class="roas-card"><div class="roas-channel">Paid Social</div><div class="roas-value" style="color:#EF4444;">0.00×</div><div class="roas-label">$0 rev / $979 spend</div></div>
-        <div class="roas-card"><div class="roas-channel">Paid SEO</div><div class="roas-value" style="color:#10B981;">6.98×</div><div class="roas-label">$48,836 rev / $6,995 spend</div></div>
-        <div class="roas-card"><div class="roas-channel">LSA</div><div class="roas-value" style="color:#10B981;">40.06×</div><div class="roas-label">$84,320 rev / $2,105 spend</div></div>
-        <div class="roas-card"><div class="roas-channel">Direct Mail</div><div class="roas-value">2,465×</div><div class="roas-label">$2,465 rev / $1 spend</div></div>
+        <div class="roas-card"><div class="roas-channel">PPC</div><div class="roas-value">3.3x</div><div class="roas-label">ROAS</div></div>
+        <div class="roas-card"><div class="roas-channel">Paid Social</div><div class="roas-value" style="color:#10B981;">8.8x</div><div class="roas-label">ROAS</div></div>
+        <div class="roas-card"><div class="roas-channel">SEO</div><div class="roas-value" style="color:#10B981;">39.5x</div><div class="roas-label">ROAS</div></div>
+        <div class="roas-card"><div class="roas-channel">LSA</div><div class="roas-value" style="color:#10B981;">12.8x</div><div class="roas-label">ROAS</div></div>
+        <div class="roas-card"><div class="roas-channel">Direct Mail</div><div class="roas-value">3.0x</div><div class="roas-label">ROAS</div></div>
+        <div class="roas-card"><div class="roas-channel">Organic</div><div class="roas-value" style="color:#10B981;">&#8734;</div><div class="roas-label">no spend</div></div>
       </div>
-      <div style="margin-top:12px;padding-top:10px;border-top:1px solid #E2E8F0;font-size:11px;color:#64748B;">
-        LSA and Paid SEO carrying the month. PPC HVAC and Paid Social underwater MTD. (Direct Mail ratio inflated by $1 recorded spend. ROAS ratios carried from latest channel pull.)
-      </div>
+      <div style="margin-top:12px;padding-top:10px;border-top:1px solid #E2E8F0;font-size:11px;color:#64748B;">SEO &amp; LSA leading on return per dollar. PPC and Direct Mail are the thinnest-margin paid channels YTD.</div>
     </div>
   </div>
-
-  <!-- 14 · PERMITS + ESCALATIONS -->
   <div class="two-col">
-    <div class="card">
-      <div class="card-title">📋 Outstanding Permits</div>
-      <div class="permit-stat">
-        <div class="permit-item"><div class="permit-val" style="color:#10B981;">0</div><div class="permit-lbl">Open Permits</div></div>
-        <div class="permit-item"><div class="permit-val">0</div><div class="permit-lbl">Failed Inspections</div></div>
-      </div>
-      <div style="margin-top:12px;font-size:11px;color:#64748B;line-height:1.6;">
-        No outstanding permit jobs on the June tab as of this morning's pull.
-      </div>
+    <div class="card"><div class="card-title">&#128203; Outstanding Permits</div>
+      <div class="permit-stat"><div class="permit-item"><div class="permit-val">6</div><div class="permit-lbl">Open Permit Jobs</div></div><div class="permit-item"><div class="permit-val">&#8212;</div><div class="permit-lbl">YTD Closed</div></div></div>
+      <div style="margin-top:12px;font-size:11px;color:#64748B;line-height:1.6;">6 outstanding permit jobs: J. Randall, Bens, Stan Hayes, Nguyen, Leo &amp; Carolyn Jones. Full list in the huddle sheet permits section.</div>
     </div>
-    <div class="card">
-      <div class="card-title">🚨 Customer Escalations</div>
-      <div class="esc-stats">
-        <div class="esc-stat"><div class="esc-stat-val">30</div><div class="esc-stat-lbl">Total YTD</div></div>
-        <div class="esc-stat"><div class="esc-stat-val" style="color:#10B981;">24</div><div class="esc-stat-lbl">Closed</div></div>
-        <div class="esc-stat"><div class="esc-stat-val" style="color:#EF4444;">6</div><div class="esc-stat-lbl">Open</div></div>
-        <div class="esc-stat"><div class="esc-stat-val" style="color:#94A3B8;">80%</div><div class="esc-stat-lbl">Close Rate</div></div>
-      </div>
-      <div style="font-size:11px;color:#64748B;line-height:1.5;">
-        6 open cases need attention. Detail in the Escalations sheet.
-      </div>
+    <div class="card"><div class="card-title">&#128680; Customer Escalations</div>
+      <div class="esc-stats"><div class="esc-stat"><div class="esc-stat-val">32</div><div class="esc-stat-lbl">Total YTD</div></div><div class="esc-stat"><div class="esc-stat-val" style="color:#10B981;">24</div><div class="esc-stat-lbl">Closed</div></div><div class="esc-stat"><div class="esc-stat-val" style="color:#EF4444;">6</div><div class="esc-stat-lbl">Open</div></div><div class="esc-stat"><div class="esc-stat-val" style="color:#94A3B8;">2</div><div class="esc-stat-lbl">TBD</div></div></div>
+      <div style="font-size:11px;color:#64748B;line-height:1.5;">6 open cases need attention (most recent: Liesa Hawks 5/22, no-AC daughter 5/28, Stephanie Trillo 5/21, Sam Gentry 4/29, Mary Britton 4/22). Detail in the Escalations sheet.</div>
     </div>
   </div>
-
-  <!-- 15 · SOURCE STRIP + FOOTER -->
-  <div class="source-strip">
-    <strong>Sources:</strong> Revenue/Sales/YTD → ServiceTitan API (Reports 77063091 + 63167744 · 8 calls) · Pulled 8:12 AM ET · Today's commitments → GD Huddle Worksheet pulled LIVE via Drive connector (matched the 8 AM snapshot — no later edits) · Marketing + Reviews + Permits + Ops → Huddle sheet JUNE 2026 CSV · 8:12 AM · Escalations → Escalations sheet · 8:12 AM · CSR perf → Lace AI headless pull · 8:12 AM · Pacing factor 22/5 = 4.4 · Install cross-check: sheet $196,606 vs API $194,357 (Δ$2,249 &lt; $5K → API retained).
-  </div>
-
+  <div class="source-strip"><strong>Sources:</strong> Revenue/Sales/YTD &#8594; ServiceTitan API (Reports 77063091 + 63167744) &#183; Pulled 8:12 AM ET &#183; <strong>Today&#39;s commitments &#8594; LIVE Google Sheet pull at build time (~9 AM ET)</strong> &#8212; Install commit $16,982 + 20 hrs captured live (blank in 8 AM CSV snapshot) &#183; Marketing/Reviews/Permits &#8594; Huddle sheet JUNE 2026 &#183; 8:12 AM &#183; Escalations &#8594; Escalations sheet &#183; 8:12 AM &#183; CSR perf &#8594; Lace AI headless scrape &#183; 8:12 AM &#183; Pacing factor 22/6 = 3.6667 &#183; Install API $194,357 reconciles to sheet $196,606 (diff under $5K, no override).</div>
 </div>
-
 <div class="report-footer">
-  Generated automatically · Monday, June 8, 2026 · Jay Is On The Way Operations · Confidential — Internal Use Only<br>
-  huddle.jayisontheway.com · D-1 = Fri June 5, 2026 · v17 (live-sheet commitments · 15-section v13 structure)
+  Generated automatically &#183; Tuesday, June 9, 2026 &#183; Jay Is On The Way Operations &#183; Confidential &#8212; Internal Use Only<br>
+  huddle.jayisontheway.com &#183; D-1 = Mon June 8, 2026 &#183; v16 (live commitment pull · June)
 </div>
-
 </div>
 </body>
 </html>
