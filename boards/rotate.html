@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Jay's — Board Rotation</title>
+<style>html,body{margin:0;height:100%;overflow:hidden;background:#fff}iframe{border:0;width:100%;height:100%}</style>
+</head><body><iframe id="f" src="service.html"></iframe><script>
+var pages=["service.html","plumbing.html","sales.html","install.html"],i=0;
+setInterval(function(){i=(i+1)%pages.length;document.getElementById("f").src=pages[i];},45000);
+setTimeout(function(){location.reload();},3600000);
+</script></body></html>
