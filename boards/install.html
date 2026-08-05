@@ -130,6 +130,8 @@ tr.trow td{border-top:2px solid var(--line);font-weight:800;background:rgba(244,
 .tiles.t5{grid-template-columns:repeat(5,1fr)}
 .tile{background:var(--tile);border:1px solid var(--line);border-radius:8px;text-align:center;padding:5px 2px}
 .tile[data-tip]{position:relative;cursor:help;outline:none}
+.tipmark{position:absolute;top:2px;right:3px;font-size:8.5px;color:#B8C6DA;line-height:1;font-weight:700;pointer-events:none}
+.tile[data-tip]:hover .tipmark,.tile[data-tip]:focus .tipmark{color:var(--royal)}
 .tile[data-tip]:hover,.tile[data-tip]:focus{z-index:30}
 .tile[data-tip]:hover::after,.tile[data-tip]:focus::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 7px);transform:translateX(-50%);width:180px;background:#0E2A4E;color:#fff;font-size:10.5px;font-weight:600;line-height:1.35;letter-spacing:0;text-align:left;padding:7px 9px;border-radius:8px;box-shadow:0 8px 22px rgba(14,42,78,.28);white-space:normal;z-index:30;pointer-events:none}
 .tile[data-tip]:hover::before,.tile[data-tip]:focus::before{content:'';position:absolute;left:50%;bottom:calc(100% + 2px);transform:translateX(-50%);border:5px solid transparent;border-top-color:#0E2A4E;z-index:30;pointer-events:none}
