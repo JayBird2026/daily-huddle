@@ -129,6 +129,10 @@ tr.trow td{border-top:2px solid var(--line);font-weight:800;background:rgba(244,
 .tiles.t4{grid-template-columns:repeat(4,1fr)}
 .tiles.t5{grid-template-columns:repeat(5,1fr)}
 .tile{background:var(--tile);border:1px solid var(--line);border-radius:8px;text-align:center;padding:5px 2px}
+.tile[data-tip]{position:relative;cursor:help;outline:none}
+.tile[data-tip]:hover,.tile[data-tip]:focus{z-index:30}
+.tile[data-tip]:hover::after,.tile[data-tip]:focus::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 7px);transform:translateX(-50%);width:180px;background:#0E2A4E;color:#fff;font-size:10.5px;font-weight:600;line-height:1.35;letter-spacing:0;text-align:left;padding:7px 9px;border-radius:8px;box-shadow:0 8px 22px rgba(14,42,78,.28);white-space:normal;z-index:30;pointer-events:none}
+.tile[data-tip]:hover::before,.tile[data-tip]:focus::before{content:'';position:absolute;left:50%;bottom:calc(100% + 2px);transform:translateX(-50%);border:5px solid transparent;border-top-color:#0E2A4E;z-index:30;pointer-events:none}
 .tile.hot{border-color:rgba(18,169,154,.45);background:rgba(18,169,154,.07)}
 .tile.hot .tv{color:#0B8F82}
 .tv{font-size:14px;font-weight:800;color:var(--txt)}
@@ -188,17 +192,7 @@ footer b{color:var(--orange);letter-spacing:2px}
       <div><div class="nm">Morgan Gwynn</div><div class="tags"><span class="lvl">P1</span><span class="rolb">CALLBACK ROLE</span></div></div>
       <div class="rilla ry"><b>83%</b><i>RILLA</i></div>
     </div>
-    <div class="tiles">
-      <div class="tile"><div class="tv">53%</div><div class="tl">OPP CONV</div></div>
-      <div class="tile"><div class="tv">$1,112</div><div class="tl">AVG TICKET</div></div>
-      <div class="tile"><div class="tv">$2,380</div><div class="tl">AVG SALE</div></div>
-      <div class="tile"><div class="tv">35</div><div class="tl">JOBS</div></div>
-      <div class="tile"><div class="tv">11%</div><div class="tl">MEMBERSHIP</div></div>
-      <div class="tile"><div class="tv">0</div><div class="tl">RECALLS</div></div>
-      <div class="tile"><div class="tv">33%</div><div class="tl">SOLD-HR EFF</div></div>
-      <div class="tile"><div class="tv">5</div><div class="tl">5★ REVIEWS</div></div>
-      <div class="tile"><div class="tv">32</div><div class="tl">OPPORTUNITIES</div></div>
-    </div>
+    <div class="tiles"><div class="tile"><div class="tv">53%</div><div class="tl">OPP CONV</div></div><div class="tile"><div class="tv">$1,112</div><div class="tl">AVG TICKET</div></div><div class="tile"><div class="tv">$2,380</div><div class="tl">AVG SALE</div></div><div class="tile"><div class="tv">35</div><div class="tl">JOBS</div></div><div class="tile"><div class="tv">11%</div><div class="tl">MEMBERSHIP</div></div><div class="tile"><div class="tv">0</div><div class="tl">RECALLS</div></div><div class="tile"><div class="tv">33%</div><div class="tl">SOLD-HR EFF</div></div><div class="tile"><div class="tv">5</div><div class="tl">5★ REVIEWS</div></div><div class="tile"><div class="tv">32</div><div class="tl">OPPORTUNITIES</div></div></div>
     <div class="cfoot"><span>TOTAL REVENUE</span>
       <div class="bar"><div class="fill" style="width:100%"></div></div>
       <span class="amt">$38,933</span></div>
@@ -212,17 +206,7 @@ footer b{color:var(--orange);letter-spacing:2px}
       <div><div class="nm">Qu'Mere Harrison</div><div class="tags"><span class="lvl">M2</span></div></div>
       <div class="rilla rg"><b>93%</b><i>RILLA</i></div>
     </div>
-    <div class="tiles">
-      <div class="tile"><div class="tv">74%</div><div class="tl">OPP CONV</div></div>
-      <div class="tile"><div class="tv">$775</div><div class="tl">AVG TICKET</div></div>
-      <div class="tile"><div class="tv">$2,183</div><div class="tl">AVG SALE</div></div>
-      <div class="tile"><div class="tv">43</div><div class="tl">JOBS</div></div>
-      <div class="tile"><div class="tv">20%</div><div class="tl">MEMBERSHIP</div></div>
-      <div class="tile"><div class="tv">0</div><div class="tl">RECALLS</div></div>
-      <div class="tile"><div class="tv">27%</div><div class="tl">SOLD-HR EFF</div></div>
-      <div class="tile"><div class="tv">3</div><div class="tl">5★ REVIEWS</div></div>
-      <div class="tile"><div class="tv">35</div><div class="tl">OPPORTUNITIES</div></div>
-    </div>
+    <div class="tiles"><div class="tile"><div class="tv">74%</div><div class="tl">OPP CONV</div></div><div class="tile"><div class="tv">$775</div><div class="tl">AVG TICKET</div></div><div class="tile"><div class="tv">$2,183</div><div class="tl">AVG SALE</div></div><div class="tile"><div class="tv">43</div><div class="tl">JOBS</div></div><div class="tile"><div class="tv">20%</div><div class="tl">MEMBERSHIP</div></div><div class="tile"><div class="tv">0</div><div class="tl">RECALLS</div></div><div class="tile"><div class="tv">27%</div><div class="tl">SOLD-HR EFF</div></div><div class="tile"><div class="tv">3</div><div class="tl">5★ REVIEWS</div></div><div class="tile"><div class="tv">35</div><div class="tl">OPPORTUNITIES</div></div></div>
     <div class="cfoot"><span>TOTAL REVENUE</span>
       <div class="bar"><div class="fill" style="width:86%"></div></div>
       <span class="amt">$33,317</span></div>
@@ -236,17 +220,7 @@ footer b{color:var(--orange);letter-spacing:2px}
       <div><div class="nm">Jermaine Hayes, Jr.</div><div class="tags"><span class="lvl">M2</span></div></div>
       <div class="rilla ry"><b>81%</b><i>RILLA</i></div>
     </div>
-    <div class="tiles">
-      <div class="tile"><div class="tv">58%</div><div class="tl">OPP CONV</div></div>
-      <div class="tile"><div class="tv">$727</div><div class="tl">AVG TICKET</div></div>
-      <div class="tile"><div class="tv">$3,044</div><div class="tl">AVG SALE</div></div>
-      <div class="tile"><div class="tv">36</div><div class="tl">JOBS</div></div>
-      <div class="tile"><div class="tv">25%</div><div class="tl">MEMBERSHIP</div></div>
-      <div class="tile"><div class="tv">0</div><div class="tl">RECALLS</div></div>
-      <div class="tile"><div class="tv">23%</div><div class="tl">SOLD-HR EFF</div></div>
-      <div class="tile"><div class="tv">5</div><div class="tl">5★ REVIEWS</div></div>
-      <div class="tile"><div class="tv">31</div><div class="tl">OPPORTUNITIES</div></div>
-    </div>
+    <div class="tiles"><div class="tile"><div class="tv">58%</div><div class="tl">OPP CONV</div></div><div class="tile"><div class="tv">$727</div><div class="tl">AVG TICKET</div></div><div class="tile"><div class="tv">$3,044</div><div class="tl">AVG SALE</div></div><div class="tile"><div class="tv">36</div><div class="tl">JOBS</div></div><div class="tile"><div class="tv">25%</div><div class="tl">MEMBERSHIP</div></div><div class="tile"><div class="tv">0</div><div class="tl">RECALLS</div></div><div class="tile"><div class="tv">23%</div><div class="tl">SOLD-HR EFF</div></div><div class="tile"><div class="tv">5</div><div class="tl">5★ REVIEWS</div></div><div class="tile"><div class="tv">31</div><div class="tl">OPPORTUNITIES</div></div></div>
     <div class="cfoot"><span>TOTAL REVENUE</span>
       <div class="bar"><div class="fill" style="width:67%"></div></div>
       <span class="amt">$26,165</span></div>
@@ -260,17 +234,7 @@ footer b{color:var(--orange);letter-spacing:2px}
       <div><div class="nm">Roger Vickers</div><div class="tags"><span class="lvl">M1</span></div></div>
       <div class="rilla rr"><b>68%</b><i>RILLA</i></div>
     </div>
-    <div class="tiles">
-      <div class="tile"><div class="tv">60%</div><div class="tl">OPP CONV</div></div>
-      <div class="tile"><div class="tv">$499</div><div class="tl">AVG TICKET</div></div>
-      <div class="tile"><div class="tv">$1,092</div><div class="tl">AVG SALE</div></div>
-      <div class="tile"><div class="tv">28</div><div class="tl">JOBS</div></div>
-      <div class="tile"><div class="tv">18%</div><div class="tl">MEMBERSHIP</div></div>
-      <div class="tile"><div class="tv">0</div><div class="tl">RECALLS</div></div>
-      <div class="tile"><div class="tv">21%</div><div class="tl">SOLD-HR EFF</div></div>
-      <div class="tile"><div class="tv">1</div><div class="tl">5★ REVIEWS</div></div>
-      <div class="tile"><div class="tv">20</div><div class="tl">OPPORTUNITIES</div></div>
-    </div>
+    <div class="tiles"><div class="tile"><div class="tv">60%</div><div class="tl">OPP CONV</div></div><div class="tile"><div class="tv">$499</div><div class="tl">AVG TICKET</div></div><div class="tile"><div class="tv">$1,092</div><div class="tl">AVG SALE</div></div><div class="tile"><div class="tv">28</div><div class="tl">JOBS</div></div><div class="tile"><div class="tv">18%</div><div class="tl">MEMBERSHIP</div></div><div class="tile"><div class="tv">0</div><div class="tl">RECALLS</div></div><div class="tile"><div class="tv">21%</div><div class="tl">SOLD-HR EFF</div></div><div class="tile"><div class="tv">1</div><div class="tl">5★ REVIEWS</div></div><div class="tile"><div class="tv">20</div><div class="tl">OPPORTUNITIES</div></div></div>
     <div class="cfoot"><span>TOTAL REVENUE</span>
       <div class="bar"><div class="fill" style="width:36%"></div></div>
       <span class="amt">$13,972</span></div>
