@@ -27,29 +27,42 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      # Report regeneration only runs on the 9am schedule or a manual trigger --
+      # NOT on every push. A `push` firing here means your Mac's hourly board
+      # update (or another automated push), which just needs Pages re-deployed
+      # with whatever's already in the repo -- it doesn't need a fresh report,
+      # and running the commit/push steps here caused a race: this job's own
+      # `git push` would get rejected if the Mac pushed again before this job
+      # finished (2026-08-06, run #174 -- "failed to push some refs ... fetch
+      # first"). Skipping these steps entirely on `push` events removes that
+      # race and avoids needlessly regenerating the report dozens of times/day.
       - name: Set up Python
+        if: github.event_name != 'push'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
+        if: github.event_name != 'push'
         run: pip install -r requirements.txt
 
       - name: Generate report
+        if: github.event_name != 'push'
         env:
           GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
         run: python generate_report.py
 
       - name: Commit and push updated report
+        if: github.event_name != 'push'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.html
           # Only commit if something changed. [skip ci] on OUR OWN commit stops
-          # this push from re-triggering this same workflow (the new `push`
-          # trigger below) -- avoids a redundant extra run. Pushes from other
-          # sources (e.g. the Mac's hourly boards/ update) have no [skip ci]
-          # in their message, so they DO trigger a redeploy, which is the point.
+          # this push from re-triggering this same workflow (the `push` trigger
+          # above) -- avoids a redundant extra run. Pushes from other sources
+          # (e.g. the Mac's hourly boards/ update) have no [skip ci] in their
+          # message, so they DO trigger a redeploy, which is the point.
           git diff --staged --quiet || git commit -m "📊 Daily Huddle Report — $(date +'%B %-d, %Y') [skip ci]"
           git push
 
