@@ -10,6 +10,12 @@ on:
 
 permissions:
   contents: write   # needed to commit the updated index.html
+  pages: write       # needed to deploy to GitHub Pages
+  id-token: write    # needed for Pages deployment auth
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -40,3 +46,21 @@ jobs:
           # Only commit if something changed
           git diff --staged --quiet || git commit -m "📊 Daily Huddle Report — $(date +'%B %-d, %Y')"
           git push
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000   # 30 min — GitHub's default 10 min is what's been timing out
