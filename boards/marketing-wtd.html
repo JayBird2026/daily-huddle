@@ -165,10 +165,77 @@ footer b{color:var(--orange);letter-spacing:2px}
   <div class="tblock"><h1>MARKETING <span class="amp">DASHBOARD</span></h1><div class="sub">Week to date · Oct 19–Oct 25, 2026 · Marketing Department</div></div>
   <div class="chips"><a class="mpick" href="index.html" style="text-decoration:none;display:inline-block;color:#1E5FD0">⌂ Dashboards</a><select class="mpick" onchange="location.href=this.value"><option value="marketing-2026-01.html">January 2026</option><option value="marketing-2026-02.html">February 2026</option><option value="marketing-2026-03.html">March 2026</option><option value="marketing-2026-04.html">April 2026</option><option value="marketing-2026-05.html">May 2026</option><option value="marketing-2026-06.html">June 2026</option><option value="marketing-2026-07.html">July 2026</option><option value="marketing-2026-08.html">August 2026</option><option value="marketing-2026-09.html">September 2026</option><option value="marketing.html">October 2026 · LIVE</option><option value="marketing-today.html">Today</option><option value="marketing-yesterday.html">Yesterday</option><option value="marketing-wtd.html" selected>Week to Date</option><option value="marketing-lastweek.html">Last Week</option><option value="marketing-ytd.html">2026 Year to Date</option></select>
     <div class="chip live">Updates hourly · ServiceTitan API</div>
-    <div class="chip">Data as of <b>awaiting first pull</b></div>
+    <div class="chip">Data as of <b>10/25 6:13 AM</b></div>
   </div>
 </header>
-<div class="stale">⚠ DATA MAY BE STALE — last successful pull awaiting first pull · expected hourly</div>
-<div class='pend'>MARKETING DATA FEED NOT YET RUNNING — run st_marketing.py on the Mac (pull_all) to light this board up.</div>
+
+<style>
+.row{display:flex;gap:14px;align-items:stretch;margin-bottom:9px}
+.row>.card{margin-bottom:0}
+.mkstrip{display:flex;align-items:center;gap:20px}
+.mkgw{text-align:center;border-right:1px solid #E1E8F2;padding-right:18px;min-width:210px}
+.mkgw svg{display:block;margin:0 auto}
+.mkgv{font-size:30px;font-weight:800;color:#0E2A4E;line-height:1}
+.mkgl{font-size:9px;font-weight:800;letter-spacing:1px;color:#5E7799;margin-top:1px}
+.mktile{width:180px;background:#F4F7FB;border:1px solid #E1E8F2;border-radius:12px;text-align:center;padding:11px 6px}
+.mktv{font-size:27px;font-weight:800;line-height:1}
+.mktl{font-size:9.5px;letter-spacing:.7px;font-weight:800;margin-top:5px;color:#0E2A4E}
+.mkts{font-size:9px;color:#5E7799;font-weight:700;margin-top:2px}
+.cpbwrap{flex:1;border-left:1px solid #E1E8F2;padding-left:18px}
+.cpbhd{font-size:10px;letter-spacing:1px;font-weight:800;color:#5E7799;margin-bottom:6px}
+.cpbnote{font-size:8.5px;font-weight:600;letter-spacing:0;color:#8FA3BE;font-style:italic}
+.cpbrow{display:flex;gap:10px} .cpb{flex:1;background:#F4F7FB;border:1px solid #E1E8F2;border-radius:12px;text-align:center;padding:9px 4px}
+.cpbv{font-size:22px;font-weight:800;line-height:1} .cpbl{font-size:10px;font-weight:800;margin-top:4px} .cpbs{font-size:8.5px;color:#5E7799;font-weight:700;margin-top:1px}
+.mksec{font-size:11.5px;letter-spacing:2px;font-weight:800;color:#5E7799;margin-bottom:8px} .mksec b{color:#F4711F}
+.mktab{width:100%;border-collapse:collapse}
+.mktab th{font-size:8.5px;letter-spacing:.5px;color:#5E7799;font-weight:800;text-align:right;padding:5px 8px;border-bottom:2px solid #E1E8F2} .mktab th.l{text-align:left}
+.mktab td{padding:7px 8px;border-bottom:1px solid #E1E8F2;font-size:13.5px} .mktab td.cn{font-weight:800;font-size:14px} .mktab td.num{text-align:right;font-weight:700}
+.dwrap{display:flex;gap:16px;align-items:center}
+.lg{display:flex;align-items:center;gap:7px;font-size:12px;padding:2.5px 0} .dot{width:11px;height:11px;border-radius:3px;flex:none}
+.ln{flex:1;font-weight:700} .lv{font-weight:800;width:52px;text-align:right} .lp{width:36px;text-align:right;color:#5E7799;font-weight:700}
+.mknote{color:#5E7799;font-size:10.5px;margin-top:7px;font-weight:600}
+.rtiles{display:flex;gap:11px} .rt{flex:1;background:#F4F7FB;border:1px solid #E1E8F2;border-radius:12px;text-align:center;padding:12px 4px}
+.rtv{font-size:24px;font-weight:800;line-height:1} .rtl{font-size:9px;font-weight:800;letter-spacing:.5px;margin-top:5px} .rts{font-size:8.5px;color:#5E7799;font-weight:700;margin-top:2px}
+.rvtot{display:flex;align-items:center;gap:10px;margin-top:10px;background:#F4F7FB;border:1px solid #E1E8F2;border-radius:12px;padding:9px 14px}
+.rvtl{font-size:9px;letter-spacing:.8px;font-weight:800;color:#5E7799} .rvloc{font-size:11px;font-weight:700;color:#0E2A4E;padding:0 4px}
+.rvloc b{display:block;font-size:8px;letter-spacing:.4px;color:#8FA3BE;font-weight:800} .rvloc span{font-size:16px;font-weight:800}
+.rvg{margin-left:auto;text-align:right} .rvg b{display:block;font-size:8px;letter-spacing:.6px;color:#5E7799;font-weight:800} .rvg span{font-size:24px;font-weight:800;color:#F4711F}
+.rvg i{display:block;font-style:normal;font-size:10px;font-weight:800;color:#0B8F82;margin-top:1px}
+.abrow{display:flex;gap:12px;align-items:stretch}
+.abcard{flex:1;border:1px solid #E1E8F2;border-radius:12px;padding:10px 12px 12px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.abcard.st{background:rgba(30,95,208,.05);border-color:rgba(30,95,208,.30)} .abcard.lace{background:rgba(18,169,154,.06);border-color:rgba(18,169,154,.35)}
+.ablogo{height:32px;width:auto;object-fit:contain;margin-bottom:7px} .abv{font-size:38px;font-weight:800;line-height:1} .abl{font-size:9.5px;color:#5E7799;font-weight:700;margin-top:3px}
+.abgap{flex:none;width:140px;background:rgba(232,80,60,.07);border:1px solid rgba(232,80,60,.4);border-radius:12px;text-align:center;padding:12px 8px;display:flex;flex-direction:column;justify-content:center}
+.abgv{font-size:32px;font-weight:800;color:#E8503C;line-height:1} .abgl{font-size:9px;font-weight:800;color:#B03A28;margin-top:4px}
+</style>
+<div class="strip"><div class="card mkstrip">
+  <div class="mkgw"><svg viewBox="0 0 200 116" width="200"><path d="M20,100 A80,80 0 0 1 180,100" fill="none" stroke="#E1E8F2" stroke-width="15" stroke-linecap="round"/><text x="100" y="82" text-anchor="middle" font-size="30" font-weight="800" fill="#A8B8CE">—</text><text x="100" y="102" text-anchor="middle" font-size="8.5" font-weight="700" fill="#5E7799">AWAITING FINANCIALS — SEE MONTHLY</text></svg><div class="mkgl">MARKETING SPEND</div></div>
+  <div style="display:flex;gap:11px;flex:none">
+    <div class="mktile"><div class="mktv">$172,475</div><div class="mktl">ATTRIBUTED REVENUE</div><div class="mkts">all departments</div></div>
+    <div class="mktile"><div class="mktv" style="color:#A8B8CE">—</div><div class="mktl">BLENDED ROAS</div><div class="mkts">awaiting financials — see monthly</div></div>
+  </div>
+  <div class="cpbwrap"><div class="cpbhd">COST PER BOOKED JOB &nbsp;·&nbsp; BY DEPARTMENT &nbsp;<span class="cpbnote">(finalized once the month's financials post — by the 15th of the following month)</span></div>
+  <div class="cpbrow"><div class="cpb"><div class="cpbv" style="color:#8FA3BE">$—</div><div class="cpbl">HVAC Service</div><div class="cpbs">65 booked · awaiting spend</div></div><div class="cpb"><div class="cpbv" style="color:#8FA3BE">$—</div><div class="cpbl">Plumbing</div><div class="cpbs">44 booked · awaiting spend</div></div><div class="cpb"><div class="cpbv" style="color:#8FA3BE">$—</div><div class="cpbl">Sales → Install</div><div class="cpbs">34 booked · awaiting spend</div></div></div></div>
+</div></div>
+<div class="row">
+  <div class="card" style="flex:1.4"><div class="mksec">SIX DIGITAL CHANNELS &nbsp;·&nbsp; <b>SYSTEM vs SHEET</b> cross-check</div>
+    <table class="mktab"><tr><th class="l">Channel</th><th>System $ (ServiceTitan)</th><th>Sheet $</th><th>Var</th><th>Spend</th><th>ROAS</th></tr><tr><td class="cn">Website / SEO</td><td class="num">$49,763</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">awaiting</td></tr><tr><td class="cn">Organic</td><td class="num">$2,901</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">awaiting</td></tr><tr><td class="cn">Google LSA</td><td class="num">$72,049</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">awaiting</td></tr><tr><td class="cn">Direct Mail</td><td class="num">$59</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">awaiting</td></tr><tr><td class="cn">Paid Social</td><td class="num">$109</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">awaiting</td></tr><tr><td class="cn">PPC</td><td class="num">$1,387</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">—</td><td class="num" style="color:#A8B8CE">awaiting</td></tr></table>
+    <div class="mknote">Revenue live from ServiceTitan (Lorie's buckets); Sheet $ + spend from Lorie's ROAS sheet. Green ROAS ≥ Nexstar floor, red below. The current month fills in once financials post (~15th of the following month).</div></div>
+  <div class="card" style="flex:1"><div class="mksec">FULL LEAD SOURCE &nbsp;·&nbsp; <b>every dollar</b></div>
+    <div class="dwrap"><div><svg viewBox="0 0 190 190" width="176" height="176"><circle cx="95" cy="95" r="68" fill="none" stroke="#1E5FD0" stroke-width="32" stroke-dasharray="123.27 303.98" stroke-dashoffset="-0.00" transform="rotate(-90 95 95)"/><circle cx="95" cy="95" r="68" fill="none" stroke="#12A99A" stroke-width="32" stroke-dasharray="7.19 420.07" stroke-dashoffset="-123.27" transform="rotate(-90 95 95)"/><circle cx="95" cy="95" r="68" fill="none" stroke="#3AA9E8" stroke-width="32" stroke-dasharray="178.48 248.78" stroke-dashoffset="-130.46" transform="rotate(-90 95 95)"/><circle cx="95" cy="95" r="68" fill="none" stroke="#7B61C9" stroke-width="32" stroke-dasharray="3.71 423.55" stroke-dashoffset="-308.94" transform="rotate(-90 95 95)"/><circle cx="95" cy="95" r="68" fill="none" stroke="#F4711F" stroke-width="32" stroke-dasharray="0.15 427.11" stroke-dashoffset="-312.65" transform="rotate(-90 95 95)"/><circle cx="95" cy="95" r="68" fill="none" stroke="#8FA3BE" stroke-width="32" stroke-dasharray="114.46 312.79" stroke-dashoffset="-312.79" transform="rotate(-90 95 95)"/><text x="95" y="92" text-anchor="middle" font-size="13" font-weight="800" fill="#0E2A4E">$172K</text><text x="95" y="107" text-anchor="middle" font-size="7.5" font-weight="700" fill="#5E7799">ALL SOURCES</text></svg></div><div style="flex:1"><div class="lg"><span class="dot" style="background:#1E5FD0"></span><span class="ln">Website / SEO</span><span class="lv">$50K</span><span class="lp">29%</span></div><div class="lg"><span class="dot" style="background:#12A99A"></span><span class="ln">Organic</span><span class="lv">$3K</span><span class="lp">2%</span></div><div class="lg"><span class="dot" style="background:#3AA9E8"></span><span class="ln">Google LSA</span><span class="lv">$72K</span><span class="lp">42%</span></div><div class="lg"><span class="dot" style="background:#7B61C9"></span><span class="ln">Paid digital · Social+PPC</span><span class="lv">$1K</span><span class="lp">1%</span></div><div class="lg"><span class="dot" style="background:#F4711F"></span><span class="ln">Direct Mail</span><span class="lv">$0K</span><span class="lp">0%</span></div><div class="lg"><span class="dot" style="background:#8FA3BE"></span><span class="ln">Other outside · referrals/repeat</span><span class="lv">$46K</span><span class="lp">27%</span></div></div></div></div>
+</div>
+<div class="row">
+  <div class="card" style="flex:1"><div class="mksec">REVIEWS ENGINE &nbsp;·&nbsp; <b>new-customer reviews</b></div>
+    <div class="rtiles"><div class="rt"><div class="rtv" style="color:#A8B8CE">8.9%</div><div class="rtl">NEW-CUST REVIEWS</div><div class="rts">target 15%</div></div><div class="rt"><div class="rtv" style="color:#A8B8CE">4.2★</div><div class="rtl">AVG RATING</div><div class="rts">Google</div></div><div class="rt"><div class="rtv" style="color:#A8B8CE">5</div><div class="rtl">THIS WEEK</div><div class="rts">reviews</div></div><div class="rt"><div class="rtv" style="color:#A8B8CE">0.7/day</div><div class="rtl">PACE</div><div class="rts">target 5/day</div></div></div>
+    <div class="rvtot"><span class="rvtl">TOTAL REVIEWS<br>ON FILE (current)</span><span class="rvloc"><b>GOOGLE · VA</b><span>474</span></span><span class="rvloc"><b>GOOGLE · NC</b><span>3,456</span></span><span class="rvloc"><b>FACEBOOK · VA</b><span>0</span></span><span class="rvloc"><b>FACEBOOK · NC</b><span>602</span></span><span class="rvg"><b>ALL LISTINGS</b><span>4,532</span><i>+9 IN OCT SO FAR</i></span></div>
+    <div class="mknote">Per-listing tiles are current totals. The all-listings number is the running total on file as of this period, with that period's new reviews below — estimated from the review feed for closed months; exact per-listing history arrives with the Business Profile API.</div></div>
+  <div class="card" style="flex:1.15"><div class="mksec">ABANDONED CALLS &nbsp;·&nbsp; <b>ServiceTitan vs Lace</b> &nbsp;— spent money, no answer</div>
+    <div class="abrow">
+      <div class="abcard st"><div class="abl" style="font-weight:800;color:#1E5FD0">ServiceTitan</div><div class="abv">180</div><div class="abl">abandoned · ServiceTitan</div></div>
+      <div class="abcard lace"><div class="abl" style="font-weight:800;color:#12A99A">Lace</div><div class="abv">—</div><div class="abl">abandoned · Lace</div></div>
+      <div class="abgap"><div class="abgv">—</div><div class="abgl">CALL GAP<br>missed opps</div></div>
+    </div>
+    <div class="mknote">Both platforms count abandons differently — ServiceTitan from its Unbooked &amp; Abandoned Calls report, Lace from its own system. The gap is how many more abandons ServiceTitan flags than Lace booked (money spent on calls that never got answered). Each shows for months where its cache exists; closed months before a feed went live read “—”.</div></div>
+</div>
 <footer><b>LIVE</b> &nbsp;·&nbsp; Jay Is On The Way · department dashboard · auto-refreshes every hour · confidential — internal use only</footer>
 </div></body></html>
